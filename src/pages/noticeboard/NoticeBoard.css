@@ -1,0 +1,257 @@
+/* src/components/StickyNote.css */
+
+.sticky-note {
+  position: absolute; /* Allows draggable to position it */
+  width: 180px;
+  min-height: 150px;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Shadow for "lifted" effect */
+  font-family: 'Kalam', cursive; /* A fun, handwritten-like font */
+  font-size: 1.1em;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  cursor: grab; /* Indicate draggable */
+  box-sizing: border-box;
+  transform: rotate(calc(var(--rotation-deg) * 1deg)); /* Apply slight random rotation */
+  --rotation-deg: calc(var(--random-factor) * 6 - 3); /* Between -3 and 3 degrees */
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.sticky-note:active {
+  cursor: grabbing;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Deeper shadow when dragging */
+  transform: scale(1.02); /* Slightly larger when active */
+}
+
+.sticky-note:hover {
+  z-index: 100; /* Bring to front on hover */
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  cursor: grab; /* Make header part of the drag handle */
+}
+
+.note-handle {
+  width: 100%;
+  height: 20px; /* Make the header a clear handle area */
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: grab;
+  z-index: 1; /* Ensure it's above other elements for dragging */
+}
+
+.note-header .delete-note-btn {
+  background: none;
+  border: none;
+  color: #c00;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  z-index: 2; /* Ensure delete button is clickable */
+}
+
+.note-header .delete-note-btn:hover {
+  opacity: 1;
+  color: #f00;
+}
+
+.note-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable scrolling for longer notes */
+  padding-top: 15px; /* Offset for header */
+  img{
+     user-drag: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+    user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  }
+}
+
+.note-content p {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.note-content textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  resize: none; /* Disable browser's textarea resize handle */
+  font-family: 'Kalam', cursive;
+  font-size: 1.1em;
+  line-height: 1.4;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Color palette for note header */
+.color-palette {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  z-index: 2; /* Ensure color dots are above the handle */
+}
+
+.color-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.color-dot:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.color-dot.active {
+  border-color: #333; /* Highlight active color */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a Google Font for "Kalam" if you want a handwritten look */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+/* src/components/NoticeBoard.css */
+
+.notice-board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d46868; /* Light background for the overall page */
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url('/assets/img/image/DJI_0981.jpg');
+  background-size: cover;
+  .layer{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(92, 92, 92, 0.452) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+
+    h2{
+        margin-top: 50px;
+        color: #102a63;
+        background-color: rgb(238, 238, 238);
+        padding: 3px 20px;
+        border-radius: 2px;
+    }
+  }
+}
+
+.notice-board-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.notice-board-header h1 {
+  font-family: 'Georgia', serif;
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.add-note-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-note-btn:hover {
+  background-color: #45a049;
+}
+
+.notice-board {
+  position: relative;
+  width: 90vw; /* Adjust as needed */
+  max-width: 1200px; /* Max width for larger screens */
+  height: 70vh; /* Adjust as needed */
+  background-color: #0f2358; /* Sienna color for wood board */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px); /* Wood grain effect */
+  background-size: 50px 50px;
+  border: 15px solid #d3d3d3; /* Darker brown for board frame */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  overflow: hidden; /* Important for containing draggable notes */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Optional: "Cork board" texture if you prefer */
+/* .notice-board {
+  background-image: url('https://www.transparenttextures.com/patterns/clean-textile.png');
+  background-color: #CD853F;
+  border: 15px solid #8B4513;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+} */
+
+.pin {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  box-shadow: 
+  
+    0 2px 6px rgba(0, 0, 0, 0.4), /* base shadow */
+    inset -2px -2px 4px rgba(255, 255, 255, 0.3), /* inner light */
+    inset 2px 2px 4px rgba(0, 0, 0, 0.3); /* inner shadow */
+  z-index: 10;
+  border-style: solid;
+  border-width: 1px;
+  transform: translateX(-50%);
+}
+.pin::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 50%;
+}

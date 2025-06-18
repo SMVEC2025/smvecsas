@@ -1,0 +1,617 @@
+.ug-header-main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-position: bottom;
+
+    .programbar {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        transform: translate(0, -50%);
+        transition: all 0.3s ease-in-out;
+
+
+        .items {
+            position: relative;
+
+            .header {
+                background-color: #fabc58;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+
+        .content.open {
+            width: 400px;
+            transition: all 0.3s ease-in-out;
+
+            @include respond-to("sm") {
+                width: 80vw;
+
+            }
+        }
+
+        .content.close {
+            width: 0;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        .content {
+            width: 0;
+            height: 600px;
+            overflow: hidden;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            background-color: rgb(255, 255, 255);
+            padding-bottom: 0.5rem;
+
+            h1 {
+                background-color: #fabc58;
+                width: 100%;
+                text-align: center;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                font-size: 28px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: rgb(58, 58, 58);
+
+            }
+
+            .itemlist {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                margin: 10px 10px;
+                overflow: hidden;
+
+                h3 {
+                    color: $primary-blue;
+                    font-size: 20px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+
+                .icons {
+                    color: $primary-blue;
+                    font-size: 15px;
+                    width: 35px !important;
+                    min-width: 35px;
+                    border-radius: 50%;
+                    height: 35px;
+                    border: 1px solid rgba(128, 128, 128, 0.363);
+                    color: $primary-blue;
+                    opacity: 0.9;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
+
+                }
+            }
+
+        }
+
+        .btn {
+            transform: translate(52px, 0) rotate(90deg) scale(-1);
+            background-color: white;
+            color: $primary-blue;
+            padding: 7px 20px;
+            border-radius: 0;
+            cursor: pointer;
+
+            @include respond-to("sm") {
+                transform: translate(52px, 30vh) rotate(90deg) scale(-1);
+                transition: all 0.3s ease;
+            }
+
+            &.true {
+                background-color: #fabc58;
+
+                @include respond-to("sm") {
+                    transform: translate(52px, 0) rotate(90deg) scale(-1);
+
+                }
+            }
+
+        }
+
+    }
+
+
+    .content {
+        z-index: 1;
+        position: static;
+        width: 100%;
+        height: 100%;
+        background-color: #04071396;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            color: rgb(255, 255, 255);
+            font-size: 60px;
+            font-weight: 500;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+
+            @include respond-to("sm") {
+                font-size: 30px;
+
+            }
+        }
+
+        p {
+            color: rgb(240, 240, 240);
+            max-width: 600px;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            font-size: 20px;
+            max-width: 800px;
+
+            @include respond-to("sm") {
+                font-size: 16px;
+                max-width: 90vw;
+            }
+
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 15px;
+            margin-top: 20px;
+
+            button {
+                padding: 7px 20px;
+                color: $primary-blue;
+                background-color: white;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.programs-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 2;
+
+    .items {
+        position: relative;
+        padding-left: 10px;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        color: rgb(238, 238, 238);
+        font-weight: 400;
+
+        &:hover {
+            scale: 102%;
+        }
+
+    }
+
+    .items::before {
+        content: "";
+        width: 1px;
+        height: 15px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+//////UG-about///////////////////////////
+
+.ug-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    padding: 10rem 0;
+
+    @include respond-to("sm") {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 2rem 10px;
+    }
+
+    .left {
+        img {
+            width: 400px;
+            height: auto;
+            margin-top: 10px;
+            height: 100%;
+            object-fit: cover;
+
+            @include respond-to("sm") {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        @include respond-to("sm") {
+            width: 100%;
+
+        }
+
+        h3 {
+            font-weight: 500;
+            color: $primary-blue;
+            font-size: 38px;
+
+            @include respond-to("sm") {
+                font-size: 25px;
+
+            }
+        }
+
+        p {
+            max-width: 80%;
+
+            @include respond-to("sm") {
+                max-width: 100%;
+                line-height: $mob-paraline;
+
+
+
+            }
+        }
+
+        button {
+            background-color: $primary-blue;
+            color: white;
+            padding: 7px 20px;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+    }
+}
+
+
+////UG-mission and vision/////
+/// 
+.mv-section {
+    padding: 6rem 30px;
+    background: linear-gradient(135deg, #fabc58);
+
+    @include respond-to("sm") {
+        padding: 2rem 10px;
+
+    }
+}
+
+.mv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mv-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: $primary-blue;
+    position: relative;
+
+    @include respond-to("sm") {
+        font-size: $mob-heading;
+        margin-bottom: 5px;
+    }
+
+}
+
+.mv-heading::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: $primary-blue;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.mv-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    @include respond-to("sm") {
+        gap: 0px;
+
+    }
+}
+
+.mv-card {
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+    text-align: left;
+
+    @include respond-to("sm") {
+        padding: 10px;
+
+    }
+}
+
+
+
+.mv-title {
+    font-size: 1.8rem;
+    color: $primary-blue;
+    margin-bottom: 15px;
+    border-left: 6px solid $primary-blue;
+    padding-left: 15px;
+
+    @include respond-to("sm") {
+        font-size: $mob-heading;
+        margin-bottom: 5px;
+        padding-left: 5px;
+        border-left: 4px solid $primary-blue;
+
+    }
+}
+
+.mv-text {
+    font-size: 1rem;
+    color: #303030;
+    line-height: 1.7;
+
+    @include respond-to("sm") {
+        font-size: $mob-para;
+        line-height: $mob-paraline;
+    }
+}
+
+
+
+// /program-details-main///
+
+.program_details-main {
+    padding: 5rem 50px;
+
+    @include respond-to("sm") {
+
+        padding: 2rem 10px;
+    }
+
+    .title-main {
+        font-size: 45px;
+
+        @include respond-to("sm") {
+            font-size: $mob-heading;
+        }
+    }
+
+    p {
+        font-size: 17px;
+
+        @include respond-to("sm") {
+            font-size: $mob-para;
+            line-height: $mob-paraline;
+        }
+    }
+
+    h2 {
+        font-size: 35px;
+        font-weight: 500;
+        color: $primary-blue;
+        text-transform: capitalize;
+
+        @include respond-to("sm") {
+            font-size: $mob-heading;
+        }
+    }
+
+    .desc {
+        max-width: 70vw;
+
+        @include respond-to("sm") {
+            max-width: 100%;
+        }
+    }
+
+    h4 {
+        color: $primary-blue;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+    .career-opportunity {
+        margin-left: 20px;
+
+        h3 {
+            color: $primary-blue;
+            font-size: 25px;
+            font-weight: 500;
+            max-width: 800px;
+            text-transform: capitalize;
+        }
+
+        div {
+            margin-bottom: 4rem;
+
+            li {
+                color: rgb(49, 49, 49);
+                font-size: 18px;
+
+                @include respond-to("sm") {
+                    font-size: $mob-para;
+                }
+            }
+        }
+    }
+
+    .button-course {
+        background-color: $primary-blue;
+        color: white;
+        padding: 7px 20px;
+
+
+    }
+
+    .bos-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.program-table {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    padding-bottom: 2rem;
+
+    .table-container {
+        width: 60vw;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid rgba(195, 200, 247, 0.61);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .ug-programs-table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+
+        .fees_header,
+        #fees_item {
+            display: none;
+        }
+    }
+
+    .ug-programs-table th,
+    .ug-programs-table td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid #d0d3fa;
+    }
+
+    .ug-programs-table thead {
+        background-color: #031372;
+        color: white;
+        font-size: 20px;
+
+    }
+
+    .cat-heading {
+        font-weight: 500;
+
+    }
+
+    .category-row td {
+        background-color: #e2e2e2;
+        font-size: 18px;
+        color: black;
+    }
+
+    .items {
+        color: black;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary-blue;
+            font-weight: 500;
+        }
+    }
+
+    .header {
+        th {
+            font-weight: 600;
+        }
+    }
+}
+
+//////////////////////////////////////
+.about-area {
+    background-color: #f5f4ef;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: $primary-blue;
+            margin-top: 1rem;
+            text-align: center;
+
+
+        }
+
+        p {
+            max-width: 80%;
+            text-align: center;
+        }
+    }
+
+    @include respond-to("sm") {
+        img {
+            width: 90vw;
+
+        }
+
+        .con {
+            h2 {
+                font-size: $mob-heading;
+                color: $primary-blue;
+                text-align: left;
+                padding-left: 20px;
+
+            }
+
+            p {
+                font-size: $mob-para;
+                line-height: $mob-paraline;
+                text-align: left;
+                max-width: 90%;
+            }
+        }
+    }
+}

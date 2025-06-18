@@ -1,0 +1,46 @@
+.admission_main{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    background-image: url('https://agri.smvec.ac.in/assets/img/breadcrumb/DJI_0981.jpg');
+}
+.af_main{
+    width: 700px;
+    transform: translate(0,0);
+}
+.highlights_main{
+
+}
+.highlights_main{
+    padding: 5rem 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgb(4, 4, 48);
+    justify-content: center;
+
+
+    div{
+        background-color: #11366d;
+        width: 220px;
+        height: 120px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 7px;
+        h4{
+            font-size: 30px;
+            color: #f1b807;
+        }
+        h2{
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+            
+        }
+    }
+}

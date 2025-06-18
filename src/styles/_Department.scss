@@ -1,0 +1,106 @@
+@import 'https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.css';
+
+
+.hod_main {
+    padding: 7rem 0;
+    background-color: #183a81;
+
+    @include respond-to("sm") {
+        padding: 2rem 0;
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 5rem;
+
+        @include respond-to("sm") {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 3px solid $primary-blue;
+                object-fit: cover;
+
+            }
+        }
+
+        h2,
+        h3,
+        p {
+            color: white;
+        }
+
+        @include respond-to("sm") {
+            .right {
+                h2 {
+                    font-size: $mob-heading;
+                }
+
+                p {
+                    font-size: $mob-para;
+                    font-weight: lighter;
+                    line-height: $mob-paraline;
+                }
+            }
+        }
+    }
+}
+
+
+
+///faculty///
+
+.dept-faculty-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0 0 0;
+
+    @include respond-to("sm") {
+    padding: 1rem 0 0 0;
+
+    }
+
+    h2 {
+        color: $primary-blue;
+        font-family: "Playfair Display", serif;
+        font-size: 50px;
+    }
+
+    p {
+        text-align: center;
+        max-width: 70%;
+        @include respond-to("sm") {
+            font-size: $mob-para;
+        max-width: 100%;
+        text-align: start;
+
+    }
+    }
+
+    button {
+        background-color: $primary-blue;
+        color: white;
+        margin-top: 20px;
+        border-radius: 3px;
+        padding: 7px 20px;
+    }
+}

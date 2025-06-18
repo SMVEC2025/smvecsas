@@ -1,0 +1,203 @@
+@import './variables';
+@import './Home';
+@import './component';
+@import './Header';
+@import './UgPrograms';
+@import './about';
+@import './campus';
+@import './Contactus';
+@import './Admission';
+@import './Form';
+@import './Department';
+@import './360';
+@import './MobileSidebarMenu';
+@import './ThreeSixtyViewer';
+@import './Placement.scss';
+
+.Test { /* Changed from App to Test as per your component name */
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tour-wrapper { /* Renamed from tour-container for clarity */
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* CRUCIAL: Makes children with absolute positioning relative to this wrapper */
+}
+
+/* --- Styles for TRULY FIXED Overlay Icons --- */
+.fixed-overlay-icons {
+  position: absolute; /* Positioned relative to .tour-wrapper */
+  bottom: 20px; /* Adjust as needed: 20px from the bottom */
+  left: 20px; /* 20px from the left */
+  right: 20px; /* 20px from the right */
+  display: flex;
+  justify-content: space-between; /* Pushes buttons to corners */
+  z-index: 10; /* Make sure they are above the viewer */
+  pointer-events: none; /* Allow clicks to pass through empty space */
+}
+
+.fixed-icon-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  cursor: pointer;
+  padding: 0; /* Remove default button padding */
+  pointer-events: all; /* Re-enable pointer events for the buttons themselves */
+  transition: transform 0.2s ease;
+}
+
+.fixed-icon-button img {
+  width: 60px; /* Adjust icon size */
+  height: 60px;
+  display: block; /* Remove extra space below image */
+  filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5)); /* Optional: add shadow to icon */
+}
+
+.fixed-icon-button:hover {
+  transform: scale(1.1); /* Hover effect */
+}
+
+/* Optional: Different hover effects or styles for prev/next */
+.fixed-icon-button.prev-icon:hover {
+  transform: translateX(-5px); /* Slide left */
+}
+.fixed-icon-button.next-icon:hover {
+  transform: translateX(5px); /* Slide right */
+}
+
+
+/* Existing .navigation-menu, .info-marker, .custom-navbar-item styles... */
+
+.navigation-menu {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navigation-menu li button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navigation-menu li button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.navigation-menu li button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.info-marker {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #333;
+  font-size: 0.95em;
+  white-space: normal;
+  max-width: 250px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.info-marker h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #007bff;
+    font-size: 1.1em;
+}
+
+.info-marker p {
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.info-marker:hover {
+    transform: translateY(-5px);
+}
+
+.info-marker-icon {
+  font-size: 2.5em;
+  line-height: 1;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+.info-marker-icon:hover {
+    transform: scale(1.1);
+}
+
+.custom-navbar-item {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.map_sidebar-main{
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background-color: rgb(224, 221, 221);
+    border-radius: 10px;
+    padding: 20px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid $primary-blue;
+        }
+        h2{
+            font-size: 18px;
+        }
+    }
+}
+
+/////
+p{
+    @include respond-to("sm") {
+    font-size: 16px;
+    line-height: 20px;
+    }
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+ font-family: "Poppins", sans-serif;
+ font-style: normal;
+
+}
+button{
+  cursor: pointer;
+  border: none;
+}
+body{
+  background-color: #fafcfb;
+}
+
+/* ////////////360 map */
+/* Styles for the container of your custom HTML hotspot */
+.custom-hotspot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional: background and padding to make the text stand out */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer; /* Indicate it's clickable */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.custom-hotspot-container:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Styles for the text inside your hotspot */
+.custom-hotspot-text {
+    color: white; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    pointer-events: none; /* Allows click to pass through to the parent container */
+}
+
+/* Optional: specific styles for navigation hotspots */
+.navigation-hotspot {
+    background-color: rgba(0, 123, 255, 0.7); /* Blue for navigation */
+}
+
+.navigation-hotspot:hover {
+    background-color: rgba(0, 123, 255, 0.9);
+}

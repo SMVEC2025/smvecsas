@@ -1,0 +1,146 @@
+/* Mobile only */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.mobile-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: white;
+
+    @include respond-to("sm") {
+        display: flex;
+
+    }
+
+    &.show.down {
+        transform: translateY(0px);
+
+        background-color: rgba(255, 0, 0, 0);
+        opacity: 1;
+    }
+
+    &.hide {
+        opacity: 1;
+    }
+
+    &.scroll {
+        background-color: rgb(255, 255, 255);
+        opacity: 1;
+        color: black;
+        transform: translateY(0px);
+    }
+
+    &.down {
+        opacity: 1;
+        background-color: white;
+        transform: translateY(-50px);
+
+    }
+
+    img {
+        width: auto;
+        margin-left: 10px;
+
+    }
+}
+
+.menu-toggle {
+    z-index: 1001;
+    border: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+.sidebar-overlay.show {
+    display: block;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    z-index: 1001;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.menu li {
+    margin-bottom: 1rem;
+}
+
+.menu a,
+.submenu-toggle {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+.submenu {
+    list-style: none;
+    padding-left: 1rem;
+    display: none;
+    margin-top: 0.5rem;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.submenu li {
+    margin-bottom: 0.5rem;
+}
+
+.submenu a {
+    color: #555;
+}
