@@ -32,7 +32,7 @@ function MediaStudies() {
     <MissionVision/>
     <Program programDetail={programDetails}/>
     <Faculty dept="Department of Basic Sciences"/>
-    <HomeNewsAndEvents title="SMVEC Events"/>
+    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
     <HomeCta/>
    </>
   )

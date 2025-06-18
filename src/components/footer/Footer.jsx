@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import FooterSocial from "./FooterSocial";
 import logo from '/assets/img/logo/logo.png';
@@ -7,27 +7,23 @@ import { AiTwotoneMail } from "react-icons/ai";
 import mainlogo from '/assets/img/logo/logo.png'
 
 
-export default function Footer( ) {
+export default function Footer() {
+  const navigate = useNavigate()
 
   const style_2 = false
-    const footerLinks = {
-    link_one:[
-        {id:1,title:"About Us",link:'/about-us'},
-        {id:2,title:"Courses",link:'/course-with-filter'},
-        {id:3,title:"News & Blog",link:'/blog-standard'},
-        {id:4,title:"Become A Teacher",link:'/become-instructor'},
-        {id:5,title:"Events",link:'/event'},
-        {id:6,title:"Contact",link:'/contact'},
+  const footerLinks = {
+    link_one: [
+      { id: 1, title: "About Us", link: '/about-us' },
+      { id: 2, title: "Programs", link: '/programs' },
+      { id: 5, title: "Events", link: '/events' },
+      { id: 6, title: "Contact", link: '/contact-us' },
     ],
-    link_two:[
-        {id:1,title:"Students",link:'/student-profile'},
-        {id:2,title:"Addmition",link:'/university-admission-overview'},
-        {id:3,title:"Faculty & Staffs",link:'/university-leadership'},
-        {id:4,title:"Media Relations",link:'#'},
-        {id:5,title:"Alumni",link:'#'},
-        {id:6,title:"Visit",link:'/university-schedule'},
+    link_two: [
+      { id: 2, title: "Admission", link: '/admission' },
+      { id: 3, title: "Faculty & Staffs", link: '/faculty' },
+      { id: 4, title: "placement", link: 'placement' },
     ]
-}
+  }
   return (
     <footer >
       <div className={`tp-footer-main ${style_2 ? '' : 'grey-bg'} pt-80 pb-55`}>
@@ -37,16 +33,15 @@ export default function Footer( ) {
               <div className={`tp-footer-widget ${style_2 ? 'tp-footer-5-col-1' : 'tp-footer-col-1'} mb-30`}>
                 <div className="tp-footer-widget-logo mb-20 tp-header-logo">
                   <Link href="/">
-                    <img 
-                       src={style_2 ? logo_black : logo} 
-                       alt="logo"  
-                       style={{ height: "auto",width:"250px" }} />
+                    <img
+                      src={style_2 ? logo_black : logo}
+                      alt="logo"
+                      style={{ height: "auto", width: "250px" }} />
                   </Link>
                 </div>
                 <div className="tp-footer-widget-content">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur <br /> adipisc ing
-                    elit.
+                 Education the foundation personal and<br></br> societal growth, empowering individuals <br></br> with knowledge.
                   </p>
                 </div>
                 <div className="tp-footer-contact">
@@ -69,8 +64,8 @@ export default function Footer( ) {
                 <div className="tp-footer-widget-link">
                   <ul>
                     {footerLinks.link_one.map((link) => (
-                      <li key={link.id}>
-                        <Link href={link.link}>{link.title}</Link>
+                      <li style={{cursor:"pointer"}} onClick={()=>{navigate(`${link.link}`)}} key={link.id}>
+                        {link.title}
                       </li>
                     ))}
                   </ul>
@@ -83,8 +78,8 @@ export default function Footer( ) {
                 <div className="tp-footer-widget-link">
                   <ul>
                     {footerLinks.link_two.map((link) => (
-                      <li key={link.id}>
-                        <Link href={link.link}>{link.title}</Link>
+                      <li  style={{cursor:"pointer"}} onClick={()=>{navigate(`${link.link}`)}} key={link.id}>
+                        {link.title}
                       </li>
                     ))}
                   </ul>
@@ -98,7 +93,7 @@ export default function Footer( ) {
                   <p>
                     To get in touch follow us <br></br>on Social media
                   </p>
-                 
+
                   {/* footer social */}
                   <div className="tp-footer-newsletter-social">
                     <FooterSocial />
@@ -106,7 +101,7 @@ export default function Footer( ) {
                   {/* footer social */}
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </div>

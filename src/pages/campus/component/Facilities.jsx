@@ -42,7 +42,7 @@ function Facilities() {
   return (
     <div className="cl_main">
           <div className="header">
-            <h4>Life at SSAS</h4>
+            <h4>Life at SMVEC SAS</h4>
             <p>Follow your passions, explore leadership opportunities, and challenge yourself. At SASS, learning and personal growth thrive in every aspect of student life—both inside and beyond the classroom.
 
 </p>

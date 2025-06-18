@@ -9,13 +9,13 @@
                 {
                     title: "fees structure for UG",
                     courseDuration: "3 Years",
-                    feePerYear: "₹15,000",
+                    feePerYear: "₹30,000",
                     intake: "60 Students"
                 },
                 {   
                     title: "fees structure for PG",
                     courseDuration: "3 Years",
-                    feePerYear: "₹15,000",
+                    feePerYear: "₹30,000",
                     intake: "60 Students"
                 },
             ],
@@ -1299,7 +1299,7 @@
             desc: "The B.A English department is committed to creating a rational environment through artistic creation, critical thinking, and modern thought. The department offers a wide range of innovative courses as part of the choice-based credit system. These courses combine the traditional concept of exposing students to the distinctive characteristics of each literary period and genre with the political readings of the present day.\nThe B.A English program develops students’ ability to interpret texts both aesthetically and theoretically. It offers a variety of innovative courses, such as English through Soft Skills, English through Interpersonal Skills, English for Conversational Skills, Shakespearean Studies, Introduction to Translation Studies, Linguistics, Diaspora Literature, and Asian Literature in English.\nThe department is a thriving academic community of teachers and students who are dedicated to sharpening their skills in various fields of their specialization through performance-oriented education. Prominent faculty members are continually engaged in providing the best possible education to undergraduate students.",
             fees: [
                 {
-                    title: "fees structure for B.A.French",
+                    title: "fees structure for UG",
                     courseDuration: "3 Years",
                     feePerYear: "30,000",
                     intake: "50 Students"
@@ -1396,7 +1396,7 @@
             desc: "B.A. Tamil is a three-year undergraduate program designed to provide in-depth knowledge of the Tamil language, literature, culture, and history. The course covers classical and modern Tamil literature, grammar, poetry, prose, and linguistics, giving students a strong foundation in both traditional and contemporary aspects of the Tamil language. It also helps students appreciate the richness and heritage of Tamil, one of the world's oldest and most vibrant languages.\nThe program not only nurtures linguistic skills but also enhances analytical, critical thinking, and interpretative abilities through the study of various literary works and cultural texts. Students get opportunities to explore Sangam literature, Bhakti poetry, modern Tamil novels, folk literature, and the influence of Tamil in media and society. In addition, subjects such as Tamil journalism, translation, and comparative literature open up interdisciplinary learning paths.\nGraduates of B.A. Tamil have diverse career options including teaching, content writing, translation, media, publishing, and civil services. They can work as Tamil teachers, language specialists, scriptwriters, or pursue higher education like M.A., M.Phil., or Ph.D. in Tamil. With the increasing importance of regional language content in digital platforms and education, the demand for skilled Tamil language professionals continues to grow both in India and abroad.",
             fees: [
                 {
-                    title: "fees structure for B.A.French",
+                    title: "fees structure for UG",
                     courseDuration: "3 Years",
                     feePerYear: "50,000",
                     intake: "50 Students"
@@ -1729,7 +1729,7 @@
             desc: "B.Sc. Visual Communication is a three-year degree course that covers a wide range of subjects related to the media industry. It is designed to help students develop the skills and knowledge they need to become successful media professionals.\nThe course includes subjects such as graphic design, photography, videography, and web design. Students also learn about the history and theory of visual communication.\nThe course is taught by experienced professionals who work in the media industry. Students have the opportunity to gain hands-on experience in the department’s hi-tech studios.\nGraduates of the B.Sc. Visual Communication course are well-prepared for careers in a variety of media-related fields. They can work as graphic designers, photographers, videographers, web designers, or in other related roles.",
             fees: [
                 {
-                    title: "fees structure for B.Sc Nutrition and Dietetics",
+                    title: "fees structure for UG",
                     courseDuration: "3 Years",
                     feePerYear: "₹50,000",
                     intake: "50 Students"
@@ -1834,7 +1834,7 @@
             desc: "Bachelor of Arts in Journalism and Mass Communication is a three-year program that teaches students how to communicate their ideas to the public. The program is designed to give students a voice in the media world. In a democracy, the freedom of expression is important, and the media plays a crucial role in upholding this freedom. The program prepares students for the demands of the media profession, and it emphasizes accuracy, fairness, and knowledge.\nThe curriculum of the Bachelor of Arts in Journalism and Mass Communication program is designed to help students learn how to communicate their ideas effectively. The program includes lectures, workshops, seminars, and independent projects. Students will also be encouraged to attend press events and conferences to learn more about the media industry. By the end of the program, students will have a comprehensive understanding of the different aspects of journalism and mass communication.\nThe visual communication program is designed to help students develop their creativity and understanding of media. Students will learn about the concepts, theories, aesthetics, and skills of visual communication, covering topics such as visual persuasion, photography, graphic design, cultural and ethical issues, and visualization of ideas. They will also have the opportunity to work on relevant project works and case studies.\nThrough hands-on practice, students will learn to apply theories into practice and to become creative and effective communicators in the media world. They will also be trained in the technical skills they need to excel in the media industry.",
             fees: [
                 {
-                    title: "fees structure for B.Sc Nutrition and Dietetics",
+                    title: "fees structure for B.A. Journalism & Mass communication",
                     courseDuration: "3 Years",
                     feePerYear: "₹40,000",
                     intake: "50 Students"

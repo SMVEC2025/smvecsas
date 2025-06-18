@@ -18,6 +18,7 @@ const Alumini = () => {
   return (
     <section className="top-recruiters-section">
       <h2>Our Top Recruiters</h2>
+      <h3>Department of commerce</h3>
       <div className="alumini-card">
         {recruiters.map((r, i) => (
           <div key={i} className="alumini-item">

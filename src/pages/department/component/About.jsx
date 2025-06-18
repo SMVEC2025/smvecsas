@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom'
 
 function About({data}) {
   const navigate = useNavigate();
+    const handleNavigate=()=>{
+       navigate(`/faculty/${data.heading}`)
+    }
   return (
     <div className='ug-about'>
         <div className='left'>
@@ -13,7 +16,7 @@ function About({data}) {
             <p>
               {data.para}
             </p>
-            <button>faculties</button>
+            <button  onClick={handleNavigate}>faculties</button>
             <button>Events</button>
         </div>
     </div>

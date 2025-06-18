@@ -55,7 +55,7 @@ function Navbar() {
 
     <div className={`navbar-main ${isScrolled ? "scrolled" : ''} ${scrollingUp ? "up" : "down"}`}>
       <div className='left'>
-        <span><img style={{width:"250px",height:"auto"}} src={isScrolled?mainlogo:whitelogo} alt="" /></span>
+        <span><img  src={isScrolled?mainlogo:whitelogo} alt="" /></span>
 
       </div>
       <div className='right'>

@@ -1,9 +1,10 @@
 import cta_logo from '/assets/img/logo/singlelogo.png';
 import cta_shape from '/assets/img/cta/cta-shape-1.png';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs";
 
 export default function HomeCta() {
+  const navigate = useNavigate()
   return (
     <section
       className="cta-area tp-cta-bg grey-bg"
@@ -33,12 +34,13 @@ export default function HomeCta() {
           <div className="col-xxl-2 col-lg-3">
             <div className="tp-cta-btn-wrap">
               <div className="tp-cta-btn text-lg-end">
-                <Link className="tp-btn" href="/university-apply">
+               <div onClick={()=>{navigate=('/admission')}}  className="tp-btn" href="/university-apply">
                   Apply Now{" "}
                   <span>
                     <BsArrowRight />
                   </span>
-                </Link>
+                </div>
+                
               </div>
               <div className="tp-cta-shape-1">
                 <img src={cta_shape} alt="shape" />

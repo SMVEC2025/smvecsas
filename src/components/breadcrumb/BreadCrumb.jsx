@@ -6,7 +6,7 @@ export default function BreadcrumbTwo({ title, subtitle,admission }) {
     <section className="tp-breadcrumb__area pt-160 pb-150 p-relative z-index-1 fix">
       <div
         className="tp-breadcrumb__bg overlay"
-        style={{backgroundImage:"url(/assets/img/breadcrumb/campus-breadcrumb.jpg)" }}
+        style={{backgroundImage:"url(/assets/img/image/DJI_0981.jpg)" }}
       ></div>
       <div className="container">
         <div className="row align-items-center">
