@@ -73,7 +73,7 @@ function App() {
           <Route path="/admission" element={<Admission />}/>
           <Route path="/contact-us" element={<ContactUs />}/> 
           <Route path="/map" element={<Map />} /> 
-          <Route path="/test" element={<PanoramaViewer />} /> 
+          <Route path="/virtual-tour" element={<PanoramaViewer />} /> 
           {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/calender" element={<Calender />} /> 
           <Route path="/calendar" element={<Calender />} /> 

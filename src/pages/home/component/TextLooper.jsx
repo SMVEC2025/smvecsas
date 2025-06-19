@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const TextLooper = () => {
-  const texts = ['Pondicherry', 'Tamilnadu'];
+  const texts = ['Pondicherry', 'Pondicherry'];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [typedLetters, setTypedLetters] = useState([]);
   const [charIndex, setCharIndex] = useState(0);

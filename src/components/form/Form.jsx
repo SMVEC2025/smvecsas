@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 import { FormControl, InputLabel, Select, FormHelperText, Box, TextField, MenuItem } from '@mui/material';
-
+import { ProgramData } from '../../data/ProgramData';
 // Indian states and cities data
 const indianStates = [
   { name: 'Puducherry', cities: ['Pondicherry', 'Karaikal', 'Mahe', 'Yanam'] },
@@ -377,9 +377,9 @@ const Form = () => {
 
               {/* Pondicherry first */}
               {/* Other states */}
-              {courses.map(course => (
+              {ProgramData.map(course => (
                 <MenuItem key={course} value={course}>
-                  {course}
+                  {course.name}
                 </MenuItem>
               ))}
             </Select>

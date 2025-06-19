@@ -1,11 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function VirtualTourHeader() {
+  const navigate = useNavigate()
   return (
     <div className='vt-header'>
-      <h2 className='left'>SMVEC</h2>
+      <img className='left' src="/assets/img/logo/smveclogo.png" alt="" />
        <div className='right'>
-        <button className='apply_btn'>Apply Now</button><button className='home_btn'>Back</button>
+        <button onClick={()=>{navigate('/admission')}}  className='apply_btn'>Apply Now</button><button className='home_btn'>Back</button>
        </div>
     </div>
     //  <div className='home' >

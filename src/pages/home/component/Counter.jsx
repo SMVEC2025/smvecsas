@@ -4,8 +4,8 @@ import { useInView, motion } from 'framer-motion';
 function Counter() {
       const stats = [
     { end: 25, label: 'Programs',suffix:'+' },
-    { end: 1200, label: 'Students', suffix:'+' },
-    { end: 95, suffix: '%', label: 'Graduation rate of our student' },
+    { end: 2000, label: 'Students', suffix:'+' },
+    { end: 95, suffix: '%', label: 'Students placed' },
     { end: 100, label: 'Faculty',suffix:"+" },
   ];
 

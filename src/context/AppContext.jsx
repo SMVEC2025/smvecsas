@@ -11,6 +11,8 @@ export const AppProvider = ({ children }) => {
     const[currentPage,setCurrentPage]=useState('home')
     const[selectedEvent,setSelectedEvent]=useState('all')
   const [imagePath, setImagePath] = useState();
+      const [isVisible, setIsVisible] = useState(true);
+  
 useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -36,7 +38,7 @@ useEffect(() => {
   }, []); // Empty dependency array means this effect runs once after the initial render
   console.log(events)
   return (
-    <AppContext.Provider value={{ imagePath, setImagePath,currentPage,setCurrentPage,showInstantForm,setShowInstantForm,isLoading,setIsLoading,events,setEvents,selectedEvent,setSelectedEvent }}>
+    <AppContext.Provider value={{ imagePath, setImagePath,currentPage,setCurrentPage,showInstantForm,setShowInstantForm,isLoading,setIsLoading,events,setEvents,selectedEvent,setSelectedEvent,isVisible, setIsVisible }}>
       {children}
     </AppContext.Provider>
   );

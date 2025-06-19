@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useContext } from 'react';
 import 'aframe';
 import { Scene, Entity } from 'aframe-react';
 import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
@@ -6,8 +6,12 @@ import { BsHeadsetVr } from "react-icons/bs";
 import { IoMdHome } from "react-icons/io";
 import VirtualTourHeader from '../../components/header/VirtualTourHeader';
 import { TfiGallery } from "react-icons/tfi";
+import PreLoader from './PreLoader';
+import { AppContext } from '../../context/AppContext';
 
 const ThreeSixtyViewer = ({ imageUrl }) => {
+    const { isVisible, setIsVisible } = useContext(AppContext)
+
     const sceneRef = useRef(null);
     const [isMobile, setIsMobile] = useState(false);
     const [inVRMode, setInVRMode] = useState(false);
@@ -16,7 +20,9 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
     const [showSidebar, setShowSidebar] = useState(false)
     const [sidebarCategory, setSidebarCategory] = useState('campus')
     const [filteredImage, setFliteredImage] = useState([])
-    const [currentImage, setCurrentImage] = useState([])
+    const [currentImage, setCurrentImage] = useState([
+
+    ])
     const [suggestingImage, setSuggestingImage] = useState([])
     useEffect(() => {
         // --- Mobile Detection ---
@@ -89,6 +95,12 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             console.warn("Attempted to exit VR, but A-Frame scene DOM element is not available.");
         }
     };
+    useEffect(() => {
+        setCurrentImage(imageData[0])
+
+
+
+    }, []);
     function handleGridClose() {
         setSplitImage(false)
     }
@@ -110,7 +122,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 1,
             name: 'SMVEC SAS',
             image: '/assets/img/360/new/artsentrance.jpg',
-            thumb:'/assets/img/360/thumb/artsentrance.jpg',
+            thumb: '/assets/img/360/thumb/artsentrance.jpg',
             cat: 'campus'
 
         },
@@ -118,7 +130,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 2,
             name: 'Canteen',
             image: '/assets/img/360/new/canteen.jpg',
-            thumb:'/assets/img/360/thumb/canteen.jpg',
+            thumb: '/assets/img/360/thumb/canteen.jpg',
 
             cat: 'facility'
 
@@ -127,7 +139,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 3,
             name: 'Entrance 1',
             image: '/assets/img/360/new/entrance1.jpg',
-            thumb:'/assets/img/360/thumb/entrance1.jpg',
+            thumb: '/assets/img/360/thumb/entrance1.jpg',
 
             cat: 'campus'
 
@@ -136,7 +148,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 4,
             name: 'Entrance 2',
             image: '/assets/img/360/new/entrance2.jpg',
-            thumb:'/assets/img/360/thumb/entrance2.jpg',
+            thumb: '/assets/img/360/thumb/entrance2.jpg',
             cat: 'campus'
 
         },
@@ -144,7 +156,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 5,
             name: 'Garden',
             image: '/assets/img/360/new/garden.jpg',
-            thumb:'/assets/img/360/thumb/garden.jpg',
+            thumb: '/assets/img/360/thumb/garden.jpg',
             cat: 'campus'
 
         },
@@ -152,7 +164,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 6,
             name: 'Gate 1',
             image: '/assets/img/360/new/gate1.jpg',
-            thumb:'/assets/img/360/thumb/gate1.jpg',
+            thumb: '/assets/img/360/thumb/gate1.jpg',
             cat: 'campus'
 
         },
@@ -160,7 +172,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 7,
             name: 'Gate 2',
             image: '/assets/img/360/new/gate2.jpg',
-            thumb:'/assets/img/360/thumb/gate2.jpg',
+            thumb: '/assets/img/360/thumb/gate2.jpg',
             cat: 'campus'
 
         },
@@ -168,7 +180,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 8,
             name: 'tennis court',
             image: '/assets/img/360/new/tennis.jpg',
-            thumb:'/assets/img/360/thumb/tennis.jpg',
+            thumb: '/assets/img/360/thumb/tennis.jpg',
             cat: 'facility'
 
         },
@@ -176,7 +188,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 9,
             name: 'volley ball',
             image: '/assets/img/360/new/volleyball.jpg',
-            thumb:'/assets/img/360/thumb/volleyball.jpg',
+            thumb: '/assets/img/360/thumb/volleyball.jpg',
             cat: 'facility'
 
         },
@@ -184,10 +196,57 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 10,
             name: 'Garden 2',
             image: '/assets/img/360/new/garden1.jpg',
-            thumb:'/assets/img/360/thumb/garden1.jpg',
+            thumb: '/assets/img/360/thumb/garden1.jpg',
             cat: 'campus'
 
         },
+        {
+            id: 11,
+            name: 'Lab1',
+            image: '/assets/img/360/lab/lab1.jpg',
+            thumb: '/assets/img/360/lab/lab1.jpg',
+            cat: 'lab'
+
+        },
+        {
+            id: 12,
+            name: 'Lab1',
+            image: '/assets/img/360/lab/lab2.jpg',
+            thumb: '/assets/img/360/lab/lab2.jpg',
+            cat: 'lab'
+
+        },
+        {
+            id: 13,
+            name: 'Lab1',
+            image: '/assets/img/360/lab/lab3.jpg',
+            thumb: '/assets/img/360/lab/lab3.jpg',
+            cat: 'lab'
+        },
+        {
+            id: 14,
+            name: 'Lab1',
+            image: '/assets/img/360/lab/lab4.jpg',
+            thumb: '/assets/img/360/lab/lab4.jpg',
+            cat: 'lab'
+        },
+        {
+            id: 15,
+            name: 'Lab1',
+            image: '/assets/img/360/lab/lab5.jpg',
+            thumb: '/assets/img/360/lab/lab5.jpg',
+            cat: 'lab'
+
+        },
+        {
+            id: 16,
+            name: 'Lab1',
+            image: '/assets/img/360/lab/lab6.jpg',
+            thumb: '/assets/img/360/lab/lab6.jpg',
+            cat: 'lab'
+
+        },
+
     ]
     console.log("alive,", alive)
 
@@ -239,30 +298,30 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
         // console.log(filteredImage[22])
     }
     console.log(suggestingImage)
-        const handleHotspotClick = (newImageId) => {
-      
+    const handleHotspotClick = (newImageId) => {
+
     };
-    const handleLeft =()=>{
+    const handleLeft = () => {
         const index = filteredImage.findIndex(obj => obj.id === currentImage.id);
-        if(index >0){
-             setCurrentImage(filteredImage[index-1])
+        if (index > 0) {
+            setCurrentImage(filteredImage[index - 1])
         }
 
     }
-    const handleRight =()=>{
-          const index = filteredImage.findIndex(obj => obj.id === currentImage.id);
-        if(index < filteredImage.length-1){
-             setCurrentImage(filteredImage[index+1])
+    const handleRight = () => {
+        const index = filteredImage.findIndex(obj => obj.id === currentImage.id);
+        if (index < filteredImage.length - 1) {
+            setCurrentImage(filteredImage[index + 1])
         }
     }
     return (
         <div className='tsv-main'>
-
+            <PreLoader />
             <VirtualTourHeader />
-            <Scene ref={sceneRef}  > {/* The ref is set here to the React component instance */}
+            <Scene ref={sceneRef}  >
                 <a-sky src={currentImage.image}></a-sky>
                 <a-camera user-was-moved="true"></a-camera>
-                    {/* Hotspot Example */}
+                {/* Hotspot Example */}
                 {/* {currentImage.id == 1 && ( // Only show this hotspot if in room1
                     <a-entity
                         geometry="primitive: sphere; radius: 0.5"
@@ -298,12 +357,13 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
                 )} */}
 
             </Scene>
+
             <div className='footer'>
                 <div className='left' onClick={handleLeft}><LuMoveLeft /></div>
                 <div className='center' onClick={handleEnterVRClick}><BsHeadsetVr /></div>
                 <div className='right' onClick={handleRight}><LuMoveRight /></div>
             </div>
-
+        
 
             {/* ///listing images */}
 
@@ -315,8 +375,8 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
                 ))}
 
             </div>
-            <div className='left_button' onClick={()=>{setShowSidebar(true)}}>
-                <TfiGallery/>
+            <div className='left_button' onClick={() => { setShowSidebar(true) }}>
+                <TfiGallery />
             </div>
             <div className={`left_bar ${showSidebar ? "show" : ""}`}
                 onMouseEnter={() => { setShowSidebar(true) }}

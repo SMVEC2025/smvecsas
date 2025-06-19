@@ -18,7 +18,7 @@ const MainLayout = ({ children }) => {
   
   return (
     <>
-     {path !=="test" &&
+     {path !=="virtual-tour" &&
      (
       <>
       <Navbar />

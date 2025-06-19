@@ -11,6 +11,7 @@
     overflow: hidden;
     position: relative;
 
+
     .home {
         position: absolute;
         left: 30px;
@@ -63,9 +64,9 @@
         .left,
         .center,
         .right {
-            background-color: rgba(83, 83, 83, 0.548);
-            width: 60px;
-            height: 60px;
+            background-color: rgba(44, 44, 44, 0.651);
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -87,7 +88,7 @@
         }
 
         .center {
-            font-size: 25px;
+            font-size: 22px;
 
             @include respond-to("sm") {
                 font-size: 20px;
@@ -117,8 +118,9 @@
     z-index: 10;
 
     .left {
-        color: white;
-        font-size: 28px;
+        width: auto;
+        height: 50px;
+        margin-left: 30px;
     }
 
     .right {
@@ -127,13 +129,15 @@
         gap: 40px;
 
         button {
-            background-color: $primary-blue;
-            color: white;
+            background-color: white;
+            color: $primary-blue;
             padding: 5px 20px;
+            border: none;
+            border-radius: 2px;
         }
 
         @include respond-to("sm") {
-            .apply_btn{
+            .apply_btn {
                 display: none;
             }
         }
@@ -349,7 +353,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: rgb(212, 211, 211);
-    background-color: rgba(83, 83, 83, 0.548);
+    background-color: rgba(44, 44, 44, 0.651);
     backdrop-filter: blur(5px);
     width: 50px;
     height: 50px;
@@ -357,10 +361,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  @include respond-to("sm") {
-                width: 40px;
-                height: 40px;
-            }
+
+    @include respond-to("sm") {
+        width: 40px;
+        height: 40px;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -373,4 +379,19 @@
     }
 
 
+}
+
+.logo-entrance {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.288);
+    backdrop-filter: blur(7px);
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
