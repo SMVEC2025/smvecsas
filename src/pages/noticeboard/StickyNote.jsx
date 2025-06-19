@@ -8,12 +8,12 @@ const StickyNote = ({
   initialX,
   initialY,
   initialColor,
-  onDelete,
   pinColor,
   onUpdateText,
   onUpdatePosition,
   onUpdateColor,
-  image
+  image,
+  setFullViewer
 }) => {
   const [text, setText] = useState(initialText);
   const [isEditing, setIsEditing] = useState(false);
@@ -65,8 +65,9 @@ const StickyNote = ({
       defaultPosition={{ x: initialX, y: initialY }}
       onStop={handleDragStop}
       bounds=".notice-board" // Constrain movement within the notice board
+      on
     >
-      <div className="sticky-note" style={{ backgroundColor: color }}>
+      <div onDoubleClick={()=>{setFullViewer(image)}} className="sticky-note" style={{ backgroundColor: color }}>
         <div className="note-header note-handle">
           
         

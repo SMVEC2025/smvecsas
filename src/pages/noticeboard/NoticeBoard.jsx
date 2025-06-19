@@ -4,6 +4,7 @@ import StickyNote from './StickyNote';
 import './NoticeBoard.css'; // Import the CSS for the notice board
 
 const NoticeBoard = () => {
+    const [fullViewer,setFullViewer] = useState()
     const [notes, setNotes] = useState([
         {
             id: '1',
@@ -59,7 +60,9 @@ const NoticeBoard = () => {
             prevNotes.map((note) => (note.id === id ? { ...note, color: newColor } : note))
         );
     }, []);
-
+   const handleClose =()=>{
+    setFullViewer(false)
+   }
     return (
         <div className="notice-board-container">
            
@@ -78,9 +81,18 @@ const NoticeBoard = () => {
                         initialColor={note.color}
                         onUpdatePosition={updateNotePosition}
                         onUpdateColor={updateNoteColor}
+                        setFullViewer={setFullViewer}
+                    
                     />
                 ))}
             </div>
+           {fullViewer && (
+             <div className='overlay' onClick={handleClose}>
+                <div>
+                    <img src={fullViewer} alt="" />
+                </div>
+            </div>
+           )}
            </div>
         </div>
     );

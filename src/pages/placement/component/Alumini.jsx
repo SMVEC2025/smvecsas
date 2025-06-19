@@ -1,5 +1,5 @@
 import React from "react";
-
+import {bcomgeneral} from '../../../data/PlacementStudentData'
 // Example logos (replace with actual logo URLs or import statically)
 const recruiters = [
   { name: "TCS", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tata_Consultancy_Services_old_logo.svg/2560px-Tata_Consultancy_Services_old_logo.svg.png" },
@@ -16,15 +16,15 @@ const recruiters = [
 
 const Alumini = () => {
   return (
-    <section className="top-recruiters-section">
-      <h2>Our Top Recruiters</h2>
+    <section style={{marginTop:"5rem"}} className="top-recruiters-section">
+      <h2>Our Students Placed in</h2>
       <h3>Department of commerce</h3>
       <div className="alumini-card">
-        {recruiters.map((r, i) => (
+        {bcomgeneral.map((r, i) => (
           <div key={i} className="alumini-item">
-            <img src={r.logo} alt={r.name} />
-            <h3>s Vasavi</h3>
-            <p>Tcs</p>
+            <img src={`/assets/img/placement/students/departmentofcommerce/20225-2025/${r.source}.png`} alt={r.name} />
+            <h3>{r.name}</h3>
+            <p>{r.placed}</p>
           </div>
         ))}
       </div>
