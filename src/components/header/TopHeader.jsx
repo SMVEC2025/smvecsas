@@ -12,8 +12,8 @@ function TopHeader() {
    return (
       <div className='top_header-main'>
          <div className='left'>
-            <span>help@smvec.ac.in</span>
-            <span>+(402) 763 282 46</span>
+            <span>smvec@smvec.ac.in</span>
+            <span>0413-2641151</span>
          </div>
          <div className='right'>
             <span onClick={() => handleNavigate('/activities')}>Activities</span>

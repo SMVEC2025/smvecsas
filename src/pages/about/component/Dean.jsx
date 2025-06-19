@@ -1,4 +1,4 @@
-import vincent from "/assets/img/board/Vincent.jpg"
+import mahalakshmi from "/assets/img/board/mahalakshmi.png"
 function Dean() {
     return (
         <div className='dm_main'>
@@ -13,26 +13,18 @@ function Dean() {
             </div>
             <div className='dm_content'>
                 <div>
-                    <img src={vincent} alt="" />
+                    <img src={mahalakshmi} alt="" />
                 </div>
                 <div>
-                    <h3> Dr. Vincent Arputhom</h3>
+                    <h3>Dr. S. MUTHULAKSHMI</h3>
                     <p>
 
-                        It is my privilege to serve as the Dean of the Centre for Legal Education at Sri Manakula Vinayagar Engineering College. My journey in the field of legal education spans over 35 years, and it has been shaped by a deep commitment to academic excellence and institutional growth.
+                        Higher education in the 21st century is accomplished with lot of strength, opportunities and challenges. Internet supports, technological developments, growth of interdisciplinary knowledge, general interest towards graduate programmes, support from Regulatory Agencies and Government and continuous up gradation in school curricula throw opportunities for the sustained development of higher education in the current era. At the same time, grabbing the attention of the students, keeping them in learning mode, engaging them with due responsibilities have challenges especially due to rampant growth of technology, and quicker adaptation towards it. All these things lead to the necessity of making the curriculum robust, state-of-art, modern, futuristic, student-self-exploration-centric and ensuring student-engagement for co-creation and teamwork. There is a greater need to synchronize the skills and knowledge of the graduates of higher education and align them to the industry needs and social advancements. Industries, instead of hiring generalists and train them, started demanding specific skills that are needed in various domains and expect the graduates to possess them on entry.
 
-I began my legal studies with a Bachelor of Laws from Madurai Kamaraj University (1977–1980), followed by a Master of Laws from Kerala University (1981–1983), where I was honored with a gold medal. In 2014, I completed my Ph.D. from the Tamil Nadu Dr. Ambedkar Law University, further enriching my understanding of the legal domain.
-
-My academic and professional journey has taken me across various esteemed institutions. I was privileged to serve as a Senior Research Fellow at Cochin University, Kerala starting from 1984. I then took up a teaching position at Andhra Christian Law College, Guntur, and continued there until 1990. Through the UPSC selection, I was appointed as Associate Professor at Dr. Ambedkar Government Law College, Pondicherry, where I served until 2015. I was later promoted to the position of Principal at the same institution, a role I proudly held until my retirement in 2019.<br/>
-
-Throughout my career, I have remained deeply involved in academic initiatives beyond the classroom. I have organized over 25 All-India Moot Court competitions, seminars, workshops, and colloquiums. One of the initiatives I take particular pride in is organizing India’s first-ever National Moot Court Competition exclusively for women law students—an effort to empower and uplift the next generation of women legal professionals.
-
-At the Centre for Legal Education, my vision is to cultivate a dynamic and inclusive environment where students are equipped not only with legal knowledge but also with the critical thinking and ethical values required to serve society. I invite you all to join us in this pursuit of justice, scholarship, and service.
- 
                     </p>
-                    
-                    
-                                   </div>
+
+
+                </div>
             </div>
         </div>
     )

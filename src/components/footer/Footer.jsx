@@ -46,14 +46,14 @@ export default function Footer() {
                 </div>
                 <div className="tp-footer-contact">
                   <span>Got Questions? Call us</span>
-                  <a href="tel:012345678">+670 413 90 762</a>
+                  <a href="tel:012345678">0413-2641151</a>
                 </div>
                 <div className="tp-footer-contact-mail">
                   <a href="mailto:smvec@gmail.com">
                     <span>
                       <AiTwotoneMail />
                     </span>
-                    smvec@gmail.com
+                    smvec@smvec.ac.in
                   </a>
                 </div>
               </div>

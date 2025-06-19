@@ -28,8 +28,12 @@ function BoardMembers() {
         <div className='content'>
           <h2>Shri.M.Dhanasekaran</h2>
           <h4>Founder, Chairman and Managing Director</h4>
-          <p>Sri Manakula Vinayagar Educational Trust was established with a mission to provide quality education across diverse disciplines, with a strong commitment to uplifting the underprivileged sections of society. The Trust manages several esteemed institutions in the Union Territory of Puducherry, including engineering, medical, nursing, polytechnic colleges, and a charitable hospital that extends free healthcare services to those in need.</p>
-          <p>Among these prestigious institutions, the Sri Manakula Vinayagar College of Law (SMVCL) emerges as a center of excellence in legal education. SMVCL is committed to nurturing future legal professionals by offering inclusive and high-quality legal education that empowers students from all backgrounds. The college is affiliated with Pondicherry University and operates as an autonomous institution, offering comprehensive undergraduate, postgraduate, and research programs in the field of law.</p>
+          <p>
+            At Sri Manakula Vinayaga Educational Trust, our mission is to provide quality education to all—especially students from underprivileged backgrounds. Over the years, we’ve established premier institutions in engineering, medicine, nursing, and polytechnic education. With a strong foundation built on academic excellence and modern learning technologies, we empower students to pursue their dreams with confidence and competence.
+          </p>
+          <p>Beyond academics, we focus on shaping responsible individuals by instilling core values, discipline, and a spirit of service. Our charitable hospital, offering free medical care, reflects this commitment to community welfare. We deeply value the continued support from our students, faculty, and partners. Together, we’re shaping not just careers—but a brighter, more meaningful future.
+
+          </p>
         </div>
       </div>
 
@@ -39,9 +43,11 @@ function BoardMembers() {
           <h2>Dr.K.Narayanasamy
           </h2>
           <h4>Secretary</h4>
-          <p>Sri Manakula Vinayagar Educational Trust stands as a beacon of excellence in shaping future legal professionals and thought leaders. Since its establishment in 1998, the Trust has achieved remarkable milestones in academic excellence, career placements, and contributions to holistic student development through co-curricular and extracurricular achievements. The Sri Manakula Vinayagar College of Law (SMVCL) reflects the Trust’s vision of delivering a comprehensive and value-driven legal education to aspiring law students.</p>
+          <p>Since its inception in 1998, Sri Manakula Vinayagar Engineering College (SMVEC) has evolved into a center of excellence, shaping the next generation of innovative technologists. With consistent achievements in academics, placements, sports, and co-curricular activities, we take pride in creating a vibrant and holistic learning environment that fosters both personal and professional growth.</p>
 
-          <p>At SMVCL, our faculty comprises distinguished academicians and seasoned legal practitioners committed to inspiring and empowering students. With a strong emphasis on legal scholarship, critical thinking, and ethical advocacy, the institution prepares students to navigate and contribute meaningfully to the ever-evolving legal landscape.</p>
+          <p>Our dedicated faculty play a key role in transforming young minds into future-ready engineers. Through active student chapters and professional bodies, we bridge the gap between classroom learning and industry expectations. At SMVEC, we encourage students to stay connected with emerging trends and technologies—preparing them to lead in an ever-evolving world. I invite you to be part of this journey, where challenges turn into opportunities and aspirations become achievements.
+
+          </p>
         </div>
       </div>
 
@@ -50,9 +56,11 @@ function BoardMembers() {
         <div className='content'>
           <h2>D. Rajarajan Dhanasekaran                </h2>
           <h4>Treasurer</h4>
-          <p>As the Treasurer of Sri Manakula Vinayagar Educational Trust, it is my privilege to extend a warm welcome to all. The Sri Manakula Vinayagar College of Law (SMVCL) stands as a beacon of legal education, committed to fostering academic excellence and holistic personal development. Rooted in a legacy of integrity and dedication, our institution strives to offer students exceptional opportunities for intellectual growth and professional success in the dynamic field of law.</p>
+          <p>Welcome to Sri Manakula Vinayagar Engineering College (SMVEC)—a place where academic excellence meets personal growth. As Treasurer, I take immense pride in being part of an institution that empowers students through innovation, discipline, and a strong value-based education system. Our mission is to provide every learner with opportunities that shape their future and fuel their success.</p>
 
-          <p>Our strengths lie in a blend of modern infrastructure, a highly qualified and dedicated faculty, a commendable placement record, and a disciplined, student-friendly campus. We take pride in offering personalized mentoring within an environment that emphasizes ethical, value-based education—preparing students to become responsible legal professionals who uphold justice and contribute meaningfully to society.</p>
+          <p>With modern infrastructure, a dedicated faculty team, excellent placement records, and a clean, eco-friendly campus, SMVEC offers an ideal environment for holistic development. Through continuous mentoring and support, we ensure that each student is guided both academically and personally. I look forward to seeing you thrive and make the most of your journey here.
+
+          </p>
 
         </div>
       </div>
@@ -61,10 +69,12 @@ function BoardMembers() {
         <div className='content'>
           <h2>S. Velayudham                </h2>
           <h4>Joint Secretary</h4>
-          <p>As the Treasurer of Sri Manakula Vinayagar Educational Trust, it is my privilege to extend a warm welcome to all. The Sri Manakula Vinayagar College of Law (SMVCL) stands as a beacon of legal education, committed to fostering academic excellence and holistic personal development. Rooted in a legacy of integrity and dedication, our institution strives to offer students exceptional opportunities for intellectual growth and professional success in the dynamic field of law.</p>
+          <p>It is with great pride and enthusiasm that I extend my warmest greetings to the Department of Physics on the release of Reflection, the official science magazine of Sri Manakula Vinayagar Engineering College (SMVEC). This initiative beautifully captures the spirit of curiosity, innovation, and intellectual exploration—offering a vibrant platform for students and faculty to engage with the latest in scientific thought and discovery. Reflection promotes a culture of inquiry, critical thinking, and shared knowledge, inspiring young minds to push the boundaries of science and contribute to meaningful change.
 
-          <p>Our strengths lie in a blend of modern infrastructure, a highly qualified and dedicated faculty, a commendable placement record, and a disciplined, student-friendly campus. We take pride in offering personalized mentoring within an environment that emphasizes ethical, value-based education—preparing students to become responsible legal professionals who uphold justice and contribute meaningfully to society.</p>
+          </p>
+          <p>At SMVEC, we are deeply committed to academic excellence and all-round development. As an autonomous institution, we offer an industry-relevant curriculum backed by the vision of the Sri Manakula Vinayagar Educational Trust—which provides a continuous learning journey from school to higher education in diverse fields including Engineering, Arts & Science, Medicine, Law, and Agriculture. I applaud the hard work of our students and faculty in bringing this magazine to life. Reflection is not just a publication—it is a celebration of scientific spirit and a lasting source of inspiration for future innovators.
 
+          </p>
         </div>
       </div>
       <div className='bm_chairman'>
@@ -72,10 +82,10 @@ function BoardMembers() {
         <div className='content'>
           <h2>Dr. V.S.K. Venkatachalapathy     </h2>
           <h4>Director cum Principal</h4>
-          <p>As the Treasurer of Sri Manakula Vinayagar Educational Trust, it is my privilege to extend a warm welcome to all. The Sri Manakula Vinayagar College of Law (SMVCL) stands as a beacon of legal education, committed to fostering academic excellence and holistic personal development. Rooted in a legacy of integrity and dedication, our institution strives to offer students exceptional opportunities for intellectual growth and professional success in the dynamic field of law.</p>
+          <p>At Sri Manakula Vinayagar Engineering College (SMVEC), we take pride in offering a peaceful and focused environment that fosters academic excellence and personal growth. Located away from the distractions of city life, our serene campus allows students to fully concentrate on their studies. With a strong commitment to safety, discipline, and order, our administration ensures an ideal learning atmosphere. Our highly qualified faculty members are devoted to mentoring students towards academic success and professional readiness, while our value-added courses bridge the gap between classroom learning and real-world industry needs.</p>
+          <p>SMVEC stands tall with a legacy of excellence, being the first engineering institution in Puducherry accredited with an ‘A’ grade by NAAC in 2013. Our students consistently earn top ranks and gold medals at Pondicherry University. Beyond academics, we focus on character building and citizenship, preparing students to thrive in life. With advanced infrastructure, fully equipped labs, a modern library, and dedicated hostel facilities with gym access, SMVEC offers everything needed for a holistic educational experience. We warmly invite you to explore the opportunities that await you and wish you a successful journey ahead.
 
-          <p>Our strengths lie in a blend of modern infrastructure, a highly qualified and dedicated faculty, a commendable placement record, and a disciplined, student-friendly campus. We take pride in offering personalized mentoring within an environment that emphasizes ethical, value-based education—preparing students to become responsible legal professionals who uphold justice and contribute meaningfully to society.</p>
-
+          </p>
         </div>
       </div>
     </div>
