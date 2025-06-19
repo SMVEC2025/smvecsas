@@ -123,6 +123,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             name: 'SMVEC SAS',
             image: '/assets/img/360/new/artsentrance.jpg',
             thumb: '/assets/img/360/thumb/artsentrance.jpg',
+            
             cat: 'campus'
 
         },
@@ -180,7 +181,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 8,
             name: 'tennis court',
             image: '/assets/img/360/new/tennis.jpg',
-            thumb: '/assets/img/360/thumb/tennis.jpg',
+            thumb: '/assets/img/360/thumb/ground.png',
             cat: 'facility'
 
         },

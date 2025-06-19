@@ -94,6 +94,7 @@ function App() {
           <Route path="/department/media-studies" element={<MediaStudies />} />
           {/* ////Placement pages///// */}
           <Route path="/placement" element={<Placement />} />
+          <Route path="/test" element={<Test />} />
 
         </Routes>
       </MainLayout>

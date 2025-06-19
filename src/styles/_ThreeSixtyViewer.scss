@@ -290,7 +290,24 @@
             }
         }
     }
+.container::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
 
+.container::-webkit-scrollbar-track {
+  background: #888; /* scrollbar thumb */
+  border-radius: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #f1f1f1; /* background of the scrollbar track */
+
+  border-radius: 8px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* thumb hover effect */
+}
     .container {
         display: flex;
         flex-direction: column;
@@ -395,3 +412,4 @@
     align-items: center;
     z-index: 1;
 }
+

@@ -137,6 +137,23 @@
             }
         }
     }
+    .panaroma-layer{
+        width: 100%;
+        height: 50vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.685);
+        z-index: 10;
+        /////////////
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 @media (max-width:500px) {

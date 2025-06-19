@@ -263,3 +263,43 @@ h2 {
 }
 
 }
+
+
+
+
+
+
+
+
+.panorama-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  overflow: hidden;
+}
+
+.panorama-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}

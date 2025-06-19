@@ -7,7 +7,7 @@ function VirtualTourHeader() {
     <div className='vt-header'>
       <img className='left' src="/assets/img/logo/smveclogo.png" alt="" />
        <div className='right'>
-        <button onClick={()=>{navigate('/admission')}}  className='apply_btn'>Apply Now</button><button className='home_btn'>Back</button>
+        <button onClick={()=>{navigate('/admission')}}  className='apply_btn'>Apply Now</button><button onClick={() => window.history.back()} className='home_btn'>Back</button>
        </div>
     </div>
     //  <div className='home' >

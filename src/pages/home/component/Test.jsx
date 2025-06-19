@@ -7,8 +7,8 @@ import TopHeader from '../../../components/header/TopHeader';
 
 const Test = () => {
   const datas = [
-    '/assets/img/360/gate1.jpg',
-    '/assets/img/360/entrance.jpg'
+    '/assets/img/360/new/gate1.jpg',
+    '/assets/img/360/new/entrance1.jpg'
   ];
 
   const [imagesLoaded, setImagesLoaded] = useState(false); // New state to track loading
@@ -86,13 +86,10 @@ const Test = () => {
 
   return (
    <>
-   <SideBar/>
-   <Navbar/>
-   <TopHeader/>
+  
     <div style={{ width: '100%', height: '100vh' }}>
       <PanoramaViewer
         imagePath={imagePath}
-        hotSpots={hotSpots}
         autoLoad={true}
         showZoomCtrl={true}
         showFullscreenCtrl={true}
