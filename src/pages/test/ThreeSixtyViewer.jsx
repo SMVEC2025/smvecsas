@@ -181,7 +181,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
             id: 8,
             name: 'tennis court',
             image: '/assets/img/360/new/tennis.jpg',
-            thumb: '/assets/img/360/thumb/ground.png',
+            thumb: '/assets/img/360/thumb/tennis.jpg',
             cat: 'facility'
 
         },
@@ -203,7 +203,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
         },
         {
             id: 11,
-            name: 'Lab1',
+            name: 'Computer science lab',
             image: '/assets/img/360/lab/lab1.jpg',
             thumb: '/assets/img/360/lab/lab1.jpg',
             cat: 'lab'
@@ -211,7 +211,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
         },
         {
             id: 12,
-            name: 'Lab1',
+            name: 'Physics lab',
             image: '/assets/img/360/lab/lab2.jpg',
             thumb: '/assets/img/360/lab/lab2.jpg',
             cat: 'lab'
@@ -219,21 +219,21 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
         },
         {
             id: 13,
-            name: 'Lab1',
+            name: 'Biotech lab',
             image: '/assets/img/360/lab/lab3.jpg',
             thumb: '/assets/img/360/lab/lab3.jpg',
             cat: 'lab'
         },
         {
             id: 14,
-            name: 'Lab1',
+            name: 'Chemistry lab',
             image: '/assets/img/360/lab/lab4.jpg',
             thumb: '/assets/img/360/lab/lab4.jpg',
             cat: 'lab'
         },
         {
             id: 15,
-            name: 'Lab1',
+            name: 'Computer graphics lab',
             image: '/assets/img/360/lab/lab5.jpg',
             thumb: '/assets/img/360/lab/lab5.jpg',
             cat: 'lab'
@@ -241,7 +241,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
         },
         {
             id: 16,
-            name: 'Lab1',
+            name: 'Computer science lab',
             image: '/assets/img/360/lab/lab6.jpg',
             thumb: '/assets/img/360/lab/lab6.jpg',
             cat: 'lab'
