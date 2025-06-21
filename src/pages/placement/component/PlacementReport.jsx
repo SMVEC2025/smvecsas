@@ -34,7 +34,7 @@ const PlacementReport = () => {
     return (
         <section className="placement-report-section">
             <div className="container">
-                <h2>📈 Placement Report: 2020–2023 & 2021–2024</h2>
+                <h2>Placement Report</h2>
                 <p className="description">
                     SMVEC School of Arts and Science continues to demonstrate excellence in student placements,
                     collaborating with top recruiters across industries. The academic years 2020–2023 and 2021–2024

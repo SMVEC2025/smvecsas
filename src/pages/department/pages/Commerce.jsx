@@ -21,20 +21,25 @@ function Commerce() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/5-1-scaled.jpg",
-    name:"Dr. Kavitha A",
-    message:"The Department of Commerce has consistently improved its academic, research, and placement success. It provides a variety of innovatively created programs, with curricula that are continually updated to meet the changing needs of the industry and main stakeholders. Students are encouraged to participate in Internships and micro Projects as part of their curriculum to enhance their academic knowledge with real-world experience and are motivated to conduct and participate in events and get involved in activities of social relevance. With such inputs, our students are hardworking, practical-oriented, and effective in any work environment. The distinguished faculty members combine their academic excellence and real-world experience with dedication and commitment. I welcome you to be a part of our journey towards being a world-class center of excellence in education and research."
+    image:"/assets/img/department/hod/commerce.png",
+    name:"Ms. M. JANAKIRAMA",
+    message:"Welcome to the PG Department of Commerce! We are excited to have you join our community of learners. Our Department is committed to providing Quality Education in Commerce through modern technology based teaching learning practices.Im delighted to lead a team of highly qualified and experienced faculty members dedicated to imparting knowledge and skills in commerce. Our programs are designed to equip students with the expertise and competencies required to excel in the dynamic world of commerce."
   }
   useEffect(() => {
     setCurrentPage(page)
   }, [])
   
+
+  const MissionData ={
+    mission:"“To be a Center of Excellence in Commerce Education by offering globally competitive Commerce education to all facets of society,fostering an entrepreneurial culture among students, assisting in the development of business and society, and instilling in students a sense of social responsibility”",
+    vision:"“To provide a comprehensive education using State of art infrastructure and Technology with the goal of producing professionals in the fields of Commerce and management, as well as to introduce new programs to close the knowledge gap between the corporate world and higher education by satisfying stakeholder needs.”"
+  }
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/bcom.png'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
-    <MissionVision/>
+    <MissionVision missionData={MissionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="commerce"/>
     <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>

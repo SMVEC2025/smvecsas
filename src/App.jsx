@@ -82,7 +82,7 @@ function App() {
           {/* ////department pages///// */}
           <Route path="/department/commerce" element={<Commerce />} />
           <Route path="/department/computational-studies" element={<ComputationalStudies />} />
-          <Route path="/department/management-studies" element={<ManagementStudies />} />
+          <Route path="/department/business-studies" element={<ManagementStudies />} />
           <Route path="/department/physics" element={<Physics />} />
           <Route path="/department/chemistry" element={<Chemistry />} />
           <Route path="/department/mathematics" element={<Mathematics />} />

@@ -7,7 +7,7 @@ import {
   FaAppleAlt, FaUtensils, FaVideo, FaNewspaper
 } from 'react-icons/fa';
 import { DepartmentData } from "../../../data/DeprartmentData";
-function Home({title}) {
+function Home({title,image}) {
     const [programBar,setProgramBar]=useState(false)
     const navigate = useNavigate();
     const handleProgramClick = (linkurl) => {
@@ -15,7 +15,7 @@ function Home({title}) {
     };
   
     return (
-        <header className='ug-header-main' style={{backgroundImage:"url('/assets/img/image/entrance.JPG')"}}>
+        <header className='ug-header-main' style={{backgroundImage:`url('${image}')`}}>
             <div className="content">
                 <h2>{title}</h2>
                 <p>This department fosters professional growth through industry-relevant training and real-world skill development. </p>

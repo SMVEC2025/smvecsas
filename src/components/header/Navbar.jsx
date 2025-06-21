@@ -16,7 +16,7 @@ function Navbar() {
   const [scrollingUp, setScrollingUp] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate()
-  const {setShowInstantForm} = useContext(AppContext)
+  const { setShowInstantForm } = useContext(AppContext)
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -51,63 +51,82 @@ function Navbar() {
     setShowSlider(true)
   }
   return (
-   <>
+    <>
 
-    <div className={`navbar-main ${isScrolled ? "scrolled" : ''} ${scrollingUp ? "up" : "down"}`}>
-      <div className='left'>
-        <span><img  src={isScrolled?mainlogo:whitelogo} alt="" /></span>
+      <div className={`navbar-main ${isScrolled ? "scrolled" : ''} ${scrollingUp ? "up" : "down"}`}>
+        <div className='left'>
+          <span><img src={isScrolled ? mainlogo : whitelogo} alt="" /></span>
 
-      </div>
-      <div className='right'>
-        <div className='links'>
-          <div className='menu-item'>
-            <span onClick={() => handleClick('/')}>Home</span>
-          </div>
+        </div>
+        <div className='right'>
+          <div className='links'>
+            <div className='menu-item'>
+              <span onClick={() => handleClick('/')}>Home</span>
+            </div>
 
-          <div className='menu-item'>
-            <span>About</span>
-            <div className='dropdown'>
-              <span onClick={() => handleClick('/about-us')}>About</span>
-              <span onClick={() => handleClick('/about/history')}>History of SMVEC</span>
-              <span onClick={() => handleClick('/contact-us')}>Contact us</span>
+            <div className='menu-item'>
+              <span>About</span>
+              <div className='dropdown'>
+                <span onClick={() => handleClick('/about-us')}>About</span>
+                <span onClick={() => handleClick('/about/history')}>History of SMVEC</span>
+                <span onClick={() => handleClick('/contact-us')}>Contact us</span>
+              </div>
+            </div>
+
+            <div className='menu-item'>
+              <span>Academics</span>
+              <div className='dropdown'>
+                <span onClick={() => handleClick('/faculty')}>Faculty</span>
+                <span onClick={() => handleClick('/programs')}>Programs</span>
+                <span onClick={() => handleClick('/ug-programs')}>ug Programs</span>
+                <span onClick={() => handleClick('/pg-programs')}>pg Programs</span>
+                <span onClick={() => handleClick('/calendar')}>calendar</span>
+                <span onClick={() => handleClick('/activities')}>Activities</span>
+              </div>
+
+
+            </div>
+            <div className='menu-item'>
+              <span>Department</span>
+              <div className='dropdown'>
+                <span onClick={() => handleClick('/department/commerce')}>Commerce</span>
+                <span onClick={() => handleClick('/faculty')}>computational studies</span>
+                <span onClick={() => handleClick('/department/business-studies')}>business studies</span>
+                <span onClick={() => handleClick('/department/physics')}>physics</span>
+                <span onClick={() => handleClick('/department/chemistry')}>chemistry</span>
+                <span onClick={() => handleClick('/department/tamil')}>tamil</span>
+                <span onClick={() => handleClick('/department/english')}>english</span>
+                <span onClick={() => handleClick('/department/french')}>french</span>
+                <span onClick={() => handleClick('/department/bio-science')}>bio science</span>
+                <span onClick={() => handleClick('/department/food-science')}>food science</span>
+                <span onClick={() => handleClick('/department/media-science')}>media studies</span>
+              </div>
+
+
+            </div>
+
+            <div className='menu-item'>
+              <span>Campus</span>
+              <div className='dropdown'>
+                <span onClick={() => handleClick('/campus')}>campus Life</span>
+                <span onClick={() => handleClick('/events')}>Events</span>
+              </div>
+            </div>
+
+            <div className='menu-item'>
+              <span onClick={() => handleClick('/admission')} >Admission</span>
+
+            </div>
+
+            <div className='menu-item'>
+              <span><button onClick={() => { setShowInstantForm(true) }}>Apply Now</button></span>
             </div>
           </div>
 
-          <div className='menu-item'>
-            <span>Academics</span>
-            <div className='dropdown'>
-              <span onClick={() => handleClick('/department/commerce')}>departments</span>
-              <span onClick={() => handleClick('/faculty')}>Faculty</span>
-              <span onClick={() => handleClick('/programs')}>Programs</span>
-              <span onClick={() => handleClick('/ug-programs')}>ug Programs</span>
-              <span onClick={() => handleClick('/pg-programs')}>pg Programs</span>
-              <span onClick={() => handleClick('/calendar')}>calendar</span>
-              <span onClick={() => handleClick('/activities')}>Activities</span>
-            </div>
-          </div>
-
-          <div className='menu-item'>
-            <span>Campus</span>
-            <div className='dropdown'>
-              <span onClick={() => handleClick('/campus')}>campus Life</span>
-              <span onClick={() => handleClick('/events')}>Events</span>
-            </div>
-          </div>
-
-          <div className='menu-item'>
-            <span onClick={() => handleClick('/admission')} >Admission</span>
-           
-          </div>
-
-          <div className='menu-item'>
-            <span><button onClick={()=>{setShowInstantForm(true)}}>Apply Now</button></span>
-          </div>
         </div>
 
       </div>
-
-    </div>
-   </>
+    </>
   )
 }
 

@@ -19,16 +19,21 @@ function Chemistry() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/5-1-scaled.jpg",
-    name:"Dr. Kavitha A",
-    message:"The Department of Commerce has consistently improved its academic, research, and placement success. It provides a variety of innovatively created programs, with curricula that are continually updated to meet the changing needs of the industry and main stakeholders. Students are encouraged to participate in Internships and micro Projects as part of their curriculum to enhance their academic knowledge with real-world experience and are motivated to conduct and participate in events and get involved in activities of social relevance. With such inputs, our students are hardworking, practical-oriented, and effective in any work environment. The distinguished faculty members combine their academic excellence and real-world experience with dedication and commitment. I welcome you to be a part of our journey towards being a world-class center of excellence in education and research."
+    image:"/assets/img/department/hod/chemistry.png",
+    name:"Dr.S.Savithri",
+    message:"Welcome to Department of Chemistry, was established in 2020. The Department seeks to combine excellence in education with service to the industry. Our vision is an innovative and leading Department to provide students with a balance of intellectual and practical experiences that enable them to serve a variety of societal needs. In our department students are nurtured to become best professional as Project Managers and also employed in research and chemical Industry or become Entrepreneurs in their own innovative way. We are having hard-working students, a young and dynamic faculty, whose expertise spans the range of disciplines in chemical science stream and a very healthy work-culture, are the basic elements that comprise the Department of Chemistry, the hub of the institute’s academia. We hold firm belief in our ability to succeed, and we nurture an attitude of self-reliance, confidence, commitment and responsibility to the motherland that we are to serve. I am confident that the students of the department would justify the credibility of the department by showing a high level of professional competence in their respective field."
+  }
+  
+  const MissionData ={
+    mission:"To develop the department as world class centre of excellence in all aspects of higher education and research with an expertise in chemical sciences.",
+    vision:"To inculcate quality inter-disciplinary training to improve the welfare of humanity."
   }
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/chemistry.png'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
-    <MissionVision/>
+    <MissionVision  missionData={MissionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="Department of Basic Sciences"/>
     <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>

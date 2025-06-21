@@ -19,16 +19,20 @@ function FoodScience() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/5-1-scaled.jpg",
-    name:"Dr. Kavitha A",
-    message:"The Department of Commerce has consistently improved its academic, research, and placement success. It provides a variety of innovatively created programs, with curricula that are continually updated to meet the changing needs of the industry and main stakeholders. Students are encouraged to participate in Internships and micro Projects as part of their curriculum to enhance their academic knowledge with real-world experience and are motivated to conduct and participate in events and get involved in activities of social relevance. With such inputs, our students are hardworking, practical-oriented, and effective in any work environment. The distinguished faculty members combine their academic excellence and real-world experience with dedication and commitment. I welcome you to be a part of our journey towards being a world-class center of excellence in education and research."
+    image:"/assets/img/department/hod/foodscience.png",
+    name:"Dr. T. Kavitha",
+    message:"Welcome to the Department of Food Science and Nutrition at SMVEC School of Arts and Science. Our mission is multifaceted to empower individuals with nutrition knowledge, develop innovative functional food products and conduct sustainable research practice all aimed at enhancing their skills in various facets of Nutrition and Food Science. Our college has a rich history of providing quality education and we are proud to continue that legacy. Our department stands out for its comprehensive curriculum, integrating theoretical knowledge with hands-on experience in our well-equipped labs and through various projects. Furthermore, our dedicated faculty, with their diverse expertise, are committed to providing a supportive and inclusive learning environment for all the student. I am confident that with our collective efforts, we will achieve our goals and continue to make significant contributions to the field of Food Science and Nutrition.  "
+  }
+  const missionData ={
+    mission:"We seek to provide in depth knowledge about Nutrition and Dietetics and enable the students in understanding nutritional strategies and acquire skills in planning diet therapy. ",
+    vision:"The program offers quality training in nutrition and dietetics, blending practical health applications with entrepreneurial readiness. It also fosters technical skills to keep academics socially and technologically relevant."
   }
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/foodscience.png'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
-    <MissionVision/>
+    <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="Department of Basic Sciences"/>
     <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>

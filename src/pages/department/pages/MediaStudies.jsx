@@ -19,17 +19,21 @@ function MediaStudies() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/5-1-scaled.jpg",
-    name:"Dr. Kavitha A",
-    message:"The Department of Commerce has consistently improved its academic, research, and placement success. It provides a variety of innovatively created programs, with curricula that are continually updated to meet the changing needs of the industry and main stakeholders. Students are encouraged to participate in Internships and micro Projects as part of their curriculum to enhance their academic knowledge with real-world experience and are motivated to conduct and participate in events and get involved in activities of social relevance. With such inputs, our students are hardworking, practical-oriented, and effective in any work environment. The distinguished faculty members combine their academic excellence and real-world experience with dedication and commitment. I welcome you to be a part of our journey towards being a world-class center of excellence in education and research."
+    image:"/assets/img/department/hod/media.png",
+    name:"Mrs. R. Rajeswari",
+    message:"In a world driven by narratives, we believe in the transformative power of media to inform,inspire, and ignite change. Our department is more than a place of learning, it’s a vibrant creative hub where ideas come to life, voices find their strength, and the media professionals oftomorrow take root. Whether your passion lies in journalism, filmmaking, digital media,advertising, or research, we offer a dynamic curriculum, immersive hands-on training, and a nurturing environment designed to help you thrive. With experienced faculty, strong industry ties, and cutting-edge facilities, we prepare you not just to navigate the media landscape but to lead and redefine it. To our students your journey here will challenge you, excite you, and prepare you for an ever-evolving media world. To future learners we invite you to discover the limitless possibilities that await in the world of media. And to our alumni and industry partners your accomplishments continue to motivate and guide us.Let’s create, critique, and communicate with purpose and passion."
   }
-  console.log(ProgramData)
+const missionData ={
+    mission:"We seek to foster in depth knowledge to the students in the world of media and create development oriented, liable and steadfast media professionals.",
+    vision:"The mission is to provide quality training in media, equipping students to make meaningful career choices. It aims to enhance understanding of evolving media trends while fostering technical skills, rational creativity, and social awareness through media education."
+  }
+  
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`}  image='/assets/img/department/viscom.png'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
-    <MissionVision/>
+    <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="Department of Basic Sciences"/>
     <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>

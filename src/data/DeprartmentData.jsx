@@ -76,9 +76,9 @@ export const DepartmentData = [
     },
     {
         id: 3,
-        department: "Management Studies",
+        department: "business studies",
         icons: <FaFileSignature />,
-        linkurl:"management-studies",
+        linkurl:"business-studies",
         programs: {
             ug: [
                 {
@@ -200,7 +200,7 @@ export const DepartmentData = [
     },
     {
         id: 10,
-        department: "Bio-Science",
+        department: "Bio Science",
         icons: <FaFileSignature />,
         linkurl:"bio-science",
         programs: {

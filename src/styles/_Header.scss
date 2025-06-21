@@ -144,6 +144,20 @@
       }
     }
   }
+  .drop-item{
+    margin: 0;
+    padding: 0;
+    &:hover{
+        color: black;
+    .sub-dropdown{
+        display: block;
+        color: black;
+    }
+    }
+  }
+  .sub-dropdown{
+    display: none;
+  }
 
   &:hover .dropdown {
     display: block;

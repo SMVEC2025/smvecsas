@@ -25,7 +25,7 @@ function ComputationalStudies() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`}  image='/assets/img/department/computational.png' />
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision/>

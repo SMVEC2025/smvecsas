@@ -8,8 +8,7 @@ export default function TeamItem({item,instructor}) {
         <img
           src={item.image}
           alt={item.name}
-          width={282}
-          height={340}
+          
           style={{ height: "auto" }}
         />
         

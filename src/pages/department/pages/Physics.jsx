@@ -19,16 +19,20 @@ function Physics() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/5-1-scaled.jpg",
-    name:"Dr. Kavitha A",
-    message:"The Department of Commerce has consistently improved its academic, research, and placement success. It provides a variety of innovatively created programs, with curricula that are continually updated to meet the changing needs of the industry and main stakeholders. Students are encouraged to participate in Internships and micro Projects as part of their curriculum to enhance their academic knowledge with real-world experience and are motivated to conduct and participate in events and get involved in activities of social relevance. With such inputs, our students are hardworking, practical-oriented, and effective in any work environment. The distinguished faculty members combine their academic excellence and real-world experience with dedication and commitment. I welcome you to be a part of our journey towards being a world-class center of excellence in education and research."
+    image:"/assets/img/department/hod/physics.png",
+    name:"Dr.T.Jayavarthanan",
+    message:"Vinayagar Engineering College.Physics serves as the cornerstone of all natural sciences and plays a pivotal role in shapingthe technologies and innovations of tomorrow. At our department, we are dedicated to excellence in teaching, research and hands-on learning. We offer both undergraduate and postgraduate programs that provide students with a solid theoretical foundation, practical competencies and the confidence to pursue careers in academia, industry and scientific research.Our faculty members are passionate educators and active researchers, contributing to a wide range of fields including condensed matter physics, spectroscopy, nanoscience, astrophysics and medical physics. To enhance student engagement beyond the classroom, we regularly organize workshops,seminars, science exhibitions, international conferences and sky-watching events, fostering both knowledge and curiosity.We take pride in nurturing an environment where students are encouraged to think critically, explore independently and embrace lifelong learning. Our well-equipped laboratories, strong academic resources and committed mentorship ensure that every learner is prepared to meet the challenges of a rapidly evolving scientific world."
+  }
+const missionData ={
+  mission:"To excel in quality-driven science education by inspiring young minds with innovative ideas,fostering a scientific temperament, and nurturing a deep sense of social responsibility among students.",
+    vision:"The program strives to provide comprehensive education using state-of-the-art infrastructure and technology to develop professionals in commerce, management, and physics. It bridges the gap between academia and industry while promoting higher studies, global standards, ethical values, and social responsibility."
   }
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`}  image='/assets/img/department/physics.png'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
-    <MissionVision/>
+    <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="Department of Basic Sciences"/>
     <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
