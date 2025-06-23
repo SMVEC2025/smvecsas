@@ -42,7 +42,7 @@ function Commerce() {
     <MissionVision missionData={MissionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="commerce"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <HomeNewsAndEvents title="SMVEC Events"  dept='commerce' eventurl="/events/commerce"/>
     <HomeCta/>
    </>
   )

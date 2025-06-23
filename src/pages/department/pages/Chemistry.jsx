@@ -35,7 +35,7 @@ function Chemistry() {
     <HodSection HodData={HodData}/>
     <MissionVision  missionData={MissionData}/>
     <Program programDetail={programDetails}/>
-    <Faculty dept="Department of Basic Sciences"/>
+    <Faculty dept="chemistry"/>
     <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
     <HomeCta/>
    </>

@@ -14,8 +14,11 @@ const AllEventSection = ({ eventData }) => {
 
   // Helper function to parse DD/MM/YYYY to Date object
   const parseDate = (dateStr) => {
-    const [day, month, year] = dateStr.split("/").map(Number);
+    if(dateStr){
+const [day, month, year] = dateStr?.split("/").map(Number);
     return new Date(year, month - 1, day);
+    }
+    
   };
 
   const today = new Date();

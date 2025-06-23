@@ -34,7 +34,7 @@ function FoodScience() {
     <HodSection HodData={HodData}/>
     <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
-    <Faculty dept="Department of Basic Sciences"/>
+    <Faculty dept="foodscience"/>
     <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
     <HomeCta/>
    </>

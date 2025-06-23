@@ -67,7 +67,7 @@ function App() {
           <Route path="/programs" element={<AllPrograms />} /> 
           <Route path="/ug-programs" element={<UgPrograms />} /> 
           <Route path="/pg-programs" element={<PgPrograms />} /> 
-          <Route path="/events" element={<Events />} /> 
+          <Route path="/events/:dept" element={<Events />} /> 
           <Route path="/event/:slug" element={<EventDetails />} /> 
           <Route path="/department/basic-science" element={<BasicScience />} /> 
           <Route path="/admission" element={<Admission />}/>

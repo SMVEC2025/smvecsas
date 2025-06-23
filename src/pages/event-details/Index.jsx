@@ -21,7 +21,7 @@ function Index() {
 
     return (
         <>
-            <BreadcrumbTwo />
+            <BreadcrumbTwo title={filteredEvents? filteredEvents[0].acf.name:"Events"} subtitle="Events" />
             {filteredEvents?(
                 <CourseDetailSection event={filteredEvents?filteredEvents:null} />
             ):"no events"}

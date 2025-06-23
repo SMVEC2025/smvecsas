@@ -36,7 +36,7 @@ useEffect(() => {
 
     fetchEvents(); // Call the async function
   }, []); // Empty dependency array means this effect runs once after the initial render
-  console.log(events)
+  // console.log(events)
   return (
     <AppContext.Provider value={{ imagePath, setImagePath,currentPage,setCurrentPage,showInstantForm,setShowInstantForm,isLoading,setIsLoading,events,setEvents,selectedEvent,setSelectedEvent,isVisible, setIsVisible }}>
       {children}

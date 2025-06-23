@@ -35,8 +35,8 @@ const missionData ={
     <HodSection HodData={HodData}/>
     <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
-    <Faculty dept="Department of Basic Sciences"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <Faculty dept="mediastudies"/>
+    <HomeNewsAndEvents title="SMVEC Events"  dept="mediastudies" eventurl="/events/mediastudies"/>
     <HomeCta/>
    </>
   )

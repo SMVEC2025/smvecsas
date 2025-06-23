@@ -35,8 +35,8 @@ function ManagementStudies() {
     <HodSection HodData={HodData}/>
     <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
-    <Faculty dept="Department of Basic Sciences"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <Faculty dept="businessstudies"/>
+    <HomeNewsAndEvents title="SMVEC Events" dept="businessstudies"  eventurl="/events"/>
     <HomeCta/>
    </>
   )
