@@ -323,6 +323,7 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
                 <a-sky src={currentImage.image}></a-sky>
                 <a-camera user-was-moved="true"></a-camera>
                 {/* Hotspot Example */}
+             
                 {/* {currentImage.id == 1 && ( // Only show this hotspot if in room1
                     <a-entity
                         geometry="primitive: sphere; radius: 0.5"
