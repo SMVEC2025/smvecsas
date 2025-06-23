@@ -4,7 +4,7 @@ import UGProgramsTable from '../../ug-programs/component/UGProgramsTable'
 function CourseDetailSection({ courseData }) {
     console.log(courseData)
     return (
-        <div className='container program_details-main'>
+        <div className='program_details-main'>
             <h2 className='title-main'>{courseData?.name}</h2>
             <p className='desc' style={{ whiteSpace: "pre-line" }}>{courseData?.desc}</p>
             <h2>Fees Structure</h2>

@@ -109,7 +109,7 @@ function Navbar() {
               <span>Campus</span>
               <div className='dropdown'>
                 <span onClick={() => handleClick('/campus')}>campus Life</span>
-                <span onClick={() => handleClick('/events')}>Events</span>
+                <span onClick={() => handleClick('/events/all')}>Events</span>
               </div>
             </div>
 

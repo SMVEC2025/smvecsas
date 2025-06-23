@@ -696,7 +696,8 @@
             h2 {
                 font-weight: 400;
                 font-size: 25px;
-                &:hover{
+
+                &:hover {
                     color: $primary-blue;
                     cursor: pointer;
                 }
@@ -898,9 +899,19 @@
 
                 &:hover {
 
-                    background-color: rgba(17, 39, 161, 0.76);
                     backdrop-filter: blur(1px);
                     opacity: 1;
+
+                }
+
+                &.insta {
+                    background-image: linear-gradient(135deg, #4b58ccdc, #b2358dd5, #e56741ce, #efbb61c9);
+
+                }
+
+                &.facebook {
+         background-image: linear-gradient(135deg, #1672eae5, #1672ead5, #4591f5da);
+
                 }
             }
 
@@ -920,6 +931,8 @@
                     border-radius: 50%;
                     margin-right: 10px;
                     color: rgba(255, 255, 255, 0.74);
+
+
                 }
 
             }

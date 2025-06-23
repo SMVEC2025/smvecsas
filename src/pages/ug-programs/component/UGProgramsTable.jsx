@@ -27,8 +27,8 @@ const UGProgramsTable = ({ data, category }) => {
         <thead>
           <tr className='header'>
             <th>Course</th>
-            <th>Duration</th>
-            <th className='fees_header'>Fees</th>
+            {/* <th>Duration</th> */}
+            <th className='fees_header'>Fees/Year</th>
           </tr>
         </thead>
         <tbody>
@@ -40,7 +40,7 @@ const UGProgramsTable = ({ data, category }) => {
               {courses.map((program, i) => (
                 <tr key={i} onClick={()=>handleNavigate(program.name)}>
                   <td className='items' >{program.name}</td>
-                  <td className='items' >{program.fees[0].courseDuration}</td>
+                  {/* <td className='items' >{program.fees[0].courseDuration}</td> */}
                   <td id='fees_item' className='items'>{program.fees[0].feePerYear}</td>
                   
                 </tr>

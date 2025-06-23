@@ -502,11 +502,12 @@
     padding-bottom: 2rem;
 
     .table-container {
-        width: 60vw;
+        width: fit-content;
         font-family: 'Segoe UI', sans-serif;
         border: 1px solid rgba(195, 200, 247, 0.61);
         border-radius: 10px;
         overflow: hidden;
+        
     }
 
     .ug-programs-table {

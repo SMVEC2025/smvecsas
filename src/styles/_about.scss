@@ -292,16 +292,22 @@ flex-wrap: wrap;
         margin-bottom: 2rem;
     }
 .table-container {
-    width: 80%;
+    width: 40%;
   font-family: 'Segoe UI', sans-serif;
   border: 1px solid rgba(195, 200, 247, 0.61);
   border-radius: 10px;
   overflow: hidden;
+  
     @include respond-to("sm") {
     width: 100%;
-     .fees_header,#fees_item{
-        display: none;
-     }
+    }
+     @include respond-to("md") {
+    width: 80%;
+     
+    }
+    @include respond-to("lg") {
+    width: 80%;
+     
     }
 }
 
