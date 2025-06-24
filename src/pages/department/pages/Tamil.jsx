@@ -30,8 +30,8 @@ function Tamil() {
     <HodSection HodData={HodData}/>
     <MissionVision/>
     <Program programDetail={programDetails}/>
-    <Faculty dept="Department of Basic Sciences"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <Faculty dept="tamil"/>
+    <HomeNewsAndEvents title="SMVEC Events" dept="tamil"  eventurl="/events/tamil"/>
     <HomeCta/>
    </>
   )

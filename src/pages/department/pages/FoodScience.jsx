@@ -35,7 +35,7 @@ function FoodScience() {
     <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="foodscience"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <HomeNewsAndEvents title="SMVEC Events" dept="foodscience"  eventurl="/events/foodscience"/>
     <HomeCta/>
    </>
   )

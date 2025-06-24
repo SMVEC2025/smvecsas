@@ -30,8 +30,8 @@ function English() {
     <HodSection HodData={HodData}/>
     <MissionVision/>
     <Program programDetail={programDetails}/>
-    <Faculty dept="Department of Basic Sciences"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <Faculty dept="english"/>
+    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events/english"/>
     <HomeCta/>
    </>
   )

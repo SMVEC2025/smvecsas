@@ -36,7 +36,7 @@ function Chemistry() {
     <MissionVision  missionData={MissionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="chemistry"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <HomeNewsAndEvents title="SMVEC Events" dept="chemistry"  eventurl="/events/chemistry"/>
     <HomeCta/>
    </>
   )

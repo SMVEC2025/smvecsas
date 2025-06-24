@@ -1,34 +1,44 @@
 import { useState } from "react";
 import PanoramaViewer from "../../../components/PanoramaViewer";
 import Test from "../../home/component/Test";
+import 'aframe'; // Import the A-Frame library
 
 
 function Facilities() {
   const [showViewer, setShowViewer] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (imgSrc) => {
+    setSelectedImage(imgSrc);
+  };
+
+  const closeViewer = () => {
+    setSelectedImage(null);
+  };
 
   const labData = [
     {
-      name: 'lab1',
+      name: 'computer science',
       source: '/assets/img/360/lab/lab1.jpg'
     },
     {
-      name: 'lab2',
+      name: 'physics',
       source: '/assets/img/360/lab/lab2.jpg'
     },
     {
-      name: 'lab3',
+      name: 'biotech',
       source: '/assets/img/360/lab/lab3.jpg'
     },
     {
-      name: 'lab4',
+      name: 'chemistry',
       source: '/assets/img/360/lab/lab4.jpg'
     },
     {
-      name: 'lab5',
+      name: 'computer graphics',
       source: '/assets/img/360/lab/lab5.jpg'
     },
     {
-      name: 'lab6',
+      name: 'computer science',
       source: '/assets/img/360/lab/lab6.jpg'
     },
 
@@ -88,14 +98,14 @@ function Facilities() {
               <h3>{e.name}</h3>
               <p>{e.para}.</p>
             </div>
-          </div> 
+          </div>
         ))}
       </div>
       <h2 className="lab-faci-title">Lab Facilities</h2>
 
       <div className="lab_facilities">
         {labData.map((e, i) => (
-          <div className="con" onClick={() => { setShowViewer(e.source) }}>
+          <div className="con" onClick={() => handleImageClick(e.source)}>
             <img src={e.source} alt="" />
             <div className="layer">
               <h4>{e.name}</h4>
@@ -106,16 +116,25 @@ function Facilities() {
       <div>
 
 
-        {/* {showViewer && (
-                <PanoramaViewer
-                    src={showViewer}
-                    onClose={() => setShowViewer(false)}
-                />
-            )} */}
+        {selectedImage && (
+          <div className="popup-overlay" onClick={closeViewer}>
+            <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+              <a-scene embedded vr-mode-ui="enabled: false">
+                <a-sky src={selectedImage} rotation="0 -130 0"></a-sky>
+                <a-camera wasd-controls-enabled="true" look-controls-enabled="true" position="0 1.6 0"></a-camera>
+              </a-scene>
+              <button className="close-btn" onClick={closeViewer}>✖</button>
+            </div>
+          </div>
+        )}
 
       </div>
-   
-    
+      <div>
+
+
+
+      </div>
+
     </div>
   )
 }

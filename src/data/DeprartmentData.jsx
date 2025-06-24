@@ -138,21 +138,21 @@ export const DepartmentData = [
             ]
         }
     },
-    {
-        id: 6,
-        department: "Mathematics",
-        icons: <FaFileSignature />,
-        linkurl:"mathematics",
-        programs: {
-            ug: [
-                {
-                    id: 61,
-                    name: "B. Sc. Mathematics"
-                }
-            ],
+    // {
+    //     id: 6,
+    //     department: "Mathematics",
+    //     icons: <FaFileSignature />,
+    //     linkurl:"mathematics",
+    //     programs: {
+    //         ug: [
+    //             {
+    //                 id: 61,
+    //                 name: "B. Sc. Mathematics"
+    //             }
+    //         ],
 
-        }
-    },
+    //     }
+    // },
     {
         id: 7,
         department:"tamil",

@@ -17,7 +17,7 @@ function TopHeader() {
          </div>
          <div className='right'>
             <span onClick={() => handleNavigate('/activities')}>Activities</span>
-            <span onClick={() => handleNavigate('/department/commerce')}>Departments</span>
+            <span onClick={() => handleNavigate('/department/commerce')}>SMVEC</span>
             {/* <span onClick={() => handleNavigate(`/faculty${currentPage == 'home' ? '' : `/${currentPage}`}`)}>Faculty</span> */}
             <span onClick={() => handleNavigate('/placement')}>Placement</span>
             <span onClick={() => handleNavigate('/calendar')}>Calendar</span>

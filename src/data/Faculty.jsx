@@ -1,4 +1,5 @@
 export const facultyData = [
+  ///commerce///////////
   {
     id: 0,
     image: "/assets/img/department/faculty/commerce/janakirama.png",
@@ -153,6 +154,8 @@ export const facultyData = [
       { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
     ],
   },
+  ///food science///////////
+
   {
     id: 14,
     image: "/assets/img/department/faculty/foodscience/kavitha.png",

@@ -752,7 +752,7 @@
         {
             name: "BBA - Bachelor of Business Administration",
             image: "https://example.com/images/english.jpg",
-            department:'Management Studies',
+            department:'business studies',
             category:"UG",
             desc: "Enterprises are all around us, in the form of businesses, service providers, government agencies, and more. Managing an enterprise requires a wide range of skills, including knowledge of finance, marketing, human resources, operations, and systems. Managers must also be able to effectively manage people and build relationships.\nA BBA program teaches you the basics of managing a business enterprise. It doesn’t require you to have a deep understanding of any particular field, but it does give you a broad overview of different business domains. This makes you a well-rounded manager who can work in any industry.\nIf you’re interested in pursuing a Master’s in Business Administration (MBA), a BBA is a great foundation. MBA programs typically require students to have a bachelor’s degree in business or a related field.",
             fees: [
@@ -828,7 +828,7 @@
         {
             name: "B.B.A. Fintech and Digital Banking",
             image: "https://example.com/images/english.jpg",
-            department:"Management Studies",
+            department:"business studies",
             category:"UG",
             desc: "This program teaches students about fintech and digital banking. It is a three-year degree program with a practical learning approach. Students will learn the tools and techniques of fintech and digital banking, and they will also have the opportunity to work on live projects. The curriculum is designed to ensure that students are employable after graduation. The program also includes field work, industry interaction, and internships, which helps students develop their skills and knowledge. This program is a good choice for students who want to pursue a career in finance or banking.",
             fees: [

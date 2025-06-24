@@ -20,8 +20,12 @@ function HomeNewsAndEvents({ title,eventurl,dept }) {
  useEffect(() => {
      
     function filtered(){
-      const FilteredEvents = events.filter((e)=> e.acf.department == dept)
+       if(dept != 'all'){
+           const FilteredEvents = events.filter((e)=> e.acf.department == dept)
      setFilteredData(FilteredEvents)
+       }else{
+        setFilteredData(events)
+       }
     }
     filtered()
   }, [events]);

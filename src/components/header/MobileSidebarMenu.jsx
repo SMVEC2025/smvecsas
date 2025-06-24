@@ -80,7 +80,6 @@ const MobileSidebarMenu = () => {
               Academics ▾
             </button>
             <ul className={`submenu ${openSubMenu === 1 ? "show" : ""}`}>
-              <li><a onClick={() => handleClick('/department/commerce')}>departments</a></li>
               <li><a onClick={() => handleClick('/faculty')}>Faculty</a></li>
               <li><a onClick={() => handleClick('/programs')}>Programs</a></li>
               <li><a onClick={() => handleClick('/ug-programs')}>ug Programs</a></li>
@@ -90,12 +89,30 @@ const MobileSidebarMenu = () => {
             </ul>
           </li>
           <li>
+            <button className="submenu-toggle" onClick={() => toggleSubMenu(4)}>
+              Department ▾
+            </button>
+            <ul className={`submenu ${openSubMenu === 4 ? "show" : ""}`}>
+                <li><a onClick={() => handleClick('/department/commerce')}>Commerce</a></li>
+                <li><a onClick={() => handleClick('/department/computaional-studies')}>computational studies</a></li>
+                <li><a onClick={() => handleClick('/department/business-studies')}>business studies</a></li>
+                <li><a onClick={() => handleClick('/department/physics')}>physics</a></li>
+                <li><a onClick={() => handleClick('/department/chemistry')}>chemistry</a></li>
+                <li><a onClick={() => handleClick('/department/tamil')}>tamil</a></li>
+                <li><a onClick={() => handleClick('/department/english')}>english</a></li>
+                <li><a onClick={() => handleClick('/department/french')}>french</a></li>
+                <li><a onClick={() => handleClick('/department/bio-science')}>bio science</a></li>
+                <li><a onClick={() => handleClick('/department/food-science')}>food science</a></li>
+                <li><a onClick={() => handleClick('/department/media-studies')}>media studies</a></li>
+            </ul>
+          </li>
+          <li>
             <button className="submenu-toggle" onClick={() => toggleSubMenu(2)}>
               Campus ▾
             </button>
             <ul className={`submenu ${openSubMenu === 2 ? "show" : ""}`}>
               <li><a onClick={() => handleClick('/campus')}>campus Life</a></li>
-              <li><a onClick={() => handleClick('/events')}>Events</a></li>
+              <li><a onClick={() => handleClick('/events/all')}>Events</a></li>
               
             </ul>
           </li>

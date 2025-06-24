@@ -38,6 +38,7 @@ function Index() {
   const handleProgramClick=(code)=>{
     navigate(`/${code}-programs`)
   }
+ 
   return (
     <div>
       <ScrollToTop/>
@@ -59,7 +60,7 @@ function Index() {
 
         </div>
       </div>       
-      <HomeNewsAndEvents title="SMVEC Events" eventurl="/events" />
+      <HomeNewsAndEvents title="SMVEC Events" dept="all" eventurl="/events/all" />
       <HomeCampus />
       <Placements/>
       <HomeSocial />

@@ -36,7 +36,7 @@ function ManagementStudies() {
     <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="businessstudies"/>
-    <HomeNewsAndEvents title="SMVEC Events" dept="businessstudies"  eventurl="/events"/>
+    <HomeNewsAndEvents title="SMVEC Events" dept="businessstudies"  eventurl="/events/businessstudies"/>
     <HomeCta/>
    </>
   )

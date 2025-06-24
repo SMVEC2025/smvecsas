@@ -29,13 +29,13 @@ function French() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/france.png'/>
     <About data={aboutData}/>
     {/* <HodSection HodData={HodData}/> */}
     <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="french"/>
-    <HomeNewsAndEvents title="SMVEC Events"  eventurl="/events"/>
+    <HomeNewsAndEvents title="SMVEC Events" dept="french"  eventurl="/events/french"/>
     <HomeCta/>
    </>
   )

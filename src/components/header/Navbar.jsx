@@ -90,14 +90,14 @@ function Navbar() {
               <span>Department</span>
               <div className='dropdown'>
                 <span onClick={() => handleClick('/department/commerce')}>Commerce</span>
-                <span onClick={() => handleClick('/department/computaional-studies')}>computational studies</span>
+                {/* <span onClick={() => handleClick('/department/computaional-studies')}>computational studies</span> */}
                 <span onClick={() => handleClick('/department/business-studies')}>business studies</span>
                 <span onClick={() => handleClick('/department/physics')}>physics</span>
                 <span onClick={() => handleClick('/department/chemistry')}>chemistry</span>
-                <span onClick={() => handleClick('/department/tamil')}>tamil</span>
-                <span onClick={() => handleClick('/department/english')}>english</span>
+                {/* <span onClick={() => handleClick('/department/tamil')}>tamil</span> */}
+                {/* <span onClick={() => handleClick('/department/english')}>english</span> */}
                 <span onClick={() => handleClick('/department/french')}>french</span>
-                <span onClick={() => handleClick('/department/bio-science')}>bio science</span>
+                {/* <span onClick={() => handleClick('/department/bio-science')}>bio science</span> */}
                 <span onClick={() => handleClick('/department/food-science')}>food science</span>
                 <span onClick={() => handleClick('/department/media-studies')}>media studies</span>
               </div>

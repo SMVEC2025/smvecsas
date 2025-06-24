@@ -35,7 +35,7 @@ function Physics() {
       <MissionVision missionData={missionData} />
       <Program programDetail={programDetails} />
       <Faculty dept="physics" />
-      <HomeNewsAndEvents title="SMVEC Events" eventurl="/events" />
+      <HomeNewsAndEvents title="SMVEC Events"  dept="physics" eventurl="/events/physics" />
       <HomeCta />
     </>
   )
