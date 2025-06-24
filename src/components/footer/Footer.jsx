@@ -7,7 +7,7 @@ import { AiTwotoneMail } from "react-icons/ai";
 import mainlogo from '/assets/img/logo/logo.png'
 
 
-export default function Footer() {
+export default function Footer() { 
   const navigate = useNavigate()
 
   const style_2 = false
@@ -15,7 +15,7 @@ export default function Footer() {
     link_one: [
       { id: 1, title: "About Us", link: '/about-us' },
       { id: 2, title: "Programs", link: '/programs' },
-      { id: 5, title: "Events", link: '/events' },
+      { id: 5, title: "Events", link: '/events/all' },
       { id: 6, title: "Contact", link: '/contact-us' },
     ],
     link_two: [

@@ -15,6 +15,7 @@ import { useContext, useEffect } from "react"
 import { AppContext } from "../../context/AppContext"
 import Placements from "./component/Placements"
 import ScrollToTop from "../../components/scrolltotop/ScrollToTop"
+import FormContainer from "./component/FormContainer"
 function Index() {
   const {setCurrentPage}=useContext(AppContext)
   useEffect(() => {
@@ -43,6 +44,7 @@ function Index() {
     <div>
       <ScrollToTop/>
       <Hero />
+      <FormContainer/>
       <About />
       <Counter />
       <div className='home-program'>
