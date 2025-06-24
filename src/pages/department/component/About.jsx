@@ -4,7 +4,10 @@ import { useNavigate } from 'react-router-dom'
 function About({data}) {
   const navigate = useNavigate();
     const handleNavigate=()=>{
-       navigate(`/faculty/${data.heading}`)
+       navigate(`/faculty/${data.url}`)
+    }
+     const EventNavigate=()=>{
+       navigate(`/events/${data.url}`)
     }
   return (
     <div className='ug-about'>
@@ -17,7 +20,7 @@ function About({data}) {
               {data.para}
             </p>
             <button  onClick={handleNavigate}>faculties</button>
-            <button>Events</button>
+            <button onClick={EventNavigate}>Events</button>
         </div>
     </div>
   )
