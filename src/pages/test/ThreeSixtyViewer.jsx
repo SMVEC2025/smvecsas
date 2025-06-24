@@ -87,14 +87,14 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
 
     const imageData = [
         { id: 1, name: 'SMVEC SAS', image: '/assets/img/360/new/artsentrance.jpg', thumb: '/assets/img/360/thumb/artsentrance.jpg', cat: 'campus' },
-        { id: 2, name: 'Canteen', image: '/assets/img/360/new/canteen.jpg', thumb: '/assets/img/360/thumb/canteen.jpg', cat: 'facility' },
+        { id: 2, name: 'Canteen', image: '/assets/img/360/new/canteen.jpg', thumb: '/assets/img/360/thumb/canteen.png', cat: 'facility' },
         { id: 3, name: 'Entrance 1', image: '/assets/img/360/new/entrance1.jpg', thumb: '/assets/img/360/thumb/entrance1.jpg', cat: 'campus' },
         { id: 4, name: 'Entrance 2', image: '/assets/img/360/new/entrance2.jpg', thumb: '/assets/img/360/thumb/entrance2.jpg', cat: 'campus' },
         { id: 5, name: 'Garden', image: '/assets/img/360/new/garden.jpg', thumb: '/assets/img/360/thumb/garden.jpg', cat: 'campus' },
         { id: 6, name: 'Gate 1', image: '/assets/img/360/new/gate1.jpg', thumb: '/assets/img/360/thumb/gate1.jpg', cat: 'campus' },
         { id: 7, name: 'Gate 2', image: '/assets/img/360/new/gate2.jpg', thumb: '/assets/img/360/thumb/gate2.jpg', cat: 'campus' },
-        { id: 8, name: 'tennis court', image: '/assets/img/360/new/tennis.jpg', thumb: '/assets/img/360/thumb/tennis.jpg', cat: 'facility' },
-        { id: 9, name: 'volley ball', image: '/assets/img/360/new/volleyball.jpg', thumb: '/assets/img/360/thumb/volleyball.jpg', cat: 'facility' },
+        { id: 8, name: 'tennis court', image: '/assets/img/360/new/tennis.jpg', thumb: '/assets/img/360/thumb/tennis.png', cat: 'facility' },
+        { id: 9, name: 'volley ball', image: '/assets/img/360/new/volleyball.jpg', thumb: '/assets/img/360/thumb/volleyball.png', cat: 'facility' },
         { id: 10, name: 'Garden 2', image: '/assets/img/360/new/garden1.jpg', thumb: '/assets/img/360/thumb/garden1.jpg', cat: 'campus' },
         { id: 11, name: 'Computer science lab', image: '/assets/img/360/lab/lab1.jpg', thumb: '/assets/img/360/lab/lab1.jpg', cat: 'lab' },
         { id: 12, name: 'Physics lab', image: '/assets/img/360/lab/lab2.jpg', thumb: '/assets/img/360/lab/lab2.jpg', cat: 'lab' },
