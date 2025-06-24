@@ -4,9 +4,12 @@ import Form from '../../../components/form/Form'
 function FormContainer() {
   return (
     <>
-     <div className='af_main'>
+      <div className='fc_home_main'>
+ <div className='af_main'>
         <Form/>
        </div>
+
+      </div>
     </>
   )
 }

@@ -34,7 +34,7 @@ export default function HomeCta() {
           <div className="col-xxl-2 col-lg-3">
             <div className="tp-cta-btn-wrap">
               <div className="tp-cta-btn text-lg-end">
-               <div onClick={()=>{navigate=('/admission')}}  className="tp-btn" href="/university-apply">
+               <div onClick={()=>{navigate('/admission')}}  className="tp-btn" href="/university-apply">
                   Apply Now{" "}
                   <span>
                     <BsArrowRight />
