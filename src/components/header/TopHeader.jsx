@@ -9,6 +9,9 @@ function TopHeader() {
    const handleNavigate = (val) => {
       navigate(val)
    }
+     const handleOpenSite = () => {
+  window.open("https://smvec.ac.in", "_blank", "noopener,noreferrer");
+};
    return (
       <div className='top_header-main'>
          <div className='left'>
@@ -16,8 +19,8 @@ function TopHeader() {
             <span>0413-2641151</span>
          </div>
          <div className='right'>
-            <span onClick={() => handleNavigate('/activities')}>Activities</span>
-            <span onClick={() => handleNavigate('/department/commerce')}>SMVEC</span>
+            {/* <span onClick={() => handleNavigate('/activities')}>Activities</span> */}
+            <span onClick={handleOpenSite}>SMVEC</span>
             {/* <span onClick={() => handleNavigate(`/faculty${currentPage == 'home' ? '' : `/${currentPage}`}`)}>Faculty</span> */}
             <span onClick={() => handleNavigate('/placement')}>Placement</span>
             <span onClick={() => handleNavigate('/calendar')}>Calendar</span>

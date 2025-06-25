@@ -50,6 +50,7 @@ function Navbar() {
     setSliderContent(value);
     setShowSlider(true)
   }
+
   return (
     <>
 
