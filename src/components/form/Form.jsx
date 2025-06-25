@@ -5,6 +5,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 import { FormControl, InputLabel, Select, FormHelperText, Box, TextField, MenuItem } from '@mui/material';
 import { ProgramData } from '../../data/ProgramData';
+import { useNavigate } from 'react-router-dom';
 // Indian states and cities data
 const indianStates = [
   { name: 'Puducherry', cities: ['Pondicherry', 'Karaikal', 'Mahe', 'Yanam'] },
@@ -57,6 +58,7 @@ const courses = [
 ];
 
 const Form = () => {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: '',
     fathername: '',
@@ -164,7 +166,8 @@ const Form = () => {
         await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
 
         setTimeout(() => {
-          setIsSubmitted(true)
+          // setIsSubmitted(true)
+          navigate('/enquired-successfully')
           setLoading(false)
         }, 100);
       } catch (error) {

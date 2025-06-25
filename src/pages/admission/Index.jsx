@@ -4,7 +4,9 @@ import Navbar from '../../components/header/Navbar'
 import TopHeader from '../../components/header/TopHeader'
 import Footer from '../../components/footer/Footer'
 import Highlights from './components/Highlights'
-
+import Programs from './components/Programs'
+import SectionTwo from '../about/component/SectionTwo'
+ 
 function Index() {
   return (
    <>
@@ -14,7 +16,11 @@ function Index() {
         <Form/>
        </div>
     </div>
+    <SectionTwo/>
+
     <Highlights/>
+    <Programs/>
+    
     
    </>
   )

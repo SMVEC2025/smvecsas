@@ -46,6 +46,7 @@ import NoticeBoard from './pages/noticeboard/NoticeBoard'
 //test
 import PanoramaViewer from './pages/test/Index'
 import Placement from './pages/placement/Index';
+import EnquiredSucessfully from './pages/enquiredsuccess/EnquiredSucessfully';
 
 function App() {
   return (
@@ -92,9 +93,12 @@ function App() {
           <Route path="/department/bio-science" element={<BioScience />} />
           <Route path="/department/food-science" element={<FoodScience />} />
           <Route path="/department/media-studies" element={<MediaStudies />} />
+          
           {/* ////Placement pages///// */}
           <Route path="/placement" element={<Placement />} />
           <Route path="/test" element={<Test />} />
+          {/* ////success message page///// */}
+          <Route path="/enquired-successfully" element={<EnquiredSucessfully />} />
 
         </Routes>
       </MainLayout>
