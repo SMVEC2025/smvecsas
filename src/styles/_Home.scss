@@ -1066,7 +1066,16 @@
     padding: 25px;
     font-family: 'Segoe UI', sans-serif;
 }
-
+.calendar-select_options{
+    font-size: 1.5rem;
+    font-size: 500;
+    color: $primary-blue;
+    border: none;
+    option{
+        color: gray;
+        font-size: 18px;
+    }
+}
 .calendar-title {
     text-align: center;
     font-size: 2rem;

@@ -9,13 +9,13 @@ const MissionVision = ({missionData}) => {
           <div className="mv-card vision">
             <h3 className="mv-title">Vision</h3>
             <p className="mv-text">
-              {missionData.mission}
+              {missionData?.mission}
               </p>
           </div>
           <div className="mv-card mission">
             <h3 className="mv-title">Mission</h3>
             <p className="mv-text">
-              {missionData.vision}
+              {missionData?.vision}
 
             </p>
           </div>

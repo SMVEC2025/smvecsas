@@ -153,36 +153,36 @@ export const DepartmentData = [
 
     //     }
     // },
-    {
-        id: 7,
-        department:"tamil",
-        icons: <FaFileSignature />,
-        linkurl:"tamil",
-        programs: {
-            ug: [
-                {
-                    id: 71,
-                    name: "B.A. Tamil"
-                }
-            ],
+    // {
+    //     id: 7,
+    //     department:"tamil",
+    //     icons: <FaFileSignature />,
+    //     linkurl:"tamil",
+    //     programs: {
+    //         ug: [
+    //             {
+    //                 id: 71,
+    //                 name: "B.A. Tamil"
+    //             }
+    //         ],
 
-        }
-    },
-    {
-        id: 8,
-        department: "English",
-        icons: <FaFileSignature />,
-        linkurl:"english",
-        programs: {
-            ug: [
-                {
-                    id: 81,
-                    name: "B.A. English"
-                }
-            ],
+    //     }
+    // },
+    // {
+    //     id: 8,
+    //     department: "English",
+    //     icons: <FaFileSignature />,
+    //     linkurl:"english",
+    //     programs: {
+    //         ug: [
+    //             {
+    //                 id: 81,
+    //                 name: "B.A. English"
+    //             }
+    //         ],
 
-        }
-    },
+    //     }
+    // },
     {
         id: 9,
         department: "French",
@@ -198,25 +198,25 @@ export const DepartmentData = [
 
         }
     },
-    {
-        id: 10,
-        department: "Bio Science",
-        icons: <FaFileSignature />,
-        linkurl:"bio-science",
-        programs: {
-            ug: [
-                {
-                    id: 101,
-                    name: "B. Sc. Bio Technology"
-                },
-                {
-                    id: 102,
-                    name: "B. Sc. Micro Biology"
-                }
-            ],
+    // {
+    //     id: 10,
+    //     department: "Bio Science",
+    //     icons: <FaFileSignature />,
+    //     linkurl:"bio-science",
+    //     programs: {
+    //         ug: [
+    //             {
+    //                 id: 101,
+    //                 name: "B. Sc. Bio Technology"
+    //             },
+    //             {
+    //                 id: 102,
+    //                 name: "B. Sc. Micro Biology"
+    //             }
+    //         ],
 
-        }
-    },
+    //     }
+    // },
     {
         id: 11,
         department: "Food Science",

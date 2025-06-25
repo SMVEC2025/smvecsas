@@ -20,16 +20,20 @@ function ComputationalStudies() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/5-1-scaled.jpg",
-    name:"Dr. Kavitha A",
-    message:"The Department of Commerce has consistently improved its academic, research, and placement success. It provides a variety of innovatively created programs, with curricula that are continually updated to meet the changing needs of the industry and main stakeholders. Students are encouraged to participate in Internships and micro Projects as part of their curriculum to enhance their academic knowledge with real-world experience and are motivated to conduct and participate in events and get involved in activities of social relevance. With such inputs, our students are hardworking, practical-oriented, and effective in any work environment. The distinguished faculty members combine their academic excellence and real-world experience with dedication and commitment. I welcome you to be a part of our journey towards being a world-class center of excellence in education and research."
+    image:"/assets/img/department/hod/cs.png",
+    name:"Dr. N. MOGANARANGAN",
+    message:"It gives me immense pleasure to welcome you to the PG Department of Computational Studies.Since its inception in 2020, our department has been committed to fostering academic excellence and preparing students to become visionaries and changemakers in the field of computer science. With an initial intake of 100 students (B.Sc. CS and BCA), we have grown significantly and currently offer a vibrant academic ecosystem for 270 students across programs including B.Sc. Computer Science, BCA, B.Sc. Data Science & Analytics, and M.Sc. Computer Science.Our department is home to a team of dedicated and highly qualified faculty members who strive to deliver holistic and industry-relevant education. The curriculum is carefully designed to offer a balance of theoretical foundations and hands-on experience, covering core computer science concepts and cutting-edge technologies such as Artificial Intelligence, Machine Learning, Big Data Analytics, IoT, Blockchain, Cyber Security, Data Mining, and Open-Source Technologies. We also emphasize essential competencies like Professional Ethics and Research Methodologies to shape well-rounded professionals.Our students have actively participated in prestigious workshops and events hosted by premier institutions like IIT Madras, IIT Kottayam, and IIT Hyderabad, showcasing their talent and gaining valuable exposure. We are proud to share that our students have collectively earned over 100+ offer letters, a testament to their hard work and the quality of education imparted in the department.I welcome all aspiring learners to join us and be part of a thriving academic community that encourages innovation, collaboration, and excellence. Together, let us shape the future of technology."
+  }
+    const missionData ={
+    mission:"To come up with successfully as a high-quality human capital in Computer Science and related areas for the sustainable growth of the IT industry needs of the country.",
+    vision:"The program aims to ensure a deeper understanding of fundamental concepts while fostering innovative skills within core areas of Computer Science. It is dedicated to producing highly skilled and motivated graduates capable of effective problem-solving both individually and collaboratively. Additionally, the program emphasizes a strong awareness of ethical responsibilities toward the profession and society."
   }
   return (
    <>
     <Home title={`Department of ${page}`}  image='/assets/img/department/computational.png' />
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
-    <MissionVision/>
+    <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="computationalstudies"/>
     <HomeNewsAndEvents title="SMVEC Events" dept="computationalstudies" eventurl="/events/computationalstudies"/>

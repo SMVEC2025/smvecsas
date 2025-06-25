@@ -560,5 +560,127 @@ export const facultyData = [
       { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
     ],
   },
+  ///////computationalstudies
+  {
+    id: 46,
+    image: "/assets/img/department/faculty/cs/moganarangan.png",
+    title: "HOD",
+    name: "Dr.N. Moganarangan",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  {
+    id: 47,
+    image: "/assets/img/department/faculty/cs/velan.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Mr. Velan",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  {
+    id: 48,
+    image: "/assets/img/department/faculty/cs/begam.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Mrs.A. Shamshath Begam",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  {
+    id: 49,
+    image: "/assets/img/department/faculty/cs/santhosh.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Dr.K.Santhosh Kumar",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  {
+    id: 50,
+    image: "/assets/img/department/faculty/cs/sathiya.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Mrs.P.Sathiya",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  {
+    id: 51,
+    image: "/assets/img/department/faculty/cs/jenifer.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Mrs.L.Jeniffer",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  {
+    id: 52,
+    image: "/assets/img/department/faculty/cs/keerthana.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Ms.A.Keerthana",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+   {
+    id: 52,
+    image: "/assets/img/department/faculty/cs/thilagashanmugi.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Ms.S.Thilagashanmugi",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+   {
+    id: 52,
+    image: "/assets/img/department/faculty/cs/rajasri.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Ms.S.Rajasri",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+   {
+    id: 52,
+    image: "/assets/img/department/faculty/cs/shanthi.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Mrs.K.Shanthi",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  {
+    id: 52,
+    image: "/assets/img/department/faculty/cs/jasmin.png",
+    title: "ASSISTANT PROFESSOR",
+    name: "Ms.J.Jasmin",
+    department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
 
 ]

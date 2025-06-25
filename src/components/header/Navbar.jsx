@@ -91,7 +91,7 @@ function Navbar() {
               <span>Department</span>
               <div className='dropdown'>
                 <span onClick={() => handleClick('/department/commerce')}>Commerce</span>
-                {/* <span onClick={() => handleClick('/department/computaional-studies')}>computational studies</span> */}
+                <span onClick={() => handleClick('/department/computational-studies')}>computational studies</span>
                 <span onClick={() => handleClick('/department/business-studies')}>business studies</span>
                 <span onClick={() => handleClick('/department/physics')}>physics</span>
                 <span onClick={() => handleClick('/department/chemistry')}>chemistry</span>
