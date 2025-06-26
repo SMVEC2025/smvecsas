@@ -47,6 +47,8 @@ import NoticeBoard from './pages/noticeboard/NoticeBoard'
 import PanoramaViewer from './pages/test/Index'
 import Placement from './pages/placement/Index';
 import EnquiredSucessfully from './pages/enquiredsuccess/EnquiredSucessfully';
+//error
+import ErrorPage from './pages/error/Index';
 
 function App() {
   return (
@@ -75,7 +77,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />}/> 
           <Route path="/map" element={<Map />} /> 
           <Route path="/virtual-tour" element={<PanoramaViewer />} /> 
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/calender" element={<Calender />} /> 
           <Route path="/calendar" element={<Calender />} /> 
           <Route path="/activities" element={<NoticeBoard />} /> 

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.college-404-container {
+  background: linear-gradient(to bottom, #f0f4ff, #d0e0ff);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Floating books animation */
+.floating-books {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.book {
+  width: 40px;
+  height: 30px;
+  background: #003366;
+  position: absolute;
+  border-radius: 4px;
+  opacity: 0.6;
+  animation: floatBook 10s linear infinite;
+}
+
+.book1 { left: 10%; top: 100%; animation-delay: 0s; }
+.book2 { left: 50%; top: 110%; animation-delay: 2s; background: #0055aa; }
+.book3 { left: 80%; top: 105%; animation-delay: 4s; background: #002244; }
+
+@keyframes floatBook {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Student shadow / silhouette */
+.student-shadow {
+  width: 80px;
+  height: 120px;
+  background: radial-gradient(circle, #003366 30%, transparent 70%);
+  border-radius: 50% 50% 10% 10%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 2s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Main message box */
+.college-message-box {
+  z-index: 2;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 51, 102, 0.15);
+  max-width: 500px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.college-title {
+  font-size: 6rem;
+  color: #003366;
+  margin: 0;
+}
+
+.college-subtitle {
+  font-size: 1.5rem;
+  color: #0055aa;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.college-text {
+  color: #444;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.college-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.college-buttons button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.college-buttons button:hover {
+  background-color: #0055aa;
+}
