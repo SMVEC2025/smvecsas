@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 
 .college-404-container {
   background: linear-gradient(to bottom, #f0f4ff, #d0e0ff);
@@ -29,16 +25,18 @@ body {
 .book {
   width: 40px;
   height: 30px;
-  background: #003366;
   position: absolute;
   border-radius: 4px;
-  opacity: 0.6;
   animation: floatBook 10s linear infinite;
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .book1 { left: 10%; top: 100%; animation-delay: 0s; }
-.book2 { left: 50%; top: 110%; animation-delay: 2s; background: #0055aa; }
-.book3 { left: 80%; top: 105%; animation-delay: 4s; background: #002244; }
+.book2 { left: 50%; top: 110%; animation-delay: 2s;  }
+.book3 { left: 80%; top: 105%; animation-delay: 4s; }
 
 @keyframes floatBook {
   0% {
@@ -79,10 +77,8 @@ body {
 /* Main message box */
 .college-message-box {
   z-index: 2;
-  background: white;
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 51, 102, 0.15);
   max-width: 500px;
   animation: fadeIn 1.5s ease-out;
 }
@@ -99,7 +95,7 @@ body {
 }
 
 .college-title {
-  font-size: 6rem;
+  font-size: 10rem;
   color: #003366;
   margin: 0;
 }

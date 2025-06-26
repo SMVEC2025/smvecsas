@@ -650,7 +650,7 @@ export const facultyData = [
     ],
   },
    {
-    id: 52,
+    id: 53,
     image: "/assets/img/department/faculty/cs/rajasri.png",
     title: "ASSISTANT PROFESSOR",
     name: "Ms.S.Rajasri",
@@ -661,7 +661,7 @@ export const facultyData = [
     ],
   },
    {
-    id: 52,
+    id: 54,
     image: "/assets/img/department/faculty/cs/shanthi.png",
     title: "ASSISTANT PROFESSOR",
     name: "Mrs.K.Shanthi",
@@ -672,11 +672,45 @@ export const facultyData = [
     ],
   },
   {
-    id: 52,
+    id: 55,
     image: "/assets/img/department/faculty/cs/jasmin.png",
     title: "ASSISTANT PROFESSOR",
     name: "Ms.J.Jasmin",
     department: "computationalstudies",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+  /////tamil
+  {
+    id: 56,
+    image: "/assets/img/department/faculty/tamil/Dr.M.VANITH.png",
+    title: "HOD",
+    name: "Dr.M.VANITHA",
+    department: "tamil",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+   {
+    id: 57,
+    image: "/assets/img/department/faculty/tamil/Dr.T.HEMALATHA.png",
+    title: "HOD",
+    name: "Dr.T.HEMALATHA",
+    department: "tamil",
+    socials: [
+      { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
+      { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },
+    ],
+  },
+   {
+    id: 58,
+    image: "/assets/img/department/faculty/tamil/Dr.R.RAJENDIRAN.png",
+    title: "HOD",
+    name: "Dr.R.RAJENDIRAN",
+    department: "tamil",
     socials: [
       { id: 1, iconCls: 'fa-brands fa-facebook-f', link: "https://www.facebook.com/" },
       { id: 2, iconCls: 'fa-brands fa-twitter', link: "https://twitter.com/" },

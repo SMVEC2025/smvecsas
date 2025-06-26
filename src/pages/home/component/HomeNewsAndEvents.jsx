@@ -44,7 +44,7 @@ function HomeNewsAndEvents({ title,eventurl,dept }) {
                     className="mySwiper"
                 >
                     {filteredData?.map((event, index) => (
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <img src={event.acf.image} alt="" />
                             <div className="bottom" onClick={()=>{navigate(`/event/${event.slug}`)}}>
                                 <div className="left">

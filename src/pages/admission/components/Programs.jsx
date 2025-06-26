@@ -24,7 +24,7 @@ function Programs() {
         <div className='program-container'>
           {ugProgram?.map((e,i)=>(
             <div key={i} className='con'  onClick={()=>handleProgramClick(e)}>
-            <img src={e.image} alt="" />
+            {/* <img src={e.icon} alt="" /> */}
             <h2>{e.name}</h2>
 
           </div>
@@ -36,7 +36,7 @@ function Programs() {
         <div className='program-container'>
           {pgProgram?.map((e,i)=>(
             <div key={i} onClick={()=>handleProgramClick(e)} className='con'>
-            <img src={e.image} alt="" />
+            <img src={e.icon} alt="" />
             <h2>{e.name}</h2>
 
           </div>

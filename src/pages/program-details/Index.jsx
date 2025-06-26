@@ -9,15 +9,12 @@ function Index() {
     const { program } = useParams();
     const decodedProgram = decodeURIComponent(program);
     const [filteredProgram, setFilteredProgram] = useState([])
-    console.log(decodedProgram)
    
 
     useEffect(() => {
         const filter = ProgramData.filter(course => course.name == decodedProgram)
         setFilteredProgram(filter)
-        console.log("decodedProgram", decodedProgram)
     }, [])
-    console.log("filteredProgram", filteredProgram)
     return (
         <>
             {filteredProgram ? (

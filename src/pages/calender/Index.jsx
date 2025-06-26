@@ -285,10 +285,8 @@ const Index = () => {
     return found ? [found.date] : [];
   };
   function handleCalendarChange(e) {
-    console.log(e.target.value)
     if (e.target.value == "ug3rdyear5thsem") {
       setEvents(thirdyearfifthsem)
-      console.log('setting')
     }
     if (e.target.value == "ugsecondyear3rdsem") {
       setEvents(secondYearThirdSem)
@@ -299,7 +297,7 @@ const Index = () => {
   }
 
   return (
-    <div className="calendermain" style={{ backgroundImage: `url('/assets/img/image/entrance.JPG')` }}>
+    <div className="calendermain" style={{ backgroundImage: `url('/assets/img/image/entrance.jpg')` }}>
       <div className="layer">
         <div className="calendar-container">
           <h2 className="calendar-title"> 

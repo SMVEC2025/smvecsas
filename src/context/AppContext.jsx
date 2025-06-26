@@ -12,6 +12,7 @@ export const AppProvider = ({ children }) => {
     const[selectedEvent,setSelectedEvent]=useState('all')
   const [imagePath, setImagePath] = useState();
       const [isVisible, setIsVisible] = useState(true);
+    const [isSubmitted, setIsSubmitted] = useState(false);
   
 useEffect(() => {
     const fetchEvents = async () => {
@@ -24,7 +25,6 @@ useEffect(() => {
 
         // Update the events state with the fetched data
         setEvents(response.data);
-        console.log(response.data)
       } catch (err) {
         // If an error occurs, set the error state
         console.error('Error fetching events:', err);
@@ -36,9 +36,8 @@ useEffect(() => {
 
     fetchEvents(); // Call the async function
   }, []); // Empty dependency array means this effect runs once after the initial render
-  // console.log(events)
   return (
-    <AppContext.Provider value={{ imagePath, setImagePath,currentPage,setCurrentPage,showInstantForm,setShowInstantForm,isLoading,setIsLoading,events,setEvents,selectedEvent,setSelectedEvent,isVisible, setIsVisible }}>
+    <AppContext.Provider value={{ imagePath, setImagePath,currentPage,setCurrentPage,showInstantForm,setShowInstantForm,isLoading,setIsLoading,events,setEvents,selectedEvent,setSelectedEvent,isVisible, setIsVisible,isSubmitted, setIsSubmitted }}>
       {children}
     </AppContext.Provider>
   );

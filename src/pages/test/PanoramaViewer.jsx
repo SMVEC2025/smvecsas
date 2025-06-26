@@ -8,7 +8,6 @@ import { GyroscopePlugin } from '@photo-sphere-viewer/gyroscope-plugin';
   ) {
     const permission = await DeviceOrientationEvent.requestPermission();
     if (permission === 'granted') {
-      console.log('Gyro permission granted');
     } else {
       alert('Permission not granted for gyroscope');
     }

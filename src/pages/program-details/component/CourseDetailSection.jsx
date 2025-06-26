@@ -2,7 +2,6 @@ import React from 'react'
 import UGProgramsTable from '../../ug-programs/component/UGProgramsTable'
 
 function CourseDetailSection({ courseData }) {
-    console.log(courseData)
     return (
         <div className='program_details-main'>
             <h2 className='title-main'>{courseData?.name}</h2>
@@ -26,7 +25,6 @@ function CourseDetailSection({ courseData }) {
                                         <td className='items'>{element?.courseDuration}</td>
                                         <td className='items'>{element?.feePerYear}</td>
                                         <td id='fees_item' className='items'>{element?.intake}</td>
-                                        {console.log(courseData?.fees)}
                                     </tr>
                                 </tbody>
                             </table>

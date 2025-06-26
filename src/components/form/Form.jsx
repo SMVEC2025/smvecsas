@@ -1,11 +1,12 @@
 
 import axios from 'axios';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 import { FormControl, InputLabel, Select, FormHelperText, Box, TextField, MenuItem } from '@mui/material';
 import { ProgramData } from '../../data/ProgramData';
 import { useNavigate } from 'react-router-dom';
+import { AppContext } from '../../context/AppContext';
 // Indian states and cities data
 const indianStates = [
   { name: 'Puducherry', cities: ['Pondicherry', 'Karaikal', 'Mahe', 'Yanam'] },
@@ -73,20 +74,18 @@ const Form = () => {
     captchaInput: '',
     is_otp_verified: 0
   });
-
+  const { isSubmitted, setIsSubmitted } = useContext(AppContext)
   const [cities, setCities] = useState([]);
   const [errors, setErrors] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [userOtp, setUserOtp] = useState(' ')
   const [otpVerified, setOtpVerified] = useState(false)
   const [buttonLoading, setButtonLoading] = useState('')
   const [timeLeft, setTimeLeft] = useState(59);
   const [loading, setLoading] = useState(false)
   const timerRef = useRef(null);
-  // Generate captcha on component mount
-  useEffect(() => {
-    generateCaptcha();
-  }, []);
+
+
+
 
   // Update cities when state changes
   useEffect(() => {
@@ -101,14 +100,6 @@ const Form = () => {
     }
   }, [formData.state]);
 
-  const generateCaptcha = () => {
-    const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let captcha = '';
-    for (let i = 0; i < 6; i++) {
-      captcha += chars[Math.floor(Math.random() * chars.length)];
-    }
-    setFormData(prev => ({ ...prev, captcha }));
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -164,12 +155,12 @@ const Form = () => {
       };
       try {
         await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
-
+        setIsSubmitted(true)
         setTimeout(() => {
-          // setIsSubmitted(true)
+
           navigate('/enquired-successfully')
           setLoading(false)
-        }, 100);
+        }, 1000);
       } catch (error) {
         alert("Something went wrong! try after sometimes");
         setLoading(false)
@@ -229,7 +220,7 @@ const Form = () => {
     }
 
 
-    setErrors(newErrors); 
+    setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
 
   }
@@ -251,15 +242,10 @@ const Form = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   }
-  if (isSubmitted) {
-    return (
-      <div className="form-container">
-        <div className="success-message">
-          <h2>Application Submitted Successfully!</h2>
-          <p>Thank you for your application. We will contact you shortly.</p>
-        </div>
-      </div>
-    );
+  function handleKeyDown(e,triggerButton = false){
+    if(e.key === "Enter"){
+     e.preventDefault()
+    }
   }
   return (
     <div className="form-container">
@@ -269,43 +255,48 @@ const Form = () => {
       <form >
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
 
-         <div className='names_field'>
-             <TextField
-            id="name"
-            label="Name"
-            name="name"
-            variant="outlined"
-            className="custom-input"
-            fullWidth
-            value={formData.name}
-            onChange={handleChange}
-            error={!!errors.name}
-            helperText={errors.name}
-          />
+          <div className='names_field'>
+            <TextField
+              id="name"
+              label="Name"
+              name="name"
+              variant="outlined"
+              className="custom-input"
+              fullWidth
+              value={formData.name}
+              onChange={handleChange}
+              error={!!errors.name}
+              helperText={errors.name}
+                onKeyDown={(e) => handleKeyDown(e)} 
 
-          <TextField
-            id="fathername"
-            label="Father Name"
-            className="custom-input"
-            name="fathername"
-            variant="outlined"
-            fullWidth
-            value={formData.fathername}
-            onChange={handleChange}
-            error={!!errors.fathername}
-            helperText={errors.fathername}
-          />
-         </div>
+
+            />
+
+            <TextField
+              id="fathername"
+              label="Father Name"
+              className="custom-input"
+              name="fathername"
+              variant="outlined"
+              fullWidth
+              value={formData.fathername}
+              onChange={handleChange}
+              error={!!errors.fathername}
+              helperText={errors.fathername}
+                onKeyDown={(e) => handleKeyDown(e)} 
+
+            />
+          </div>
           <div className='input-with-btn'>
 
             <TextField
               id="phone"
               label="Phone"
-              
+
               name="phone"
               variant="outlined"
               className="custom-input"
-              style={{ width: `${otpVerified?'100%':'calc(100% - 120px)'}` }}
+              style={{ width: `${otpVerified ? '100%' : 'calc(100% - 120px)'}` }}
               value={formData.phone}
               onChange={handleChange}
               error={!!errors.phone}
@@ -327,28 +318,30 @@ const Form = () => {
 
 
 
-          {!otpVerified?(
+          {!otpVerified ? (
             <div className='input-with-btn'>
 
-            <TextField
-             id="otp"
-              name="otp"
-              value={formData.otp}
-              onChange={handleChange}
-              label="OTP"
-              variant="outlined"
-              className="custom-input"
-              style={{ width: `calc(100% - 120px)` }}
-              error={!!errors.otp}
-              helperText={errors.otp}
-            />
+              <TextField
+                id="otp"
+                name="otp"
+                value={formData.otp}
+                onChange={handleChange}
+                label="OTP"
+                variant="outlined"
+                className="custom-input"
+                style={{ width: `calc(100% - 120px)` }}
+                error={!!errors.otp}
+                helperText={errors.otp}
+                
+                onKeyDown={(e) => handleKeyDown(e)} 
+                />
 
-            <button onClick={verifyOtp}>Verify</button>
+              <button onClick={verifyOtp}>Verify</button>
 
-          </div>
-          ):<div className='success-msg'>OTP Verified Sucessfully</div>}
+            </div>
+          ) : <div className='success-msg'>OTP Verified Sucessfully</div>}
 
-       
+
 
           <TextField
             id="email"
@@ -362,6 +355,8 @@ const Form = () => {
             onChange={handleChange}
             error={!!errors.email}
             helperText={errors.email}
+                onKeyDown={(e) => handleKeyDown(e)} 
+
           />
           <FormControl fullWidth sx={{ mt: 2 }} error={Boolean(errors.course)}>
             <InputLabel id="course-label">Program</InputLabel>
@@ -390,47 +385,47 @@ const Form = () => {
             {errors.course && <FormHelperText>{errors.course}</FormHelperText>}
           </FormControl>
 
-         <div className='location_inputs'>
-             <TextField
-            select
-            id="state"
-            label="State"
-            name="state"
-            fullWidth
-            className="custom-input"
-            variant="outlined"
-            value={formData.state}
-            onChange={handleChange}
-            error={!!errors.state}
-            helperText={errors.state}
-          >
-            {indianStates.map((state) => (
-              <MenuItem key={state.name} value={state.name}>
-                {state.name}
-              </MenuItem>
-            ))}
-          </TextField>
-          <TextField
-            select
-            id="city"
-            label="City"
-            name="city"
-            fullWidth
-            variant="outlined"
-            className="custom-input"
-            value={formData.city}
-            onChange={handleChange}
-            error={!!errors.city}
-            helperText={errors.city}
-          >
-            {cities.map((city) => (
-              <MenuItem key={city} value={city}>
-                {city}
-              </MenuItem>
-            ))}
-          </TextField>
+          <div className='location_inputs'>
+            <TextField
+              select
+              id="state"
+              label="State"
+              name="state"
+              fullWidth
+              className="custom-input"
+              variant="outlined"
+              value={formData.state}
+              onChange={handleChange}
+              error={!!errors.state}
+              helperText={errors.state}
+            >
+              {indianStates.map((state) => (
+                <MenuItem key={state.name} value={state.name}>
+                  {state.name}
+                </MenuItem>
+              ))}
+            </TextField>
+            <TextField
+              select
+              id="city"
+              label="City"
+              name="city"
+              fullWidth
+              variant="outlined"
+              className="custom-input"
+              value={formData.city}
+              onChange={handleChange}
+              error={!!errors.city}
+              helperText={errors.city}
+            >
+              {cities.map((city) => (
+                <MenuItem key={city} value={city}>
+                  {city}
+                </MenuItem>
+              ))}
+            </TextField>
 
-         </div>
+          </div>
 
           <TextField
             id="message"

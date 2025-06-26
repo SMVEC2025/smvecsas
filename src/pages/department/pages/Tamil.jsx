@@ -20,16 +20,20 @@ function Tamil() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/05/5-1-scaled.jpg",
-    name:"Dr. Kavitha A",
-    message:"The Department of Commerce has consistently improved its academic, research, and placement success. It provides a variety of innovatively created programs, with curricula that are continually updated to meet the changing needs of the industry and main stakeholders. Students are encouraged to participate in Internships and micro Projects as part of their curriculum to enhance their academic knowledge with real-world experience and are motivated to conduct and participate in events and get involved in activities of social relevance. With such inputs, our students are hardworking, practical-oriented, and effective in any work environment. The distinguished faculty members combine their academic excellence and real-world experience with dedication and commitment. I welcome you to be a part of our journey towards being a world-class center of excellence in education and research."
+    image:"/assets/img/department/faculty/tamil/Dr.M.VANITH.png",
+    name:"Dr.M.VANITHA",
+    message:"தமிழுக்கு அமுதென்றுபேர் - அந்தத் தமிழ் இன்பத்தமிழ் எங்கள் உயிருக்கு நேர்! - பாவேந்தர் பாரதிதாசன்.Language is more than a communication tool—it is a vessel that carries the essence of a civilization, its culture, values, and wisdom. Tamil, one of the world’s oldest languages, is a literary treasure that spans over 5,000 years. Our department strives to instill a deep appreciation for the richness of Tamil among today’s youth. Through dedicated teaching and celebration of the languages nuances, we aim to empower our students to excel academically and culturally. எங்கும் உள்ளது என்தமிழ்! இமயத்தின் எல்லை கண்ட என்தமிழ்! என்றும் வாழியவே!"
+  }
+    const missionData = {
+    mission: "To provide structured exercises in reading, writing, and speaking Tamil fluently and correctly. To teach the five core elements of Tamil grammar—script, vocabulary,meaning, syntax, and structure—along with literary history and classical texts.",
+    vision: "To preserve the enduring glory of the Tamil language and to cultivate its relevance in the evolving global context."
   }
   return (
    <>
     <Home title={`Department of ${page}`}/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
-    <MissionVision/>
+    <MissionVision missionData={missionData}/>
     <Program programDetail={programDetails}/>
     <Faculty dept="tamil"/>
     <HomeNewsAndEvents title="SMVEC Events" dept="tamil"  eventurl="/events/tamil"/>

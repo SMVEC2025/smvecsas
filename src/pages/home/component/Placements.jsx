@@ -21,7 +21,7 @@ function Placements() {
             <Header title="Proud Placements" />
             <div className='conmain'>
                 {partners.map((e, i) => (
-                    <div className='con'>
+                    <div key={i} className='con'>
                         <img src={e.logo} alt="" />
                     </div>
                 ))}

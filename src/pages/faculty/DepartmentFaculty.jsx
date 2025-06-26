@@ -15,7 +15,6 @@ function DepartmentFaculty() {
     useEffect(() => {
         const filter = facultyData.filter(faculty => faculty.department == decodedDept)
         setFilteredDepartment(filter)
-        console.log("decodedDept", decodedDept)
     }, [])
 
 

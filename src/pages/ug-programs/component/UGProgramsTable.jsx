@@ -26,7 +26,7 @@ const UGProgramsTable = ({ data, category }) => {
       <table className="ug-programs-table">
         <thead>
           <tr className='header'>
-            <th>Course</th>
+            <th>Program</th>
             {/* <th>Duration</th> */}
             <th className='fees_header'>Fees/Year</th>
           </tr>

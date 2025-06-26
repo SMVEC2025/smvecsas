@@ -153,21 +153,21 @@ export const DepartmentData = [
 
     //     }
     // },
-    // {
-    //     id: 7,
-    //     department:"tamil",
-    //     icons: <FaFileSignature />,
-    //     linkurl:"tamil",
-    //     programs: {
-    //         ug: [
-    //             {
-    //                 id: 71,
-    //                 name: "B.A. Tamil"
-    //             }
-    //         ],
+    {
+        id: 7,
+        department:"tamil",
+        icons: <FaFileSignature />,
+        linkurl:"tamil",
+        programs: {
+            ug: [
+                {
+                    id: 71,
+                    name: "B.A. Tamil"
+                }
+            ],
 
-    //     }
-    // },
+        }
+    },
     // {
     //     id: 8,
     //     department: "English",

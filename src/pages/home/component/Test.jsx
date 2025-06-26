@@ -28,7 +28,6 @@ const Test = () => {
     Promise.all(datas.map(loadImage))
       .then(() => {
         setImagesLoaded(true);
-        console.log('All images preloaded!');
       })
       .catch((error) => {
         console.error('Error preloading images:', error);

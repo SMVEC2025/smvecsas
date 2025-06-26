@@ -38,15 +38,12 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
         const sceneAFrameEl = sceneRef.current ? sceneRef.current.el : null;
 
         if (sceneAFrameEl) {
-            console.log('A-Frame scene DOM element found:', sceneAFrameEl);
 
             const handleEnterVR = () => {
-                console.log('Entered VR mode!');
                 setInVRMode(true);
             };
 
             const handleExitVR = () => {
-                console.log('Exited VR mode!');
                 setInVRMode(false);
             };
 
@@ -61,7 +58,6 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
                 }
             };
         } else {
-            console.log('A-Frame scene DOM element not yet available.');
         }
 
         return () => {

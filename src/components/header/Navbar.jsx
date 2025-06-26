@@ -82,7 +82,7 @@ function Navbar() {
                 <span onClick={() => handleClick('/ug-programs')}>ug Programs</span>
                 <span onClick={() => handleClick('/pg-programs')}>pg Programs</span>
                 <span onClick={() => handleClick('/calendar')}>calendar</span>
-                <span onClick={() => handleClick('/activities')}>Activities</span>
+                {/* <span onClick={() => handleClick('/activities')}>Activities</span> */}
                 <span onClick={() => handleClick('/placement')}>Placement</span>
               </div>
 
@@ -96,7 +96,7 @@ function Navbar() {
                 <span onClick={() => handleClick('/department/business-studies')}>business studies</span>
                 <span onClick={() => handleClick('/department/physics')}>physics</span>
                 <span onClick={() => handleClick('/department/chemistry')}>chemistry</span>
-                {/* <span onClick={() => handleClick('/department/tamil')}>tamil</span> */}
+                <span onClick={() => handleClick('/department/tamil')}>tamil</span>
                 {/* <span onClick={() => handleClick('/department/english')}>english</span> */}
                 <span onClick={() => handleClick('/department/french')}>french</span>
                 {/* <span onClick={() => handleClick('/department/bio-science')}>bio science</span> */}

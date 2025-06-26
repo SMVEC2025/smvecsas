@@ -6,8 +6,6 @@ function Program({programDetail}) {
   const handleProgramClick=(program)=>{
     navigate(`/program/${program.name}`)
   }
-  console.log(programDetail)
-  console.log(programDetail)
   return (
     <div className='home-program' >
         <div className='overlay'></div>
