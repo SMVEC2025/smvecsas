@@ -9,7 +9,7 @@ const socialData = [
   {
     id: 1,
     cls: "social-fb",
-    href: "https://www.facebook.com",
+    href: "https://www.facebook.com/SMVECOfficial",
     iconClass: "fa-brands fa-facebook-f",
     alt: "Facebook",
     item: <SlSocialFacebook />
@@ -17,7 +17,7 @@ const socialData = [
   {
     id: 2,
     cls: "social-twit",
-    href: "https://www.twitter.com",
+    href: "https://x.com/SMVEC2",
     iconClass: "fa-brands fa-twitter",
     alt: "Twitter",
     item: <FaXTwitter />
@@ -26,7 +26,7 @@ const socialData = [
   {
     id: 3,
     cls: "social-wa",
-    href: "https://www.linkedin.com",
+    href: "https://api.whatsapp.com/send/?phone=919344916320&text&app_absent=0",
     iconClass: "fa-brands fa-linkedin-in",
     alt: "Whatsapp",
     item: <FaWhatsapp />
@@ -35,7 +35,7 @@ const socialData = [
   {
     id: 4,
     cls: "social-insta",
-    href: "https://www.youtube.com",
+    href: "https://www.instagram.com/smvec_official/",
     iconClass: "fa-brands fa-youtube",
     alt: "Instagram",
     item: <FaInstagram />
@@ -44,7 +44,7 @@ const socialData = [
   {
     id: 5,
     cls: "social-yout",
-    href: "https://www.youtube.com",
+    href: "https://www.youtube.com/@official_smvec",
     iconClass: "fa-brands fa-youtube",
     alt: "YouTube",
     item: <LuYoutube />
