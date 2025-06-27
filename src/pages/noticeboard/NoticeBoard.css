@@ -7,7 +7,6 @@
   padding: 10px;
   border-radius: 2px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Shadow for "lifted" effect */
-  font-family: 'Kalam', cursive; /* A fun, handwritten-like font */
   font-size: 1.1em;
   line-height: 1.4;
   display: flex;
@@ -100,7 +99,6 @@
   border: none;
   background: transparent;
   resize: none; /* Disable browser's textarea resize handle */
-  font-family: 'Kalam', cursive;
   font-size: 1.1em;
   line-height: 1.4;
   padding: 0;
@@ -134,8 +132,6 @@
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Add a Google Font for "Kalam" if you want a handwritten look */
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 /* src/components/NoticeBoard.css */
 
