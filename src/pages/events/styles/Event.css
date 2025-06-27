@@ -324,7 +324,6 @@ button {
   background-size: cover !important;
   padding-top: 245px;
   padding-bottom: 180px;
-  background-image: url(../images/breadcrumb_bg_1.jpg);
 }
 
 .tf__breadcrumb .container {
@@ -334,7 +333,6 @@ button {
 .tf__breadcrumb .container::after {
   position: absolute;
   content: "";
-  background: url(../images/breadcrumb_bg_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -626,7 +624,6 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/banner_bg.jpg);
 }
 
 .tf__banner_2 div,
@@ -696,7 +693,6 @@ button {
 .tf__banner::after {
   position: absolute;
   content: "";
-  background: url(../images/banner_shape.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -724,7 +720,6 @@ button {
 .tf__banner::before {
   position: absolute;
   content: "";
-  background: url(../images/arrow_shapes.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -789,7 +784,6 @@ button {
 }
 
 .tf__single_category_text {
-  background: url(../images/categiry_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -978,7 +972,6 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../images/about_bg.png);
 }
 
 .tf__about_top {
@@ -994,7 +987,6 @@ button {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   top: -150px;
-  background-image: url(../images/about_top_bg.jpg);
 }
 
 .tf__about_top::after {
@@ -1076,7 +1068,6 @@ button {
 .tf__about_text ul li::after {
   position: absolute;
   content: "";
-  background: url(../images/check_icon_1.png);
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
@@ -1104,7 +1095,6 @@ button {
 .tf__about_img::before {
   position: absolute;
   content: "";
-  background: url(../images/about_shape_1.png);
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
@@ -1118,7 +1108,6 @@ button {
 }
 
 .tf__about_img::before {
-  background: url(../images/about_shape_2.png);
   top: auto;
   right: auto;
   left: -56px;
@@ -1172,14 +1161,12 @@ button {
   color: var(--colorWhite);
 }
 .tf__faq {
-  background-image: url(../images/faq_bg.png);
 }
 .tf__banner_3 .tf__banner_text::after,
 .tf__faq::after,
 .tf__about::after {
   position: absolute;
   content: "";
-  background: url(../images/book_shapes.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1196,7 +1183,6 @@ button {
 .tf__about::before {
   position: absolute;
   content: "";
-  background: url(../images/pen_shapes.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1488,7 +1474,6 @@ button {
   content: "";
   width: 170px;
   height: 230px;
-  background: url(../images/arrow_shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1524,7 +1509,6 @@ button {
   content: "";
   width: 130px;
   height: 130px;
-  background: url(../images/about_shape_2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1632,7 +1616,6 @@ button {
 }
 
 .tf__faq_accordion .accordion-header button::after {
-  background: url(../images/arrow_icon_1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1644,7 +1627,6 @@ button {
 }
 
 .tf__faq_accordion .accordion-button:not(.collapsed)::after {
-  background: url(../images/arrow_icon_2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1703,7 +1685,6 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/work_bg.jpg);
 }
 
 .tf__work_single {
@@ -1752,7 +1733,6 @@ button {
 }
 
 .tf__work_single_text {
-  background: url(../images/single_work_bg.png);
   background-position: bottom center !important;
   background-repeat: no-repeat !important;
   padding: 160px 60px 40px 60px;
@@ -1848,7 +1828,6 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/testimonial_bg.jpg);
 }
 
 .tf___testimonial .tf__heading_area h5,
@@ -2055,7 +2034,6 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/video_bg.jpg);
 }
 
 .tf__video_overlay {
@@ -2225,7 +2203,6 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/footer_bg.jpg);
 }
 
 .tf__footer_overlay {
@@ -2464,7 +2441,6 @@ button {
 .tf__about_2_img .tf__about_large::after {
   position: absolute;
   content: "";
-  background: url(../images/about_2_shape.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2620,7 +2596,6 @@ button {
 }
 
 .tf__popular_service_single {
-  background: url(../images/popular_ervices_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2976,7 +2951,6 @@ button {
 
 /* activities slider area start */
 .tf__activities_slider_area {
-  background-image: url(../images/activities_bg.jpg);
 }
 .tf__activities_slider_area .tf__heading_area h5,
 .tf__activities_slider_area .tf__heading_area h2 {
@@ -3116,7 +3090,6 @@ button {
 .tf__blog_details_text .list li::after {
   position: absolute;
   content: "";
-  background: url(../images/check_icon_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3754,7 +3727,6 @@ button {
 .tf__course_overview ol li::after {
   position: absolute;
   content: "";
-  background: url(../images/check_icon_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4017,7 +3989,6 @@ button {
 .tf__event_det_center_text ul li::after {
   position: absolute;
   content: "";
-  background: url(../images/check_icon_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4362,7 +4333,6 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../images/banner_bg2.jpg);
 }
 
 .tf__banner_2_text {
@@ -4433,7 +4403,6 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/about_2_bg.jpg);
 }
 
 .tf__home_2_about_img {
@@ -4553,7 +4522,6 @@ button {
 }
 
 .tf__upcoming_event::after {
-  background: url(../images/banner_shape2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4573,7 +4541,6 @@ button {
 
 .tf__counter_2 .tf__counter_area {
   padding: 0;
-  background-image: url(../images/counter_bg2.jpg);
 }
 
 .tf__counter2_overlay {
@@ -4588,7 +4555,6 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/testimonial_bg.jpg);
 }
 
 .tf__testimonial_2_area {
@@ -4700,7 +4666,6 @@ button {
 .tf__team_2::before {
   position: absolute;
   content: "";
-  background: url(../images/arrow_shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -4716,7 +4681,6 @@ button {
 .tf__team_2::after {
   position: absolute;
   content: "";
-  background: url(../images/team_shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -4869,7 +4833,6 @@ button {
 
 /* footer 2 start */
 .tf__footer_2 .tf__footer_apply {
-  background-image: url(../images/footer_apply_bg.jpg);
 }
 .tf__footer_2 .tf__footer_overlay {
   background: #002f6cf5;
@@ -5066,7 +5029,6 @@ button {
   margin: 0;
   height: auto;
   background-position: center top !important;
-  background-image: url(../images/banner_bg3.jpg);
 }
 
 .home_3 .tf__banner_text {
@@ -5104,7 +5066,6 @@ button {
 }
 
 .tf__banner_3 .tf__banner_text::before {
-  background: url(../images/banner_shape3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5151,7 +5112,6 @@ button {
   padding-top: 25px;
   position: relative;
   top: -95px;
-  background-image: url(../images/study_contact_bg.jpg);
 }
 
 .tf__study_contact_text {
@@ -5244,13 +5204,11 @@ button {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  background-image: url(../images/counter_3_bg.jpg);
 }
 
 .tf__counter_3_area::after {
   position: absolute;
   content: "";
-  background: url(../images/counter_3_img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -5287,7 +5245,6 @@ button {
 .tf__counter_3_area::before {
   position: absolute;
   content: "";
-  background: url(../images/banner_shape3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5308,7 +5265,6 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../images/team_3_bg.jpg);
 }
 
 .tf__team_3 .tf__single_team .title:hover {
@@ -5351,7 +5307,6 @@ button {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  background-image: url(../images/contact_3_bg.jpg);
 }
 select.select_js.form-select {
   border: none;
@@ -5525,7 +5480,6 @@ select.select_js.form-select {
   background: var(--colorGreen);
 }
 .tf__footer_3 .tf__footer_apply {
-  background-image: url(../images/footer_apply_bg2.jpg);
 }
 .tf__footer_3 .tf__footer_apply .tf__footer_apply_overlay {
   background: #191e24a3;
@@ -5586,7 +5540,6 @@ select.select_js.form-select {
     SERVICES PAGE START
 ==================================*/
 .tf__single_services {
-  background: url(../images/service_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5624,7 +5577,6 @@ select.select_js.form-select {
 .tf__single_services::before {
   position: absolute;
   content: "";
-  background: url(../images/service_shapes.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -5869,7 +5821,6 @@ select.select_js.form-select {
 .tf__team_description ul li::after {
   position: absolute;
   content: "";
-  background: url(../images/check_icon_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -5884,7 +5835,6 @@ select.select_js.form-select {
 }
 
 .tf__counter_area {
-  background: url(../images/counter_bg.jpg);
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
@@ -5951,7 +5901,6 @@ select.select_js.form-select {
 .tf__team_page::after {
   position: absolute;
   content: "";
-  background: url(../images/team_shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -5968,7 +5917,6 @@ select.select_js.form-select {
 .tf__team_page::before {
   position: absolute;
   content: "";
-  background: url(../images/arrow_shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
