@@ -75,6 +75,7 @@ h2{
         padding: 15px 0;
         background-color: #11366d;
         width: 300px;
+        gap: 20px;
             border-radius: 10px;
             cursor: pointer;
             &:hover{
@@ -84,7 +85,8 @@ h2{
 
             }
             img{
-                width: 70px;
+                width: 50px;
+                opacity: 1;
             }
         h2{
             color: white;

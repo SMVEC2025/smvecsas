@@ -4,7 +4,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Physics",
         category: "UG",
-        icon: "/assets/img/icons/physics.png",
+        icon: "/assets/icons/B.sc-Physics.png",
         desc: "B.Sc Physics is a degree program that studies the fundamental principles of the universe. It is a challenging but rewarding program that can lead to a variety of careers in science, engineering, and technology.\nThe program covers a wide range of topics, including mechanics, thermodynamics, electromagnetism, quantum mechanics, and relativity. Students learn how to use mathematical and problem-solving skills to understand the physical world.\nThe program is designed to prepare students for a variety of careers. Some students go on to work in research or academia, while others work in industry or government. With its strong quantitative background, the program can also prepare students for careers in finance, business, and law.\nIf you are interested in learning about the fundamental principles of the universe and are up for a challenge, then B.Sc Physics is a great option for you.B.Sc Physics A Bachelor of Science in Physics is a challenging but rewarding degree program that requires conceptualization skills and imagination. This is in line with the words of Albert Einstein, who said that “imagination is more important than knowledge.”\nPhysics is a strong discipline in basic sciences that offers a variety of career opportunities. It provides students with a strong foundation in physics and related subjects, such as computer science and mathematics.\nIf you are interested in a challenging but rewarding degree program that will teach you how to think critically and solve problems, then a Bachelor of Science in Physics may be a good fit for you.",
 
         fees: [
@@ -120,7 +120,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Chemistry",
         category: "UG",
-        icon: "/assets/img/icons/chemistry.png",
+        icon: "/assets/icons/B.sc-Chemistry.png",
         desc: "B.Sc Chemistry is a degree program that studies the fundamental principles of chemistry and its applications in other scientific fields. The program is designed to prepare students for a variety of careers in chemistry, as well as other fields that require a strong understanding of chemistry.\nThe program covers a wide range of topics, including organic chemistry, inorganic chemistry, physical chemistry, analytical chemistry, and biochemistry. Students also have the opportunity to participate in research projects and to take elective courses in other disciplines.\nThe program is taught by highly qualified faculty members with extensive experience in teaching and research. The laboratories are well-equipped to support high-quality teaching and research.\nThe program is flexible and allows students to explore their interests in other disciplines. This makes it a good choice for students who are interested in a career in chemistry, but who also want to have the option to pursue other careers.",
         fees: [
             {
@@ -237,7 +237,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Mathematics",
         category: "UG",
-        icon: "/assets/img/icons/maths.png",
+        icon: "/assets/icons/B.sc-Mathematics.png",
         desc: "B.Sc Mathematics is a 3-year undergraduate degree program that studies the quantitative aspects of structures, shapes, and changes. The program trains students in various patterns, formulas, and conjectures. It has become popular in recent years due to the increasing demand for mathematics in a variety of industries.\nB.Sc Mathematics has become popular because of the increasing need for calculations and analysis in various fields. This is because mathematics is a fundamental tool that can be used to solve problems in a variety of disciplines. For example, engineering is a field that relies heavily on mathematics, and the need for mathematical analysis is only going to grow as engineering becomes more complex.\nB.Sc Mathematics is also known as an evergreen field because the knowledge it provides is always in demand. This is because mathematics is a universal language that can be applied to any field. As a result, graduates with a B.Sc Mathematics degree have a wide range of career options available to them.",
         fees: [
             {
@@ -326,7 +326,7 @@ export const ProgramData = [
         name: "B.com Professional Accounting",
         image: "https://example.com/images/english.jpg",
         category: "UG",
-        icon: "/assets/img/icons/accounting.png",
+        icon: "/assets/icons/B.com-Professional-Accounting.png",
         department: "commerce",
         desc: "B.Com. Professional Accounting is a three-year undergraduate degree program that teaches accounting, finance, marketing, economics, management, and taxation. The program is designed to prepare students for careers in accounting and auditing. Students who graduate from the program will have a deep understanding of accounting principles and practices, and they will also have the skills and knowledge necessary to succeed in the workplace.\nThe program is mapped with the Chartered Accountancy program, so students can pursue C.A. qualification after graduating. The program also emphasizes the development of soft skills, such as communication and interpersonal skills, which are essential for success in any career.\nGraduates of the program have many job opportunities in accounting and auditing firms, as well as in other industries. They are also well-prepared for further studies, such as a Master of Business Administration (MBA).",
         fees: [
@@ -390,7 +390,7 @@ export const ProgramData = [
         name: "B.Com. Cost and Management Accounting",
         image: "https://example.com/images/english.jpg",
         category: "UG",
-        icon: "/assets/img/icons/management.png",
+        icon: "/assets/icons/B.Com.-Cost-and-Management-Accounting.png",
         department: "commerce",
         desc: "Cost and Management Accounting is a valuable program for commerce students who want to make a career in management accounting. The program covers a wide range of subjects, including accounting, finance, management, and taxation. It also prepares students for the professional program in Cost and Management Accountancy in India, which is equivalent to the Chartered Accountancy program.\nGraduates of the Cost and Management Accounting program will have an edge over other B.Com. graduates in the Consultancy and Managerial Compliance domain. They will be able to use their skills and knowledge to help businesses improve their financial performance and make better decisions.",
         fees: [
@@ -455,7 +455,7 @@ export const ProgramData = [
         name: "B.Com General",
         image: "https://example.com/images/english.jpg",
         category: "UG",
-        icon: "/assets/img/icons/commerce.png",
+        icon: "/assets/icons/B.Com-General.png",
         department: "commerce",
         desc: "B.Com is a discipline that deals with business and trade. It has evolved over the past five decades to include many subjects, such as accounting, management, law, economics, mathematics, statistics, marketing, banking, and insurance. This is because businesses have become increasingly globalized, and there is a need for people with a strong understanding of commerce to help manage these businesses.\nIn the present scenario, there is a renewed focus on local and regional businesses. This means that there are many opportunities for B.Com graduates to work in these businesses and help them grow. B.Com graduates can also play a role in the development of the economy by helping businesses to create jobs and grow the economy.\nToday Commerce Degree is one of the most sought-after degree by those who come out of school education mainly because of three reasons: (i) the skills acquired through Commerce learning, (ii) myriad opportunities of higher education, and (iii) ever-growing job and career opportunities.  Accounting and Financial Analysis skills are the major skills acquired through a B.Com. degree, in addition to Communication, Documentation, Spreadsheets, and Data Processing Skills.  As to higher education, a commerce graduate can pursue Chartered Accountancy, Cost and Management Accountancy, Masters in Commerce, Masters in Business Administration, Masters in Company Secretaryship, Masters in Bank Management, as well as Law programs throughout the world.  Furthermore, there are many hybrid programs such as M.Sc. in Finance and Economics which admit commerce graduates.  Finally, sky is the limit when it comes to job and career opportunities for the commerce graduates.  They can become Junior Accountants, Tally Experts, Junior Accounts Officers, Payables Administration, Receivables Administration, Pay-Roll Accountants, Junior Tax Consultants, though some of these require certain additional learning in the form of certificate and diploma programmes.",
         fees: [
@@ -559,7 +559,7 @@ export const ProgramData = [
         name: "B.Com. Accounting and Finance",
         image: "https://example.com/images/english.jpg",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.Com.-Accounting-and-Finance.png",
         department: "commerce",
         desc: "B.Com Accounting and Finance is a degree that focuses on the two most important parts of any business: accounting and finance. These two areas regulate the different operations of a business and help to manage financial data and resources. Graduates of this program will be in high demand for senior finance and accounting positions in businesses.",
         fees: [
@@ -625,7 +625,7 @@ export const ProgramData = [
         name: "B.Com Corporate Secretaryship",
         image: "https://example.com/images/english.jpg",
         category: "UG",
-        icon: "/assets/img/icons/secretaty.png",
+        icon: "/assets/icons/B.Com-Corporate-Secretaryship.png",
         department: "commerce",
         desc: "Company Secretaryship is a new form of organization that emerged in India in the 19th century. The number of registered companies in India has increased significantly since the millennium, and there are currently more than 12 lakhs registered companies. This has led to an increase in the demand for company secretaries, who are responsible officers in public and private companies. Company secretaries need to have a wide range of skills, including accounting, finance, economics, and law. They also need to be familiar with the statutory duties of a company secretary. The Degree Program in Commerce with Specialisation in Company Secretaryship is a program that prepares students for a career in company secretaryship.\nThere are many positions available for the one who is pursuing corporate secretaryship career – such as Trainee Secretary, Junior Company Secretary, Assistant Company Secretary, Deputy Company Secretary, and Company Secretary, in addition to being a “Company Secretary in practice”.  Furthermore, these graduates can also be employed in legal as well as finance departments for their hold on Accounting and Law courses in the programme.  The graduates in Corporate Secretaryship can pursue further education in Law (with specialisations in Labour and Industrial Laws, Company Law, or Taxation Law), Masters in Corporate Secretaryship, Masters in Commerce, Master of Business Administration, Master of Bank Management, and more particularly the much-coveted qualification, viz., the Associate Membership in the Institute of Company Secretaries in India (ICSI).  There are a plenty of job opportunities available even to those who complete the intermediate examination of ICSI, which is quite possible as a parallel to Corporate Secretaryship Degree learning.",
         fees: [
@@ -764,7 +764,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: 'business studies',
         category: "UG",
-        icon: "/assets/img/icons/businessadmin.png",
+        icon: "/assets/icons/BBA---Bachelor-of-Business-Administration.png",
         desc: "Enterprises are all around us, in the form of businesses, service providers, government agencies, and more. Managing an enterprise requires a wide range of skills, including knowledge of finance, marketing, human resources, operations, and systems. Managers must also be able to effectively manage people and build relationships.\nA BBA program teaches you the basics of managing a business enterprise. It doesn’t require you to have a deep understanding of any particular field, but it does give you a broad overview of different business domains. This makes you a well-rounded manager who can work in any industry.\nIf you’re interested in pursuing a Master’s in Business Administration (MBA), a BBA is a great foundation. MBA programs typically require students to have a bachelor’s degree in business or a related field.",
         fees: [
             {
@@ -841,7 +841,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "business studies",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.B.A.-Fintech-and-Digital-Banking.png",
         desc: "This program teaches students about fintech and digital banking. It is a three-year degree program with a practical learning approach. Students will learn the tools and techniques of fintech and digital banking, and they will also have the opportunity to work on live projects. The curriculum is designed to ensure that students are employable after graduation. The program also includes field work, industry interaction, and internships, which helps students develop their skills and knowledge. This program is a good choice for students who want to pursue a career in finance or banking.",
         fees: [
             {
@@ -907,7 +907,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "computational studies",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.Sc.-Computer-Science.png",
         desc: "The Department of Computer Science at School of Arts and Science, Sri Manakula Vinayagar Engineering College strives to create outstanding computer professionals with values to reshape the nation’s destiny. The training imparted aims to prepare young minds for the challenging opportunities in the IT industry with a global awareness. The department offers a flexible curriculum that allows students to explore their own interests in increasing depth. The department has a strong commitment to excellence in undergraduate education. The curriculum is intensive and hands-on, with an emphasis on theory that distinguishes our degree from most other colleges and institutes. Our faculty, students, and staff are central to our success as one of the most thriving and sought-after departments.\nThe Department of Computer Science was established in 2020 to provide quality education in the field of computer science. The department has modern facilities for teaching, learning, and research. It offers a wide range of research opportunities and programs of study at the undergraduate level. The department has produced quality professionals who hold important positions in the IT industry in India and abroad.\nThe department’s close ties to industry ensures that students get a rigorous, relevant, and broad education. The department’s world-class laboratory gives students access to the latest and coolest technologies. This enlivens the curriculum, provides research and summer job opportunities, and makes the department a very exciting place to study computer science.",
         fees: [
             {
@@ -1030,7 +1030,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "computational studies",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.Sc-Data-Science-and-Analytics.png",
         desc: "Data science is a field of study that uses large amounts of data to find hidden trends and patterns. This information can be used to make better decisions. Companies collect vast amounts of data, and they use data science tools and techniques to build predictive models.\nB.Sc Data Science and Analytics is a field that can be easy to learn with proper guidance. However, it is a vast field, and it can be easy for beginners to get lost. Our B.Sc Data Science and Analytics Programme can help you learn all the concepts from the beginning.\nData scientists collect, analyze, and interpret large amounts of data. They use their knowledge of mathematics, statistics, and computer science to find patterns and trends in data. This information can be used to make better decisions, improve products, and understand customer behavior.\nData scientists are a relatively new field, but they are in high demand. This is because the amount of data that businesses collect is growing exponentially, and there is a need for people who can make sense of it.\nIf you are interested in a career in data science, there are a few things you can do to prepare. First, you should develop your skills in mathematics, statistics, and computer science. You should also learn about the different tools and techniques that data scientists use.\nThere are many online resources that can help you learn about data science. You can also find data science courses at colleges and universities.",
         fees: [
             {
@@ -1145,7 +1145,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "computational studies",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/BCA---Bachelor-of-Computer-Application.png",
         desc: "BCA the department emphasizes value based quality education in Computer Application and the curriculum reflects the depth and width of Computer Application where emphasis is laid on practical understanding of technology and offers the three year degree in BCA. The class room is designed with an IT environment and equipped with projectors. The lab consists of state of the art Desktop machines. All the students visit industrial houses as a part of their academic work to get practical exposure. The Department enjoys good relations with some of the top IT Companies like CTS, WIPRO, INFOSYS and HCL. The placement cell process provides students with every opportunity to enter these top ranking companies.\nThe department is involved in research and academic activities. The research areas of the department include data mining, bioinformatics, image processing, wireless networks, grid computing, cloud computing, and speech recognition. The department has published many research papers in peer-reviewed journals.\nThe department has a team of experienced teachers who train students in the latest technology. Students are also given opportunities to participate in technical seminars, guest lectures, personality development programs, aptitude tests, group discussions, and industrial visits. The department also offers value-added courses, soft skill development programs, and job-oriented courses to help students find employment. The department has well-equipped laboratories and spacious classrooms. The infrastructure and quality of education offered by the department have been well appreciated by researchers and academicians.",
         fees: [
             {
@@ -1264,7 +1264,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "french",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.A.-French.png",
         desc: "French is an official language in 29 countries of the world and is spoken in five continents. It is the language of international relations and diplomacy, and is the official language of many international organizations. Having a strong understanding of French will open up many career opportunities for students.\nThe B.A French Literature program covers French and Francophone literature, listening, speaking, reading, and writing skills, linguistics, translation, history, culture, and civilization of France. In today’s increasingly multicultural world, foreign languages are essential tools for global citizenship. Every course in the program is designed to help students develop skills for effective intercultural communication, which will improve their educational opportunities and career prospects in a globalized and interconnected world.\nThe B.A. French curriculum focuses on teaching the four major language skills: listening, speaking, reading, and writing. The courses are designed to help students use language creatively and spontaneously. They also include skill-based modules like linguistics, translation, interpretation, tourism, and information technology.\nIn addition to language skills, students also learn about the history, culture, and literature of France. They analyze major social, political, and cultural events from the medieval to contemporary period. They also study contemporary France and its relations with the French speaking world.",
         fees: [
             {
@@ -1312,7 +1312,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "english",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.A-English.png",
         desc: "The B.A English department is committed to creating a rational environment through artistic creation, critical thinking, and modern thought. The department offers a wide range of innovative courses as part of the choice-based credit system. These courses combine the traditional concept of exposing students to the distinctive characteristics of each literary period and genre with the political readings of the present day.\nThe B.A English program develops students’ ability to interpret texts both aesthetically and theoretically. It offers a variety of innovative courses, such as English through Soft Skills, English through Interpersonal Skills, English for Conversational Skills, Shakespearean Studies, Introduction to Translation Studies, Linguistics, Diaspora Literature, and Asian Literature in English.\nThe department is a thriving academic community of teachers and students who are dedicated to sharpening their skills in various fields of their specialization through performance-oriented education. Prominent faculty members are continually engaged in providing the best possible education to undergraduate students.",
         fees: [
             {
@@ -1410,7 +1410,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "tamil",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.A.-Tamil.png",
         desc: "B.A. Tamil is a three-year undergraduate program designed to provide in-depth knowledge of the Tamil language, literature, culture, and history. The course covers classical and modern Tamil literature, grammar, poetry, prose, and linguistics, giving students a strong foundation in both traditional and contemporary aspects of the Tamil language. It also helps students appreciate the richness and heritage of Tamil, one of the world's oldest and most vibrant languages.\nThe program not only nurtures linguistic skills but also enhances analytical, critical thinking, and interpretative abilities through the study of various literary works and cultural texts. Students get opportunities to explore Sangam literature, Bhakti poetry, modern Tamil novels, folk literature, and the influence of Tamil in media and society. In addition, subjects such as Tamil journalism, translation, and comparative literature open up interdisciplinary learning paths.\nGraduates of B.A. Tamil have diverse career options including teaching, content writing, translation, media, publishing, and civil services. They can work as Tamil teachers, language specialists, scriptwriters, or pursue higher education like M.A., M.Phil., or Ph.D. in Tamil. With the increasing importance of regional language content in digital platforms and education, the demand for skilled Tamil language professionals continues to grow both in India and abroad.",
         fees: [
             {
@@ -1487,7 +1487,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Bio-Science",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.Sc.-Bio-technology.png",
         desc: "A blend of biology and technology, biotechnology offers a rewarding career to those who have interests in application of technology as well as research.\nThe demand for professionals in the life sciences field is high in India. This is because the country is an agrarian economy and has a growing population. There is a need for professionals who can improve agricultural practices and develop new medicines.\nThere are many organizations that are looking for qualified professionals in the life sciences field. Technical colleges are trying to meet the demand, but a large number of students who are engaged in cutting-edge research leave India to complete their research projects.\nBiotechnology has been making steady progress in India in the last decade and a half. However, many students who study biotechnology in India tend to move abroad after completing their research. This is because there are more opportunities for research and development in foreign countries.",
         fees: [
             {
@@ -1578,7 +1578,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Bio-Science",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.Sc-Microbiolog-food.png",
         desc: "Microbiology is the study of the biology of microscopic organisms – viruses, bacteria, algae, fungi, slime molds, and protozoa. The methods used to study and manipulate these minute and mostly unicellular organisms differ from those used in most other biological investigations. Many microorganisms are unique among living things in their ability to use gaseous nitrogen from the air for their nutritional requirements, or to degrade complex macromolecules in such materials as wood.\nRecombinant DNA technology uses microorganisms, particularly bacteria and viruses, to amplify DNA sequences and generate the encoded products. Moving genes from one microorganism to another, or amplifying them within microorganisms, permits application of microbial skills to solve medical and environmental problems. By rearranging the genes that control these and other processes, scientists seek to engineer microorganisms that will process wastes, fertilize agricultural land, produce desirable biomolecules, and solve other problems inexpensively and safely.\nMicrobiologists pursue careers in many fields, including agricultural, environmental, food, and industrial microbiology, public health, resource management, basic research, education and pharmaceuticals.",
         fees: [
             {
@@ -1650,7 +1650,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Food Science",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.Sc.-Nutrition-and-Dietetics.png",
         desc: "A BSc in Nutrition and Dietetics is a course that combines the study of nutrition and dietetics. It teaches students about the science of nutrition, how to create healthy diets, and how to help people with special dietary needs. The course also covers research methods and techniques, so that graduates can conduct their own research in the field of nutrition.\nThe course is highly in demand, as people are becoming more aware of the importance of eating a healthy diet. Graduates can work in a variety of settings, including hospitals, clinics, schools, and private practice. They can also work as researchers or consultants.\nDietitians have more advanced training and qualifications, and they can provide medical advice. They typically work in hospitals, clinics, and healthcare centers.\nNutritionists do not have as much training, but they can still provide general nutrition advice. They typically work in private practice or in other settings that do not require medical advice.",
         fees: [
             {
@@ -1747,7 +1747,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Media Studies",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.Sc.-Visual-Communication.png",
         desc: "B.Sc. Visual Communication is a three-year degree course that covers a wide range of subjects related to the media industry. It is designed to help students develop the skills and knowledge they need to become successful media professionals.\nThe course includes subjects such as graphic design, photography, videography, and web design. Students also learn about the history and theory of visual communication.\nThe course is taught by experienced professionals who work in the media industry. Students have the opportunity to gain hands-on experience in the department’s hi-tech studios.\nGraduates of the B.Sc. Visual Communication course are well-prepared for careers in a variety of media-related fields. They can work as graphic designers, photographers, videographers, web designers, or in other related roles.",
         fees: [
             {
@@ -1853,7 +1853,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Media Studies",
         category: "UG",
-        icon: "/assets/img/icons/",
+        icon: "/assets/icons/B.A.-Journalism-&-Mass-communication.png",
         desc: "Bachelor of Arts in Journalism and Mass Communication is a three-year program that teaches students how to communicate their ideas to the public. The program is designed to give students a voice in the media world. In a democracy, the freedom of expression is important, and the media plays a crucial role in upholding this freedom. The program prepares students for the demands of the media profession, and it emphasizes accuracy, fairness, and knowledge.\nThe curriculum of the Bachelor of Arts in Journalism and Mass Communication program is designed to help students learn how to communicate their ideas effectively. The program includes lectures, workshops, seminars, and independent projects. Students will also be encouraged to attend press events and conferences to learn more about the media industry. By the end of the program, students will have a comprehensive understanding of the different aspects of journalism and mass communication.\nThe visual communication program is designed to help students develop their creativity and understanding of media. Students will learn about the concepts, theories, aesthetics, and skills of visual communication, covering topics such as visual persuasion, photography, graphic design, cultural and ethical issues, and visualization of ideas. They will also have the opportunity to work on relevant project works and case studies.\nThrough hands-on practice, students will learn to apply theories into practice and to become creative and effective communicators in the media world. They will also be trained in the technical skills they need to excel in the media industry.",
         fees: [
             {
@@ -1958,6 +1958,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Physics",
         category: "PG",
+        icon:'/assets/icons/M.Sc.-Physics.png',
         desc: "M.Sc. Physics is a two-year postgraduate program that develops students’ problem-solving, analytical, and critical thinking skills. It also teaches students about mathematics and physics. This program can help students get jobs in research and development, teaching, and scientific research.\nThe program covers a wide range of topics, including mathematical physics, classical mechanics, quantum mechanics, solid state physics, atomic spectroscopy, nuclear physics, relativity and cosmology, classical electrodynamics, advanced optics, statistical mechanics, group theory, and astrophysics.\nStudents who are interested in physics and research should consider this program. The training will give them the skills they need to work with cutting-edge technology and make a big impact in the field.\nPh.D. programmes are excellent employment options after earning an M.Sc. in Physics. It also makes it easier for them to get higher-paying jobs and gain more knowledge and expertise. The Ph.D. in Physics, Ph.D. in Geo Physics, Ph.D. in Green energy technology, Ph.D. in Nanotechnology, and Ph.D. in Nuclear Physics are some of the common specialties that students should choose for their Ph.D. M.Sc. physics graduates can find work in both the public and private sectors. Online tutor, College lecturer, Assistant Professor, Observation Scientist, Laboratory Technician, School Science Technician, Research Analyst, etc. are some of the common employment descriptions for Physics lovers. Graduates in M.Sc. Physics are in high demand in the industries of aerospace and defence, automobiles, railways, nuclear and renewable energy, oil and gas, electronics and telecommunications and manufacturing. A person can try to aim for some prestigious and well-known national organisations after completing a postgraduate degree in physics, such as the Defence Research and Development Organisation (DRDO), Indian Space Research Organisation (ISRO), Bhabha Atomic Research Centre (BARC), Indira Gandhi Centre for Atomic Research Centre, etc. Students with an M.Sc. in Physics degree have the option of pursuing further careers such as software engineering, network administration, information technology consulting, security expert, systems support administrator, interface engineering, etc.",
         fees: [
             {
@@ -2056,6 +2057,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: "Chemistry",
         category: "PG",
+        icon:'/assets/icons/M.Sc-Chemistry.png',
         desc: "M.Sc Chemistry is a two year science program at the Master’s Degree level. It impart an advance level theoretical and practical knowledge in the major fields of inorganic, organic, physical, analytical, material and computational chemistry.\nM.Sc Chemistry offers huge scope to candidates who have pursued a degree in MSc Chemistry. They can opt for a teaching job as a professor or a teacher. They can also work in Pharmaceutical Companies, Laboratories, Research Centers, Medical Colleges, private clinics and other organizations. There are further higher education choices, such as PhD, various job positions. After completing M.Sc. Chemistry program, students will be able to\ndevelop new molecules or innovative techniques with industrial and societal applications\nappreciate the central role of chemistry in our society and use this as a basis for ethical behavior in issues facing chemists including an understanding of safe handling of chemicals, environmental issues and key issues facing our society in energy, health and medicine.\ndevelop critical thinking and analysis skills to solve complex chemical problems.",
         fees: [
             {
@@ -2158,6 +2160,7 @@ export const ProgramData = [
         image: "https://example.com/images/english.jpg",
         department: 'computational studies',
         category: "PG",
+        icon:'/assets/icons/M.Sc-Computer-Science-commerce.png',
         desc: "M.Sc Computer Science is designed to provid an insight into computing through advance concepts, principles, strategies and skill supplemented with pratical knowledge to effectively develop and work with a range of technologies to build system and application that will help apply in real time computing.",
         fees: [
             {
@@ -2219,6 +2222,7 @@ export const ProgramData = [
     {
         name: "Master of Commerce (M.Com)",
         image: "https://example.com/images/english.jpg",
+        icon:'/assets/icons/Master-of-Commerce-(M.Com).png',
         department: "commerce",
         category: "PG",
         desc: "Commerce explores a wide range of aspects, from investment to buying and selling, from making a profit to sustainable business practices, from packaging and distributing products to supply and demand, and everything in between. One of the latest and most important developments is E-commerce or Electronic Commerce, which represents the transaction of goods or services online.\nThe main branches of Commerce are Trade, Transport, Warehousing, Insurance, Banking, Advertising and Marketing. Some of these branches are specific subdisciplines of Commerce, while others — like Advertising, Banking, or Marketing — are independent disciplines, part of the broader Business field.\nA post graduate degree in Commerce degree includes subjects like Financial Accounting, Business Analytics, Micro and Macroeconomics, Statistics, Marketing, Organizational Behaviour, Principles of Economics, Business Communication, Branding, etc.\nBecause trading is an essential day-to-day activity, graduates in commerce can easily find positions in corporations, small businesses, non-profit organisations, banks, outsourcing, insuring, audit and consulting firms, in governmental agencies or in the e-commerce industry.",
@@ -2271,6 +2275,7 @@ export const ProgramData = [
     {
         name: "M.A. English",
         image: "https://example.com/images/english.jpg",
+        icon:'/assets/icons/M.A.-English.png',
         department: "english",
         desc: "The history of the Department of English inaugurates along with the inception of the Sri Manakula Vinayagar School of Arts and Science College. Initially, the Department started the undergraduate degree programme in English Literature and owing to popular demand; the postgraduate programme was started in the year 2023 by incorporating contemporary trends and critical thinking.\nThe Department of English is dedicated and provides a ground-breaking course offered to postgraduate students by considering New Educational Policy. The programme advances students to critically evaluate and enhance Classical to Contemporary Literary acquaintance. A few courses are Tamil Literature in English Translation, Green Literature, Revisiting Classics, Disabilities Studies, Translation and Other World Literature.\nThis programme integrates research and creative thinking which enables student’s analytical skills and artistic thinking. The Department built-in with state of arc syllabi and qualified faculty members who are delivering the best education to the postgraduates.",
         fees: [
