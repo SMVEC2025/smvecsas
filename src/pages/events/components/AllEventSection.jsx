@@ -45,7 +45,9 @@ const [day, month, year] = dateStr?.split("/").map(Number);
       window.scrollTo(0, 200);
     }, 500);
   };
-
+  function handleclick(slug){
+navigate(`/event/${slug}`)
+  }
   return (
     <div className="events_main">
       <TabSwitcher />
@@ -61,8 +63,8 @@ const [day, month, year] = dateStr?.split("/").map(Number);
             </div>
           </div>
           <div className="row">
-            {currentEventItems.map((item, index) => (
-              <div className="col-xl-4 col-md-6 wow fadeInUp" key={index}>
+            {currentEventItems?.map((item, index) => (
+              <div onClick={()=>{handleclick(item.slug)}} className="col-xl-4 col-md-6 wow fadeInUp" key={index}>
                 <div className="tf__single_event">
                   <div className="tf__single_event_img">
                     <img
@@ -80,7 +82,7 @@ const [day, month, year] = dateStr?.split("/").map(Number);
                         <i><SlCalender /></i> {item?.acf?.date}
                       </li>
                     </ul>
-                    <Link className="title" to={`/events/${item.slug}`}>
+                    <Link className="title" to={`/event/${item.slug}`}>
                       {item?.acf?.name}
                     </Link>
                     <p className="pb-5">{item?.acf?.intro}</p>

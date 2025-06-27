@@ -6,7 +6,7 @@ function About() {
   return (
     <div className='ug-about'>
         <div className='left'>
-         <img src="https://smvec.ac.in/wp-content/uploads/2024/06/Sri_Manakula_Vinayagar_Engineering_College.webp" alt="" />
+         <img src="/assets/img/image/Sri_Manakula_Vinayagar_Engineering_College.webp" alt="Sri_Manakula_Vinayagar_Engineering_College.webp" />
         </div>
         <div className='right'>
             <h3>About SMVEC School of Arts and Science</h3>
