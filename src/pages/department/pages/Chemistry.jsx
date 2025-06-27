@@ -31,7 +31,7 @@ function Chemistry() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`} image='/assets/img/department/chemistry.png'/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/chemistry.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision  missionData={MissionData}/>

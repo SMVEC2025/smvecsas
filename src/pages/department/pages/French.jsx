@@ -30,7 +30,7 @@ function French() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`} image='/assets/img/department/france.png'/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/france.webp'/>
     <About data={aboutData}/>
     {/* <HodSection HodData={HodData}/> */}
     <MissionVision missionData={missionData}/>

@@ -31,7 +31,7 @@ function ManagementStudies() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`} image='/assets/img/department/business.png'/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/business.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision missionData={missionData}/>

@@ -31,7 +31,7 @@ const missionData ={
   
   return (
    <>
-    <Home title={`Department of ${page}`}  image='/assets/img/department/viscom.png'/>
+    <Home title={`Department of ${page}`}  image='/assets/img/department/viscom.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision missionData={missionData}/>

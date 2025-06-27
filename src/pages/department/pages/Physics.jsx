@@ -30,7 +30,7 @@ function Physics() {
   }
   return (
     <>
-      <Home title={`Department of ${page}`} image='/assets/img/department/physics.png' />
+      <Home title={`Department of ${page}`} image='/assets/img/department/physics.webp' />
       <About data={aboutData} />
       <HodSection HodData={HodData} />
       <MissionVision missionData={missionData} />

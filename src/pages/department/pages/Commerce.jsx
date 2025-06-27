@@ -37,7 +37,7 @@ function Commerce() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`} image='/assets/img/department/bcom.png'/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/bcom.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision missionData={MissionData}/>

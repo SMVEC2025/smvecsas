@@ -26,7 +26,7 @@ function BioScience() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`} image='/assets/img/department/bioscience.png'/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/bioscience.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision/>

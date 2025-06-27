@@ -30,7 +30,7 @@ function FoodScience() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`} image='/assets/img/department/foodscience.png'/>
+    <Home title={`Department of ${page}`} image='/assets/img/department/foodscience.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision missionData={missionData}/>
