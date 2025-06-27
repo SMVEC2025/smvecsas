@@ -1,6 +1,6 @@
 
 .college-404-container {
-  background: linear-gradient(to bottom, #f0f4ff, #d0e0ff);
+  background: linear-gradient(to bottom, #f0e6ff, #f0e6ff);
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -19,15 +19,16 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: 5;
 }
 
 .book {
-  width: 40px;
+  width: 80px;
   height: 30px;
   position: absolute;
   border-radius: 4px;
   animation: floatBook 10s linear infinite;
+  z-index: 3;
   img{
     width: 100%;
     height: auto;
@@ -41,11 +42,11 @@
 @keyframes floatBook {
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: 0.6;
+    opacity: 1;
   }
   100% {
     transform: translateY(-120vh) rotate(360deg);
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -81,6 +82,18 @@
   border-radius: 12px;
   max-width: 500px;
   animation: fadeIn 1.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img{
+    width: 50vw;
+    
+    @media (max-width:600px) {
+      width: 90vw;
+      
+    }
+  }
 }
 
 @keyframes fadeIn {
@@ -121,7 +134,7 @@
 }
 
 .college-buttons button {
-  background-color: #003366;
+  background-color: #33419a;
   color: white;
   border: none;
   padding: 12px 18px;
@@ -129,6 +142,12 @@
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s ease;
+    @media (max-width:600px) {
+ padding: 7px 10px;
+  font-size: 15px;
+  border-radius: 5px;      
+    }
+
 }
 
 .college-buttons button:hover {
