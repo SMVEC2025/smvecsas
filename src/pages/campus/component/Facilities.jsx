@@ -72,13 +72,13 @@ function Facilities() {
       name: 'sports',
       subheading: null,
       para: 'Vibrant sports facilities at SMVEC foster team spirit, fitness, and enthusiasm across a range of outdoor games.',
-      img: '/assets/img/campus/ground.jpg'
+      img: '/assets/img/campus/ground.webp'
     },
     {
       name: 'canteen',
       subheading: null,
       para: 'Our hygienic canteen serves a variety of delicious meals and snacks, making it a favorite hangout spot for students.',
-      img: '/assets/img/campus/Canteen.png'
+      img: '/assets/img/campus/Canteen.webp'
     }
   ];
 

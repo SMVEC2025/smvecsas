@@ -16,7 +16,7 @@ function HomeSocial() {
     <div className='home_socail-main'>
       <Header title='stay connected' />
       <div className='content'>
-        <div className='left' style={{ backgroundImage: 'url(/assets/img/socialmedia/imageleft.png)' }}>
+        <div className='left' style={{ backgroundImage: 'url(/assets/img/socialmedia/imageleft.webp)' }}>
           <section className='facebook' onClick={()=>{handleNavigation('https://www.facebook.com/SMVECOfficial')}}>
             <p>From a single vision to 25 years of impact, this was a moment of pride, gratitude, and inspiration.</p>
             <span><span className='logo_t facebook'><SlSocialFacebook /></span>@SMVEC</span>
@@ -26,7 +26,7 @@ function HomeSocial() {
           <p>From a single vision to 25 years of impact, this was a moment of pride, gratitude, and inspiration.</p>
           <span><span className='logo_t'><FaXTwitter /></span>@SMVEC</span>
         </div>
-        <div className='right'  style={{ backgroundImage: 'url(/assets/img/socialmedia/imageright.png)' }}>
+        <div className='right'  style={{ backgroundImage: 'url(/assets/img/socialmedia/imageright.webp)' }}>
           <section className='insta' onClick={()=>{handleNavigation('https://www.instagram.com/smvec_official/')}}> 
             <p>From a single vision to 25 years of impact, this was a moment of pride, gratitude, and inspiration.</p>
             <span><span className='logo_t insta'><FaInstagram /></span>@SMVEC</span>
