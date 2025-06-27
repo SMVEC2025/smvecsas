@@ -14,7 +14,7 @@ function Counter() {
   return (
     <div className='home-counter'>
         <div className='img-container'>
-            <img src="/assets/img/image/auditorium.JPG" alt="" />
+            <img src="/assets/img/image/auditorium.webp" alt="" />
         </div>
         <div>
                 <div className="counter-section" ref={ref}>

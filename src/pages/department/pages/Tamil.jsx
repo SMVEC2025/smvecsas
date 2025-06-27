@@ -30,7 +30,7 @@ function Tamil() {
   }
   return (
    <>
-    <Home title={`Department of ${page}`}/>
+    <Home title={`Department of ${page}`} image='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mk3qDELXEniKlj4r/adobestock_200491542-YZ9xbW14bMTE3rNG.jpeg'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
     <MissionVision missionData={missionData}/>

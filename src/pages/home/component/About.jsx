@@ -6,7 +6,7 @@ function About() {
   return (
     <div className='about-main'>
       <div className='left'>
-        <img src="/assets/img/image/entrance.jpg" alt="" />
+        <img src="/assets/img/image/entrance.webp" alt="" />
       </div>
       <div className='right'>
         <h2>Welcome to <br></br> SMVEC School of Arts and Science</h2>

@@ -44,9 +44,9 @@ function HomeNewsAndEvents({ title,eventurl,dept }) {
                     className="mySwiper"
                 >
                     {filteredData?.map((event, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide style={{cursor:"pointer"}} key={index} onClick={()=>{navigate(`/event/${event.slug}`)}}>
                             <img src={event.acf.image} alt="" />
-                            <div className="bottom" onClick={()=>{navigate(`/event/${event.slug}`)}}>
+                            <div className="bottom" >
                                 <div className="left">
                                     <h2>{event.acf.date?.split('/')[0]}</h2>
                                     <h4>{event.acf.date?.split('/')[1]}/{event.acf.date?.split('/')[2]}</h4>

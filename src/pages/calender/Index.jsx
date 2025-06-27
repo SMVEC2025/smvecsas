@@ -297,7 +297,7 @@ const Index = () => {
   }
 
   return (
-    <div className="calendermain" style={{ backgroundImage: `url('/assets/img/image/entrance.jpg')` }}>
+    <div className="calendermain" style={{ backgroundImage: `url('/assets/img/image/entrance.webp')` }}>
       <div className="layer">
         <div className="calendar-container">
           <h2 className="calendar-title"> 

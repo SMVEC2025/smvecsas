@@ -1,4 +1,4 @@
-import mainimg from "/assets/img/board/auditorium.jpg"
+import mainimg from "/assets/img/image/auditorium.webp"
 
 
 
