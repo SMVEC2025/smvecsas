@@ -30,11 +30,13 @@
   </head>
   <body>
       <!-- moving no script to body coz vite doesnt allow me to use this inside head -->
-  <noscript>
+ 
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+     <noscript>
     <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=649136718849525&ev=PageView&noscript=1" />
     </noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
