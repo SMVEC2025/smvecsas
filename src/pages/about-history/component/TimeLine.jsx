@@ -5,7 +5,7 @@ const historyData = [
   {
     id: 1,
     year: "1999",
-    imgSrc: "/assets/img/history/history-thumb-1.png",
+    imgSrc: "/assets/img/history/history-",
     title: "1999",
     description: "Sri Manakula Vinayagar Engineering College (SMVEC) was founded by the Sri Manakula Vinayaga Educational Trust to provide quality, affordable education, especially for underprivileged communities.",
     thumbPosition: "left",
