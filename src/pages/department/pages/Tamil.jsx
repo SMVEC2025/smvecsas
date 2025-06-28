@@ -10,7 +10,8 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
-import { Helmet } from 'react-helmet'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 function Tamil() {
   const page = "tamil"
   const aboutData = {
@@ -31,11 +32,11 @@ function Tamil() {
   }
   return (
     <>
-      <Helmet>
+      <HelmetProvider>
         <title>Tamil | SMVEC SAS</title>
         <meta name="description" content="Start your carreer today in Tamil" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
       <Home title={`Department of ${page}`} image='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mk3qDELXEniKlj4r/adobestock_200491542-YZ9xbW14bMTE3rNG.jpeg' />
       <About data={aboutData} />
       <HodSection HodData={HodData} />

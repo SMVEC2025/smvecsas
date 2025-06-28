@@ -10,7 +10,8 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
-import { Helmet } from 'react-helmet'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 function ManagementStudies() {
   const page = "business studies"
   const aboutData={
@@ -32,11 +33,11 @@ function ManagementStudies() {
   }
   return (
    <>
-    <Helmet>
+    <HelmetProvider>
         <title>Business studies | SMVEC SAS</title>
         <meta name="description" content="Start your carreer today in Business studies" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
     <Home title={`Department of ${page}`} image='/assets/img/department/business.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>

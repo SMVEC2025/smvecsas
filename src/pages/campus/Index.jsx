@@ -4,16 +4,17 @@ import BreadcrumbTwo from '../../components/breadcrumb/BreadCrumb'
 import Footer from '../../components/footer/Footer'
 import Facilities from './component/Facilities'
 import Test from '../home/component/Test'
-import { Helmet } from 'react-helmet'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 function Index() {
   return (
     <>
-       <Helmet>
+       <HelmetProvider>
         <title>Campus Life | SMVEC SAS</title>
         <meta name="description" content="Explore our campus life" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
     <BreadcrumbTwo title="Campus life" subtitle="campus life"/>
     <Facilities/>
       

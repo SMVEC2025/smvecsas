@@ -16,7 +16,8 @@ import { AppContext } from "../../context/AppContext"
 import Placements from "./component/Placements"
 import ScrollToTop from "../../components/scrolltotop/ScrollToTop"
 import FormContainer from "./component/FormContainer"
-import { Helmet } from "react-helmet"
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 function Index() {
   const {setCurrentPage}=useContext(AppContext)
   useEffect(() => {
@@ -43,11 +44,11 @@ function Index() {
  
   return (
      <>
-     <Helmet>
+     <HelmetProvider>
         <title>Best Arts and science college in pondicheery</title>
         <meta name="description" content="SMVEC school of arts an science is the best college in pondicherry" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
     <div>
       <ScrollToTop/>
       <Hero />

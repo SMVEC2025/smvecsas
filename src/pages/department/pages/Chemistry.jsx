@@ -10,7 +10,8 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
-import { Helmet } from 'react-helmet'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 function Chemistry() {
   const page = "Chemistry"
   const aboutData={
@@ -32,11 +33,11 @@ function Chemistry() {
   }
   return (
    <>
-   <Helmet>
+   <HelmetProvider>
         <title>Chemistry | SMVEC SAS</title>
         <meta name="description" content="Start your carreer today in chemistry" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
     <Home title={`Department of ${page}`} image='/assets/img/department/chemistry.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>

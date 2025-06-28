@@ -11,7 +11,8 @@ import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
 import { AppContext } from '../../../context/AppContext'
-import { Helmet } from 'react-helmet'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 function Commerce() {
   const {currentPage,setCurrentPage}=useContext(AppContext)
   const page = "commerce"
@@ -38,11 +39,11 @@ function Commerce() {
   }
   return (
    <>
-       <Helmet>
+       <HelmetProvider>
         <title>Commerce | SMVEC SAS</title>
         <meta name="description" content="Start your carreer today in commrerce" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
     <Home title={`Department of ${page}`} image='/assets/img/department/bcom.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>

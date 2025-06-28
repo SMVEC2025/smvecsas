@@ -10,7 +10,8 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
-import { Helmet } from 'react-helmet'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 function English() {
   const page = "English"
   const aboutData={
@@ -27,11 +28,11 @@ function English() {
   }
   return (
    <>
-      <Helmet>
+      <HelmetProvider>
         <title>English | SMVEC SAS</title>
         <meta name="description" content="Start your carreer today in English" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
     <Home title={`Department of ${page}`}/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>

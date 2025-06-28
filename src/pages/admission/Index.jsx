@@ -6,16 +6,17 @@ import Footer from '../../components/footer/Footer'
 import Highlights from './components/Highlights'
 import Programs from './components/Programs'
 import SectionTwo from '../about/component/SectionTwo'
-import { Helmet } from 'react-helmet'
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 function Index() {
   return (
     <>
-      <Helmet>
+      <HelmetProvider>
         <title>Admission | SMVEC SAS</title>
         <meta name="description" content="Admission open for arts and science start your carreer today" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </Helmet>
+      </HelmetProvider>
       <div className='admission_main'>
         <div className='af_main'>
           <Form />
