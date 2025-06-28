@@ -20,7 +20,7 @@ function Physics() {
   }
   const programDetails = ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData = {
-    image: "/assets/img/department/hod/physics.png",
+    image: "/assets/img/department/hod/physics.webp",
     name: "Dr.T.Jayavarthanan",
     message: "Vinayagar Engineering College.Physics serves as the cornerstone of all natural sciences and plays a pivotal role in shapingthe technologies and innovations of tomorrow. At our department, we are dedicated to excellence in teaching, research and hands-on learning. We offer both undergraduate and postgraduate programs that provide students with a solid theoretical foundation, practical competencies and the confidence to pursue careers in academia, industry and scientific research.Our faculty members are passionate educators and active researchers, contributing to a wide range of fields including condensed matter physics, spectroscopy, nanoscience, astrophysics and medical physics. To enhance student engagement beyond the classroom, we regularly organize workshops,seminars, science exhibitions, international conferences and sky-watching events, fostering both knowledge and curiosity.We take pride in nurturing an environment where students are encouraged to think critically, explore independently and embrace lifelong learning. Our well-equipped laboratories, strong academic resources and committed mentorship ensure that every learner is prepared to meet the challenges of a rapidly evolving scientific world."
   }

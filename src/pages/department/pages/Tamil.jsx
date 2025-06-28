@@ -20,7 +20,7 @@ function Tamil() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"/assets/img/department/faculty/tamil/Dr.M.VANITH.png",
+    image:"/assets/img/department/faculty/tamil/Dr.M.VANITH.webp",
     name:"Dr.M.VANITHA",
     message:"தமிழுக்கு அமுதென்றுபேர் - அந்தத் தமிழ் இன்பத்தமிழ் எங்கள் உயிருக்கு நேர்! - பாவேந்தர் பாரதிதாசன்.Language is more than a communication tool—it is a vessel that carries the essence of a civilization, its culture, values, and wisdom. Tamil, one of the world’s oldest languages, is a literary treasure that spans over 5,000 years. Our department strives to instill a deep appreciation for the richness of Tamil among today’s youth. Through dedicated teaching and celebration of the languages nuances, we aim to empower our students to excel academically and culturally. எங்கும் உள்ளது என்தமிழ்! இமயத்தின் எல்லை கண்ட என்தமிழ்! என்றும் வாழியவே!"
   }

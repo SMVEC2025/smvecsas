@@ -20,7 +20,7 @@ function Chemistry() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"/assets/img/department/hod/chemistry.png",
+    image:"/assets/img/department/hod/chemistry.webp",
     name:"Dr.S.Savithri",
     message:"Welcome to Department of Chemistry, was established in 2020. The Department seeks to combine excellence in education with service to the industry. Our vision is an innovative and leading Department to provide students with a balance of intellectual and practical experiences that enable them to serve a variety of societal needs. In our department students are nurtured to become best professional as Project Managers and also employed in research and chemical Industry or become Entrepreneurs in their own innovative way. We are having hard-working students, a young and dynamic faculty, whose expertise spans the range of disciplines in chemical science stream and a very healthy work-culture, are the basic elements that comprise the Department of Chemistry, the hub of the institute’s academia. We hold firm belief in our ability to succeed, and we nurture an attitude of self-reliance, confidence, commitment and responsibility to the motherland that we are to serve. I am confident that the students of the department would justify the credibility of the department by showing a high level of professional competence in their respective field."
   }

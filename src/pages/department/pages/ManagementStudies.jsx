@@ -20,7 +20,7 @@ function ManagementStudies() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"/assets/img/department/hod/business.png",
+    image:"/assets/img/department/hod/business.webp",
     name:"Dr. Bala Sendhil Kumar G",
     message:"The Department of Business Studies is a dynamic academic unit offering a wide range of programmes including B.Com (Corporate Secretaryship), B.Com (Computer Applications), BBA (General), and BBA (FinTech and Digital Banking). These programmes are thoughtfully curated to provide students with both foundational and advanced knowledge, integrating real-world relevance and future-ready competencies. At the heart of our department lies a strong ethical vision - a vision rooted in discipline, commitment to learning, and value-based education. While we deliver a robust curriculum tailored to the evolving needs of the industry and society, we firmly believe that discipline is the backbone of academic excellence and personal growth. Discipline nurtures focus, and focus fuels achievement. We instil this spirit among our students to ensure they not only gain academic knowledge but also develop a strong character and sense of responsibility.Each programme we offer is designed with a dual objective to empower students with skills and knowledge, and to shape them as responsible citizens who contribute meaningfully to society and the nation. Our curriculum is interwoven with modules that enhance critical thinking, ethical decision-making and innovation. "
   }

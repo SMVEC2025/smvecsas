@@ -22,7 +22,7 @@ function Commerce() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"/assets/img/department/hod/commerce.png",
+    image:"/assets/img/department/hod/commerce.webp",
     name:"Ms. M. JANAKIRAMA",
     message:"Welcome to the PG Department of Commerce! We are excited to have you join our community of learners. Our Department is committed to providing Quality Education in Commerce through modern technology based teaching learning practices.Im delighted to lead a team of highly qualified and experienced faculty members dedicated to imparting knowledge and skills in commerce. Our programs are designed to equip students with the expertise and competencies required to excel in the dynamic world of commerce."
   }

@@ -20,7 +20,7 @@ function MediaStudies() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"/assets/img/department/hod/media.png",
+    image:"/assets/img/department/hod/media.webp",
     name:"Mrs. R. Rajeswari",
     message:"In a world driven by narratives, we believe in the transformative power of media to inform,inspire, and ignite change. Our department is more than a place of learning, it’s a vibrant creative hub where ideas come to life, voices find their strength, and the media professionals oftomorrow take root. Whether your passion lies in journalism, filmmaking, digital media,advertising, or research, we offer a dynamic curriculum, immersive hands-on training, and a nurturing environment designed to help you thrive. With experienced faculty, strong industry ties, and cutting-edge facilities, we prepare you not just to navigate the media landscape but to lead and redefine it. To our students your journey here will challenge you, excite you, and prepare you for an ever-evolving media world. To future learners we invite you to discover the limitless possibilities that await in the world of media. And to our alumni and industry partners your accomplishments continue to motivate and guide us.Let’s create, critique, and communicate with purpose and passion."
   }

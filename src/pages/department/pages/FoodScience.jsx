@@ -20,7 +20,7 @@ function FoodScience() {
   }
   const programDetails=ProgramData?.filter(program => program.department.toLocaleLowerCase() == page.toLocaleLowerCase())
   const HodData={
-    image:"/assets/img/department/hod/foodscience.png",
+    image:"/assets/img/department/hod/foodscience.webp",
     name:"Dr. T. Kavitha",
     message:"Welcome to the Department of Food Science and Nutrition at SMVEC School of Arts and Science. Our mission is multifaceted to empower individuals with nutrition knowledge, develop innovative functional food products and conduct sustainable research practice all aimed at enhancing their skills in various facets of Nutrition and Food Science. Our college has a rich history of providing quality education and we are proud to continue that legacy. Our department stands out for its comprehensive curriculum, integrating theoretical knowledge with hands-on experience in our well-equipped labs and through various projects. Furthermore, our dedicated faculty, with their diverse expertise, are committed to providing a supportive and inclusive learning environment for all the student. I am confident that with our collective efforts, we will achieve our goals and continue to make significant contributions to the field of Food Science and Nutrition.  "
   }
