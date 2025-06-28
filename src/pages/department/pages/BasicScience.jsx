@@ -24,6 +24,7 @@ function BasicScience() {
   }
   return (
    <>
+   
     <Home title={`Department of ${page}`}/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>

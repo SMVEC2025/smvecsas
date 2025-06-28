@@ -9,6 +9,7 @@ import Campuses from './component/Campuses'
 import MissionVision from '../department/component/MissionAndVision'
 import BoardMembers from './component/BoardMembers'
 import Dean from './component/Dean'
+import { Helmet } from 'react-helmet'
 function Index() {
       const MissionData ={
     mission:"“To provide holistic, interdisciplinary education that fosters critical thinking, creativity, and ethical values. It prepares students for meaningful careers, research, and responsible global citizenship.”",
@@ -16,6 +17,11 @@ function Index() {
   }
     return (
         <>
+        <Helmet>
+        <title>About Us | SMVEC SAS</title>
+        <meta name="description" content="Learn More about us" />
+        {/* <link rel="icon" href="/favicon-new.ico" /> */}
+      </Helmet>
             <BreadCrumb title="About"
                 subtitle="About" />
             <About />
