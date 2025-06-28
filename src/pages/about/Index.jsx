@@ -9,30 +9,30 @@ import Campuses from './component/Campuses'
 import MissionVision from '../department/component/MissionAndVision'
 import BoardMembers from './component/BoardMembers'
 import Dean from './component/Dean'
-import { HelmetProvider, Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 function Index() {
-      const MissionData ={
-    mission:"“To provide holistic, interdisciplinary education that fosters critical thinking, creativity, and ethical values. It prepares students for meaningful careers, research, and responsible global citizenship.”",
-    vision:"“To be a centre of academic excellence that blends creativity, scientific inquiry, and human values to shape socially responsible global citizens.”"
+  const MissionData = {
+    mission: "“To provide holistic, interdisciplinary education that fosters critical thinking, creativity, and ethical values. It prepares students for meaningful careers, research, and responsible global citizenship.”",
+    vision: "“To be a centre of academic excellence that blends creativity, scientific inquiry, and human values to shape socially responsible global citizens.”"
   }
-    return (
-        <>
-        <HelmetProvider>
+  return (
+    <>
+      <Helmet>
         <title>About Us | SMVEC SAS</title>
         <meta name="description" content="Learn More about us" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
-      </HelmetProvider>
-            <BreadCrumb title="About"
-                subtitle="About" />
-            <About />
-            <SectionTwo />
-            <MissionVision missionData={MissionData} />
-            <Dean />
-            <BoardMembers />
-            <HomeCta />
-        </>
-    )
+      </Helmet>
+      <BreadCrumb title="About"
+        subtitle="About" />
+      <About />
+      <SectionTwo />
+      <MissionVision missionData={MissionData} />
+      <Dean />
+      <BoardMembers />
+      <HomeCta />
+    </>
+  )
 }
 
 export default Index

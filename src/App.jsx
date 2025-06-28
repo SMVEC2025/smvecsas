@@ -49,13 +49,14 @@ import Placement from './pages/placement/Index';
 import EnquiredSucessfully from './pages/enquiredsuccess/EnquiredSucessfully';
 //error
 import ErrorPage from './pages/error/Index';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 function App() {
   return (
     <>
+    <HelmetProvider>
     <AppProvider>
      <Router>
-      
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} /> 
@@ -106,6 +107,7 @@ function App() {
       </MainLayout>
     </Router>
     </AppProvider>
+    </HelmetProvider>
     </>
   );
 }
