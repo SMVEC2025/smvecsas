@@ -32,7 +32,7 @@ function ComputationalStudies() {
   return (
    <>
       <Helmet>
-        <title>Commerce | SMVEC SAS</title>
+        <title>Cs | SMVEC SAS</title>
         <meta name="description" content="Start your carreer today in computational studies" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
       </Helmet>

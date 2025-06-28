@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoLocationOutline } from "react-icons/io5";
 
 function CourseDetailSection({ event }) {
     const eventDetail = event[0]?.acf
@@ -16,7 +17,7 @@ function CourseDetailSection({ event }) {
                                 <img
                                     src={eventDetail?.image}
                                     alt="event details"
-                                    className="img-fluid w-100"
+                                    className="event-main_img"
                                 />
                             </div>
                             <div className="tf__event_details_text mt_35 wow fadeInUp">
@@ -24,12 +25,12 @@ function CourseDetailSection({ event }) {
                                 <ul className="location d-flex flex-wrap">
                                     <li>
                                         <i >
-                                            
 
+                                  <IoLocationOutline/>
                                         </i> pondicherry
                                     </li>
                                     <li>
-                                      {eventDetail?.time}
+                                        {eventDetail?.time}
                                     </li>
                                 </ul>
                                 <div dangerouslySetInnerHTML={{ __html: eventDetail?.description }}>

@@ -10,6 +10,7 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
+import { Helmet } from 'react-helmet'
 function French() {
   const page = "French"
   const aboutData={
@@ -30,6 +31,12 @@ function French() {
   }
   return (
    <>
+    <Helmet>
+        <title>French | SMVEC SAS</title>
+        <meta name="description" content="Start your carreer today in french" />
+        {/* <link rel="icon" href="/favicon-new.ico" /> */}
+      </Helmet>
+
     <Home title={`Department of ${page}`} image='/assets/img/department/france.webp'/>
     <About data={aboutData}/>
     {/* <HodSection HodData={HodData}/> */}

@@ -10,6 +10,7 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
+import { Helmet } from 'react-helmet'
 function MediaStudies() {
   const page = "Media Studies"
   const aboutData={
@@ -31,6 +32,11 @@ const missionData ={
   
   return (
    <>
+    <Helmet>
+        <title>Media Studies | SMVEC SAS</title>
+        <meta name="description" content="Start your carreer today in Media Studies" />
+        {/* <link rel="icon" href="/favicon-new.ico" /> */}
+      </Helmet>
     <Home title={`Department of ${page}`}  image='/assets/img/department/viscom.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>

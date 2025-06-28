@@ -10,6 +10,7 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
+import { Helmet } from 'react-helmet'
 function Physics() {
   const page = "physics"
   const aboutData = {
@@ -30,6 +31,11 @@ function Physics() {
   }
   return (
     <>
+       <Helmet>
+        <title>Physics | SMVEC SAS</title>
+        <meta name="description" content="Start your carreer today in Physics" />
+        {/* <link rel="icon" href="/favicon-new.ico" /> */}
+      </Helmet>
       <Home title={`Department of ${page}`} image='/assets/img/department/physics.webp' />
       <About data={aboutData} />
       <HodSection HodData={HodData} />

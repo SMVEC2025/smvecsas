@@ -28,7 +28,7 @@ function English() {
   return (
    <>
       <Helmet>
-        <title>Commerce | SMVEC SAS</title>
+        <title>English | SMVEC SAS</title>
         <meta name="description" content="Start your carreer today in English" />
         {/* <link rel="icon" href="/favicon-new.ico" /> */}
       </Helmet>

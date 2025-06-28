@@ -10,6 +10,7 @@ import Navbar from '../../../components/header/Navbar'
 import HodSection from '../component/HodSection'
 import Faculty from '../component/Faculty'
 import { ProgramData } from '../../../data/ProgramData'
+import { Helmet } from 'react-helmet'
 function FoodScience() {
   const page = "Food Science"
   const aboutData={
@@ -30,6 +31,11 @@ function FoodScience() {
   }
   return (
    <>
+    <Helmet>
+        <title>Food science | SMVEC SAS</title>
+        <meta name="description" content="Start your carreer today in food science" />
+        {/* <link rel="icon" href="/favicon-new.ico" /> */}
+      </Helmet>
     <Home title={`Department of ${page}`} image='/assets/img/department/foodscience.webp'/>
     <About data={aboutData}/>
     <HodSection HodData={HodData}/>
