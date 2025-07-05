@@ -2,18 +2,18 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from '../../../components/Header';
 
-function Faculty({dept}) {
+function Faculty({ dept }) {
   const navigate = useNavigate();
-  const handleNavigate=()=>{
-     navigate(`/faculty/${dept}`)
+  const handleNavigate = () => {
+    navigate(`/faculty/${dept}`)
   }
   return (
     <div className='container dept-faculty-main'>
-        <Header title="faculty"/>
-        <p>Teaching environment and quality are central to SRMIST’s capabilities profile. Our Professors are the reason for our continued ability to foster vibrant and value adding learning experiences for our students. The success of our students’ in terms of their learning and overall development enabled by our faculty members is an area of focus of Leadership at SRMIST. Many opportunities are provided to our faculty members to conduct research and engage with the industry in consultancy and other projects. This platform brings our faculty members an opportunity to expand their knowledge contribution as well as bring those rich experiential inputs to the classrooms, and labs, therefore benefiting our students.
-
-</p>
-        <button className='' onClick={handleNavigate}>Faculty Members</button>
+      <Header title="faculty" />
+      <p>
+        At SMVEC's School of Arts and Science (SAS), we believe that a strong and inspiring teaching environment is the foundation of academic excellence. Our dedicated faculty members play a pivotal role in creating enriching learning experiences that shape the academic and personal growth of our students. The leadership at SMVEC SAS is committed to fostering a culture where quality teaching, student-centric learning, and faculty development go hand in hand. Our faculty are encouraged to engage in continuous research, participate in academic collaborations, and contribute to consultancy and industry-linked projects. These initiatives not only enhance their academic contributions but also bring real-world insights into the classroom, significantly benefiting our students’ overall educational journey.
+      </p>
+      <button className='' onClick={handleNavigate}>Faculty Members</button>
     </div>
   )
 }

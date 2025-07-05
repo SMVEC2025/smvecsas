@@ -16,7 +16,8 @@ function Dean() {
                     <img src={mahalakshmi} alt="" />
                 </div>
                 <div>
-                    <h3>Dr. S. MUTHULAKSHMI</h3>
+                    <h3>Dr. S. Muthulakshmi, Ph.D.</h3>
+                    <span>Dean of SMVEC School of Arts and Science</span>
                     <p>
 
                         Higher education in the 21st century is accomplished with lot of strength,

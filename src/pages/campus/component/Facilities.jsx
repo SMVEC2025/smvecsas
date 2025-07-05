@@ -19,27 +19,33 @@ function Facilities() {
   const labData = [
     {
       name: 'computer science',
-      source: '/assets/img/360/lab/lab1.jpg'
+      source: '/360/lab/lab1.jpg',
+      thumb:'/360/thumb/lab1.webp'
     },
     {
       name: 'physics',
-      source: '/assets/img/360/lab/lab2.jpg'
+      source: '/360/lab/lab2.jpg',
+      thumb:'/360/thumb/lab2.webp'
     },
     {
       name: 'biotech',
-      source: '/assets/img/360/lab/lab3.jpg'
+      source: '/360/lab/lab3.jpg',
+      thumb:'/360/thumb/lab3.webp'
     },
     {
       name: 'chemistry',
-      source: '/assets/img/360/lab/lab4.jpg'
+      source: '/360/lab/lab4.jpg',
+      thumb:'/360/thumb/lab4.webp'
     },
     {
       name: 'computer graphics',
-      source: '/assets/img/360/lab/lab5.jpg'
+      source: '/360/lab/lab5.jpg',
+      thumb:'/360/thumb/lab5.webp'
     },
     {
       name: 'computer science',
-      source: '/assets/img/360/lab/lab6.jpg'
+      source: '/360/lab/lab6.jpg',
+      thumb:'/360/thumb/lab6.webp'
     },
 
   ]
@@ -72,13 +78,13 @@ function Facilities() {
       name: 'sports',
       subheading: null,
       para: 'Vibrant sports facilities at SMVEC foster team spirit, fitness, and enthusiasm across a range of outdoor games.',
-      img: '/assets/img/campus/ground.webp'
+      img: 'assets/img/campus/ground.webp'
     },
     {
       name: 'canteen',
       subheading: null,
       para: 'Our hygienic canteen serves a variety of delicious meals and snacks, making it a favorite hangout spot for students.',
-      img: '/assets/img/campus/Canteen.webp'
+      img: 'assets/img/campus/Canteen.webp'
     }
   ];
 
@@ -106,7 +112,7 @@ function Facilities() {
       <div className="lab_facilities">
         {labData.map((e, i) => (
           <div className="con" onClick={() => handleImageClick(e.source)}>
-            <img src={e.source} alt="" />
+            <img src={e.thumb} alt="" />
             <div className="layer">
               <h4>{e.name}</h4>
             </div>

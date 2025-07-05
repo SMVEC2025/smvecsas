@@ -82,6 +82,10 @@ width: 100%;
   display: inline-block;
   animation: spin 1s linear infinite;
   font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @keyframes spin {

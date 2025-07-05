@@ -50,64 +50,68 @@ import EnquiredSucessfully from './pages/enquiredsuccess/EnquiredSucessfully';
 //error
 import ErrorPage from './pages/error/Index';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
+import AlreadyEnquired from './pages/alreadyenquired/AlreadyEnquired';
 
 function App() {
   return (
     <>
-    <HelmetProvider>
-    <AppProvider>
-     <Router>
-      <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home />} /> 
-          <Route path="/departments/:program" element={<Departments />} /> 
-          <Route path="/departments/department-of-basicscience" element={<DepartmentOfBasicScience />} /> 
-          <Route path="/program/:program" element={<Program />} /> 
-          <Route path="/faculty" element={<Faculty />} /> 
-          <Route path="/faculty/:dept" element={<DepartmentFaculty />} /> 
-          <Route path="/about-us" element={<About />} /> 
-          <Route path="/about/history" element={<AboutHistory />} /> 
-          <Route path="/campus" element={<Campus />} /> 
-          <Route path="/programs" element={<AllPrograms />} /> 
-          <Route path="/ug-programs" element={<UgPrograms />} /> 
-          <Route path="/pg-programs" element={<PgPrograms />} /> 
-          <Route path="/events/:dept" element={<Events />} /> 
-          <Route path="/event/:slug" element={<EventDetails />} /> 
-          <Route path="/department/basic-science" element={<BasicScience />} /> 
-          <Route path="/admission" element={<Admission />}/>
-          <Route path="/contact-us" element={<ContactUs />}/> 
-          <Route path="/map" element={<Map />} /> 
-          <Route path="/virtual-tour" element={<PanoramaViewer />} /> 
-          <Route path="*" element={<ErrorPage />} />
-          <Route path="/calender" element={<Calender />} /> 
-          <Route path="/calendar" element={<Calender />} /> 
-          <Route path="/activities" element={<NoticeBoard />} /> 
-          
-          {/* ////department pages///// */}
-          <Route path="/department/commerce" element={<Commerce />} />
-          <Route path="/department/computational-studies" element={<ComputationalStudies />} />
-          <Route path="/department/business-studies" element={<ManagementStudies />} />
-          <Route path="/department/physics" element={<Physics />} />
-          <Route path="/department/chemistry" element={<Chemistry />} />
-          <Route path="/department/mathematics" element={<Mathematics />} />
-          <Route path="/department/tamil" element={<Tamil />} />
-          <Route path="/department/english" element={<English />} />
-          <Route path="/department/french" element={<French />} />
-          <Route path="/department/bio-science" element={<BioScience />} />
-          <Route path="/department/food-science" element={<FoodScience />} />
-          <Route path="/department/media-studies" element={<MediaStudies />} />
-          
-          {/* ////Placement pages///// */}
-          <Route path="/placement" element={<Placement />} />
-          <Route path="/test" element={<Test />} />
-          {/* ////success message page///// */}
-          <Route path="/enquired-successfully" element={<EnquiredSucessfully />} />
+      <HelmetProvider>
+        <AppProvider>
+          <Router>
+            <MainLayout>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/departments/:program" element={<Departments />} />
+                <Route path="/departments/department-of-basicscience" element={<DepartmentOfBasicScience />} />
+                <Route path="/program/:program" element={<Program />} />
+                <Route path="/faculty" element={<Faculty />} />
+                <Route path="/faculty/:dept" element={<DepartmentFaculty />} />
+                <Route path="/about-us" element={<About />} />
+                <Route path="/about/history" element={<AboutHistory />} />
+                <Route path="/campus" element={<Campus />} />
+                <Route path="/programs" element={<AllPrograms />} />
+                <Route path="/ug-programs" element={<UgPrograms />} />
+                <Route path="/pg-programs" element={<PgPrograms />} />
+                <Route path="/events/:dept" element={<Events />} />
+                <Route path="/event/:slug" element={<EventDetails />} />
+                <Route path="/department/basic-science" element={<BasicScience />} />
+                <Route path="/admission" element={<Admission />} />
+                <Route path="/contact-us" element={<ContactUs />} />
+                <Route path="/map" element={<Map />} />
+                <Route path="/virtual-tour" element={<PanoramaViewer />} />
+                <Route path="*" element={<ErrorPage />} />
+                <Route path="/calender" element={<Calender />} />
+                <Route path="/calendar" element={<Calender />} />
+                <Route path="/activities" element={<NoticeBoard />} />
 
-        </Routes>
-      </MainLayout>
-    </Router>
-    </AppProvider>
-    </HelmetProvider>
+                {/* ////department pages///// */}
+                <Route path="/department/commerce" element={<Commerce />} />
+                <Route path="/department/computational-studies" element={<ComputationalStudies />} />
+                <Route path="/department/business-studies" element={<ManagementStudies />} />
+                <Route path="/department/physics" element={<Physics />} />
+                <Route path="/department/chemistry" element={<Chemistry />} />
+                <Route path="/department/mathematics" element={<Mathematics />} />
+                <Route path="/department/tamil" element={<Tamil />} />
+                <Route path="/department/english" element={<English />} />
+                <Route path="/department/french" element={<French />} />
+                <Route path="/department/bio-science" element={<BioScience />} />
+                <Route path="/department/food-science" element={<FoodScience />} />
+                <Route path="/department/media-studies" element={<MediaStudies />} />
+
+                {/* ////Placement pages///// */}
+                <Route path="/placement" element={<Placement />} />
+                <Route path="/test" element={<Test />} />
+                {/* ////success message page///// */}
+                <Route path="/success" element={<EnquiredSucessfully />} />
+
+                <Route path="/already-enquired" element={<AlreadyEnquired />} />
+
+
+              </Routes>
+            </MainLayout>
+          </Router>
+        </AppProvider>
+      </HelmetProvider>
     </>
   );
 }

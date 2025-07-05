@@ -51,12 +51,6 @@ const indianStates = [
 
 // Add more states as needed
 
-const courses = [
-  'B.A., LL.B - 5 years',
-  'B.B.A. LL.B - 5 years',
-  'B.Sc. LL.B - 5 years',
-  'LL.B - 3 years'
-];
 
 const Form = () => {
   const navigate = useNavigate()
@@ -74,7 +68,7 @@ const Form = () => {
     captchaInput: '',
     is_otp_verified: 0
   });
-  const { isSubmitted, setIsSubmitted } = useContext(AppContext)
+  const { isSubmitted, setIsSubmitted, setShowInstantForm } = useContext(AppContext)
   const [cities, setCities] = useState([]);
   const [errors, setErrors] = useState({});
   const [userOtp, setUserOtp] = useState(' ')
@@ -154,13 +148,19 @@ const Form = () => {
 
       };
       try {
-        await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
-        setIsSubmitted(true)
-        setTimeout(() => {
+        let response = await axios.post('https://agribackend.vercel.app/api/submit-form', enquiryData);
 
-          navigate('/enquired-successfully')
+        setTimeout(() => {
+          setIsSubmitted(true)
+          setShowInstantForm(false)
           setLoading(false)
-        }, 1000);
+          if (response.data != 1) {
+            navigate(`/success/?id=${response.data}`, { state: enquiryData?.student_name })
+          } else {
+            navigate('/already-enquired')
+          }
+
+        }, 100);
       } catch (error) {
         alert("Something went wrong! try after sometimes");
         setLoading(false)
@@ -242,9 +242,9 @@ const Form = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   }
-  function handleKeyDown(e,triggerButton = false){
-    if(e.key === "Enter"){
-     e.preventDefault()
+  function handleKeyDown(e, triggerButton = false) {
+    if (e.key === "Enter") {
+      e.preventDefault()
     }
   }
   return (
@@ -267,7 +267,7 @@ const Form = () => {
               onChange={handleChange}
               error={!!errors.name}
               helperText={errors.name}
-                onKeyDown={(e) => handleKeyDown(e)} 
+              onKeyDown={(e) => handleKeyDown(e)}
 
 
             />
@@ -283,7 +283,7 @@ const Form = () => {
               onChange={handleChange}
               error={!!errors.fathername}
               helperText={errors.fathername}
-                onKeyDown={(e) => handleKeyDown(e)} 
+              onKeyDown={(e) => handleKeyDown(e)}
 
             />
           </div>
@@ -316,32 +316,36 @@ const Form = () => {
 
 
 
+          {userOtp !==' ' && (
+            <>
+
+              {!otpVerified ? (
+                <div className='input-with-btn'>
+
+                  <TextField
+                    id="otp"
+                    name="otp"
+                    value={formData.otp}
+                    onChange={handleChange}
+                    label="OTP"
+                    variant="outlined"
+                    className="custom-input"
+                    style={{ width: `calc(100% - 120px)` }}
+                    error={!!errors.otp}
+                    helperText={errors.otp}
+
+                    onKeyDown={(e) => handleKeyDown(e)}
+                  />
+
+                  <button onClick={verifyOtp}>Verify</button>
+
+                </div>
+              ) : <div className='success-msg'>OTP Verified Sucessfully</div>}
 
 
-          {!otpVerified ? (
-            <div className='input-with-btn'>
 
-              <TextField
-                id="otp"
-                name="otp"
-                value={formData.otp}
-                onChange={handleChange}
-                label="OTP"
-                variant="outlined"
-                className="custom-input"
-                style={{ width: `calc(100% - 120px)` }}
-                error={!!errors.otp}
-                helperText={errors.otp}
-                
-                onKeyDown={(e) => handleKeyDown(e)} 
-                />
-
-              <button onClick={verifyOtp}>Verify</button>
-
-            </div>
-          ) : <div className='success-msg'>OTP Verified Sucessfully</div>}
-
-
+            </>
+          )}
 
           <TextField
             id="email"
@@ -355,7 +359,7 @@ const Form = () => {
             onChange={handleChange}
             error={!!errors.email}
             helperText={errors.email}
-                onKeyDown={(e) => handleKeyDown(e)} 
+            onKeyDown={(e) => handleKeyDown(e)}
 
           />
           <FormControl fullWidth sx={{ mt: 2 }} error={Boolean(errors.course)}>
@@ -376,7 +380,7 @@ const Form = () => {
               {/* Pondicherry first */}
               {/* Other states */}
               {ProgramData.map(course => (
-                <MenuItem key={course} value={course}>
+                <MenuItem key={course.name} value={course.name}>
                   {course.name}
                 </MenuItem>
               ))}

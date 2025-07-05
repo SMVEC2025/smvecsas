@@ -1,35 +1,109 @@
 .success-container {
-  height: 100vh;
-  width: 100%;
-  background-color: #2c3789;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  .success-box {
-  padding: 40px 30px;
-  border-radius: 12px;
+  justify-content: center;
+  background: radial-gradient(circle at center, #f7f9ff, #dde8ff);
+  height: 100vh;
   text-align: center;
-  max-width: 400px;
-  width: 90%;
+  padding: 20px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.success-box h1 {
-  color: #ffffff;
-  font-size: 32px;
-  margin-bottom: 16px;
+.smvec-animated-logo {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
+  animation: zoomIn 1s ease forwards;
+  shape-rendering: geometricPrecision; /* prevents blur */
 }
 
-.success-box p {
-  font-size: 18px;
-  color: #cccccc;
-  margin: 6px 0;
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
-.countdown {
-  font-size: 14px;
-  color: #f0f0f0;
+.petals {
+  stroke: #D8A228;
+  stroke-width: 2;
+  fill: transparent;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw-stroke 1s ease forwards;
+}
+
+@keyframes draw-stroke {
+  0% {
+    stroke-dashoffset: 400;
+    filter: drop-shadow(0 0 5px #aaa);
+  }
+  90% {
+    filter: drop-shadow(0 0 5px #aaa);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #D8A228;
+    filter: none;
+  }
+}
+
+.base-section path {
+  fill: #33409C;
+  stroke: #33409C;
+  animation: baseDraw 1s ease forwards;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+}
+
+@keyframes baseDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.thankyou-text {
+  font-size: 2rem;
+  color: #2c3e50;
   margin-top: 10px;
+  animation: fadeIn 0.8s ease 1.4s forwards;
+  opacity: 0;
 }
 
+.sub-text {
+  font-size: 1.15rem;
+  color: #555;
+  margin-top: 10px;
+  animation: fadeIn 0.8s ease 1.6s forwards;
+  opacity: 0;
+}
+.sub-button{
+  margin-top: 30px;
+  background-color: #30429e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  animation: fadeIn 0.8s ease 1.6s forwards;
+  opacity: 0;
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

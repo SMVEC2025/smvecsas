@@ -16,15 +16,15 @@ function CourseDetailSection({ courseData }) {
                                 <thead>
                                     <tr className='header'>
                                         <th>Duration</th>
-                                        <th>Fee / Year</th>
-                                        <th className='fees_header'>Intake</th>
+                                        {/* <th>Fee / Year</th>
+                                        <th className='fees_header'>Intake</th> */}
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr >
                                         <td className='items'>{element?.courseDuration}</td>
-                                        <td className='items'>{element?.feePerYear}</td>
-                                        <td id='fees_item' className='items'>{element?.intake}</td>
+                                        {/* <td className='items'>{element?.feePerYear}</td>
+                                        <td id='fees_item' className='items'>{element?.intake}</td> */}
                                     </tr>
                                 </tbody>
                             </table>

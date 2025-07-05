@@ -82,22 +82,22 @@ const ThreeSixtyViewer = ({ imageUrl }) => {
     };
 
     const imageData = [
-        { id: 1, name: 'SMVEC SAS', image: '/assets/img/360/new/artsentrance.jpg', thumb: '/assets/img/360/thumb/artsentrance.jpg', cat: 'campus' },
-        { id: 2, name: 'Canteen', image: '/assets/img/360/new/canteen.jpg', thumb: '/assets/img/360/thumb/canteen.png', cat: 'facility' },
-        { id: 3, name: 'Entrance 1', image: '/assets/img/360/new/entrance1.jpg', thumb: '/assets/img/360/thumb/entrance1.jpg', cat: 'campus' },
-        { id: 4, name: 'Entrance 2', image: '/assets/img/360/new/entrance2.jpg', thumb: '/assets/img/360/thumb/entrance2.jpg', cat: 'campus' },
-        { id: 5, name: 'Garden', image: '/assets/img/360/new/garden.jpg', thumb: '/assets/img/360/thumb/garden.jpg', cat: 'campus' },
-        { id: 6, name: 'Gate 1', image: '/assets/img/360/new/gate1.jpg', thumb: '/assets/img/360/thumb/gate1.jpg', cat: 'campus' },
-        { id: 7, name: 'Gate 2', image: '/assets/img/360/new/gate2.jpg', thumb: '/assets/img/360/thumb/gate2.jpg', cat: 'campus' },
-        { id: 8, name: 'tennis court', image: '/assets/img/360/new/tennis.jpg', thumb: '/assets/img/360/thumb/tennis.png', cat: 'facility' },
-        { id: 9, name: 'volley ball', image: '/assets/img/360/new/volleyball.jpg', thumb: '/assets/img/360/thumb/volleyball.png', cat: 'facility' },
-        { id: 10, name: 'Garden 2', image: '/assets/img/360/new/garden1.jpg', thumb: '/assets/img/360/thumb/garden1.jpg', cat: 'campus' },
-        { id: 11, name: 'Computer science lab', image: '/assets/img/360/lab/lab1.jpg', thumb: '/assets/img/360/lab/lab1.jpg', cat: 'lab' },
-        { id: 12, name: 'Physics lab', image: '/assets/img/360/lab/lab2.jpg', thumb: '/assets/img/360/lab/lab2.jpg', cat: 'lab' },
-        { id: 13, name: 'Biotech lab', image: '/assets/img/360/lab/lab3.jpg', thumb: '/assets/img/360/lab/lab3.jpg', cat: 'lab' },
-        { id: 14, name: 'Chemistry lab', image: '/assets/img/360/lab/lab4.jpg', thumb: '/assets/img/360/lab/lab4.jpg', cat: 'lab' },
-        { id: 15, name: 'Computer graphics lab', image: '/assets/img/360/lab/lab5.jpg', thumb: '/assets/img/360/lab/lab5.jpg', cat: 'lab' },
-        { id: 16, name: 'Computer science lab', image: '/assets/img/360/lab/lab6.jpg', thumb: '/assets/img/360/lab/lab6.jpg', cat: 'lab' },
+        { id: 1, name: 'SMVEC SAS', image: '/360/new/artsentrance.jpg', thumb: '/360/thumb/artsentrance.jpg', cat: 'campus' },
+        { id: 2, name: 'Canteen', image: '/360/new/canteen.jpg', thumb: '/360/thumb/canteen.png', cat: 'facility' },
+        { id: 3, name: 'Entrance 1', image: '/360/new/entrance1.jpg', thumb: '/360/thumb/entrance1.jpg', cat: 'campus' },
+        { id: 4, name: 'Entrance 2', image: '/360/new/entrance2.jpg', thumb: '/360/thumb/entrance2.jpg', cat: 'campus' },
+        { id: 5, name: 'Garden', image: '/360/new/garden.jpg', thumb: '/360/thumb/garden.jpg', cat: 'campus' },
+        { id: 6, name: 'Gate 1', image: '/360/new/gate1.jpg', thumb: '/360/thumb/gate1.jpg', cat: 'campus' },
+        { id: 7, name: 'Gate 2', image: '/360/new/gate2.jpg', thumb: '/360/thumb/gate2.jpg', cat: 'campus' },
+        { id: 8, name: 'tennis court', image: '/360/new/tennis.jpg', thumb: '/360/thumb/tennis.png', cat: 'facility' },
+        { id: 9, name: 'volley ball', image: '/360/new/volleyball.jpg', thumb: '/360/thumb/volleyball.png', cat: 'facility' },
+        { id: 10, name: 'Garden 2', image: '/360/new/garden1.jpg', thumb: '/360/thumb/garden1.jpg', cat: 'campus' },
+        { id: 11, name: 'Computer science lab', image: '/360/lab/lab1.jpg', thumb: '/360/thumb/lab1.webp', cat: 'lab' },
+        { id: 12, name: 'Physics lab', image: '/360/lab/lab2.jpg', thumb: '/360/thumb/lab2.webp', cat: 'lab' },
+        { id: 13, name: 'Biotech lab', image: '/360/lab/lab3.jpg', thumb: '/360/thumb/lab3.webp', cat: 'lab' },
+        { id: 14, name: 'Chemistry lab', image: '/360/lab/lab4.jpg', thumb: '/360/thumb/lab4.webp', cat: 'lab' },
+        { id: 15, name: 'Computer graphics lab', image: '/360/lab/lab5.jpg', thumb: '/360/thumb/lab5.webp', cat: 'lab' },
+        { id: 16, name: 'Computer science lab', image: '/360/lab/lab6.jpg', thumb: '/360/thumb/lab6.webp', cat: 'lab' },
     ];
 
     useEffect(() => {
